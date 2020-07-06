@@ -1,1 +1,1 @@
-<svg id="avorf" patternUnits="userSpaceOnUse" width="6" height="6"><path d="M 0,6 l 6,-6 M -1.5,1.5 l 3,-3 M 4.5,7.5 l 3,-3" stroke-width="2" shape-rendering="geometricPrecision" stroke="white" stroke-linecap="square"></path></svg>
+<svg width="6" height="6"><path d="M0 6l6-6m-7.5 1.5l3-3m3 9l3-3" stroke-width="2" shape-rendering="geometricPrecision" stroke="#fff" stroke-linecap="square"/></svg>
