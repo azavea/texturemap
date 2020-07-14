@@ -1,0 +1,1224 @@
+<html><head>
+    <meta charset="utf-8">
+    <title>d3 patterns</title>
+    <style type="text/css">
+      body { background-color: white; overflow-x: hidden; font-family: graphik; }
+      .box {
+        display: inline-block;
+        margin-right: 10px;
+        padding: 10px;
+        margin-bottom: 10px;
+        box-shadow: 0 0 0 1px rgba(16,22,26,.1), 0 0 0 rgba(16,22,26,0), 0 1px 1px rgba(16,22,26,.2);
+      }
+      svg {
+        width: 200px;
+        height: 200px;
+      }
+      .download {
+        display: block;
+        width: 100%;
+        box-shadow: inset 0 0 0 1px rgba(16,22,26,.2), inset 0 -1px 0 rgba(16,22,26,.1);
+        background-color: #fff;
+        border: none;
+        padding: 6px 4px;
+        margin-top: 4px;
+        cursor: pointer;
+        background-image: linear-gradient(180deg,hsla(0,0%,100%,.8),hsla(0,0%,100%,0));
+      }
+      .download:hover {
+        background-color: #ebf1f5;
+      }
+    </style>
+
+  </head>
+  <body>
+    <div id="example"><div data-id="0" data-type="line" data-color="black" id="box-0" class="box"><div class="pattern"><svg><defs><pattern id="kntro" patternUnits="userSpaceOnUse" width="4" height="4"><path d="M 0,4 l 4,-4 M -1,1 l 2,-2 M 3,5 l 2,-2" stroke-width="0.25" shape-rendering="crispEdges" stroke="black" stroke-linecap="square"></path></pattern></defs><rect width="200" height="200" style="fill: white;"></rect><rect width="200" height="200" style="fill: url(&quot;#kntro&quot;);"></rect></svg></div><button class="download">Download</button></div><div data-id="1" data-type="line" data-color="black" id="box-1" class="box"><div class="pattern"><svg><defs><pattern id="lsoeq" patternUnits="userSpaceOnUse" width="5" height="5"><path d="M 0,5 l 5,-5 M -1.25,1.25 l 2.5,-2.5 M 3.75,6.25 l 2.5,-2.5" stroke-width="0.25" shape-rendering="crispEdges" stroke="black" stroke-linecap="square"></path></pattern></defs><rect width="200" height="200" style="fill: white;"></rect><rect width="200" height="200" style="fill: url(&quot;#lsoeq&quot;);"></rect></svg></div><button class="download">Download</button></div><div data-id="2" data-type="line" data-color="black" id="box-2" class="box"><div class="pattern"><svg><defs><pattern id="wdfw" patternUnits="userSpaceOnUse" width="6" height="6"><path d="M 0,6 l 6,-6 M -1.5,1.5 l 3,-3 M 4.5,7.5 l 3,-3" stroke-width="0.25" shape-rendering="crispEdges" stroke="black" stroke-linecap="square"></path></pattern></defs><rect width="200" height="200" style="fill: white;"></rect><rect width="200" height="200" style="fill: url(&quot;#wdfw&quot;);"></rect></svg></div><button class="download">Download</button></div><div data-id="3" data-type="line" data-color="black" id="box-3" class="box"><div class="pattern"><svg><defs><pattern id="amepw" patternUnits="userSpaceOnUse" width="4" height="4"><path d="M 0,4 l 4,-4 M -1,1 l 2,-2 M 3,5 l 2,-2" stroke-width="0.5" shape-rendering="crispEdges" stroke="black" stroke-linecap="square"></path></pattern></defs><rect width="200" height="200" style="fill: white;"></rect><rect width="200" height="200" style="fill: url(&quot;#amepw&quot;);"></rect></svg></div><button class="download">Download</button></div><div data-id="4" data-type="line" data-color="black" id="box-4" class="box"><div class="pattern"><svg><defs><pattern id="cotsy" patternUnits="userSpaceOnUse" width="5" height="5"><path d="M 0,5 l 5,-5 M -1.25,1.25 l 2.5,-2.5 M 3.75,6.25 l 2.5,-2.5" stroke-width="0.5" shape-rendering="crispEdges" stroke="black" stroke-linecap="square"></path></pattern></defs><rect width="200" height="200" style="fill: white;"></rect><rect width="200" height="200" style="fill: url(&quot;#cotsy&quot;);"></rect></svg></div><button class="download">Download</button></div><div data-id="5" data-type="line" data-color="black" id="box-5" class="box"><div class="pattern"><svg><defs><pattern id="usxub" patternUnits="userSpaceOnUse" width="6" height="6"><path d="M 0,6 l 6,-6 M -1.5,1.5 l 3,-3 M 4.5,7.5 l 3,-3" stroke-width="0.5" shape-rendering="crispEdges" stroke="black" stroke-linecap="square"></path></pattern></defs><rect width="200" height="200" style="fill: white;"></rect><rect width="200" height="200" style="fill: url(&quot;#usxub&quot;);"></rect></svg></div><button class="download">Download</button></div><div data-id="6" data-type="line" data-color="black" id="box-6" class="box"><div class="pattern"><svg><defs><pattern id="guwzu" patternUnits="userSpaceOnUse" width="8" height="8"><path d="M 0,8 l 8,-8 M -2,2 l 4,-4 M 6,10 l 4,-4" stroke-width="0.5" shape-rendering="crispEdges" stroke="black" stroke-linecap="square"></path></pattern></defs><rect width="200" height="200" style="fill: white;"></rect><rect width="200" height="200" style="fill: url(&quot;#guwzu&quot;);"></rect></svg></div><button class="download">Download</button></div><div data-id="7" data-type="line" data-color="black" id="box-7" class="box"><div class="pattern"><svg><defs><pattern id="kzblx" patternUnits="userSpaceOnUse" width="10" height="10"><path d="M 0,10 l 10,-10 M -2.5,2.5 l 5,-5 M 7.5,12.5 l 5,-5" stroke-width="0.5" shape-rendering="crispEdges" stroke="black" stroke-linecap="square"></path></pattern></defs><rect width="200" height="200" style="fill: white;"></rect><rect width="200" height="200" style="fill: url(&quot;#kzblx&quot;);"></rect></svg></div><button class="download">Download</button></div><div data-id="8" data-type="line" data-color="black" id="box-8" class="box"><div class="pattern"><svg><defs><pattern id="hgqdo" patternUnits="userSpaceOnUse" width="4" height="4"><path d="M 0,4 l 4,-4 M -1,1 l 2,-2 M 3,5 l 2,-2" stroke-width="1" shape-rendering="crispEdges" stroke="black" stroke-linecap="square"></path></pattern></defs><rect width="200" height="200" style="fill: white;"></rect><rect width="200" height="200" style="fill: url(&quot;#hgqdo&quot;);"></rect></svg></div><button class="download">Download</button></div><div data-id="9" data-type="line" data-color="black" id="box-9" class="box"><div class="pattern"><svg><defs><pattern id="olqpz" patternUnits="userSpaceOnUse" width="5" height="5"><path d="M 0,5 l 5,-5 M -1.25,1.25 l 2.5,-2.5 M 3.75,6.25 l 2.5,-2.5" stroke-width="1" shape-rendering="crispEdges" stroke="black" stroke-linecap="square"></path></pattern></defs><rect width="200" height="200" style="fill: white;"></rect><rect width="200" height="200" style="fill: url(&quot;#olqpz&quot;);"></rect></svg></div><button class="download">Download</button></div><div data-id="10" data-type="line" data-color="black" id="box-10" class="box"><div class="pattern"><svg><defs><pattern id="rjryx" patternUnits="userSpaceOnUse" width="6" height="6"><path d="M 0,6 l 6,-6 M -1.5,1.5 l 3,-3 M 4.5,7.5 l 3,-3" stroke-width="1" shape-rendering="crispEdges" stroke="black" stroke-linecap="square"></path></pattern></defs><rect width="200" height="200" style="fill: white;"></rect><rect width="200" height="200" style="fill: url(&quot;#rjryx&quot;);"></rect></svg></div><button class="download">Download</button></div><div data-id="11" data-type="line" data-color="black" id="box-11" class="box"><div class="pattern"><svg><defs><pattern id="ufbsp" patternUnits="userSpaceOnUse" width="8" height="8"><path d="M 0,8 l 8,-8 M -2,2 l 4,-4 M 6,10 l 4,-4" stroke-width="1" shape-rendering="crispEdges" stroke="black" stroke-linecap="square"></path></pattern></defs><rect width="200" height="200" style="fill: white;"></rect><rect width="200" height="200" style="fill: url(&quot;#ufbsp&quot;);"></rect></svg></div><button class="download">Download</button></div><div data-id="12" data-type="line" data-color="black" id="box-12" class="box"><div class="pattern"><svg><defs><pattern id="eoszh" patternUnits="userSpaceOnUse" width="10" height="10"><path d="M 0,10 l 10,-10 M -2.5,2.5 l 5,-5 M 7.5,12.5 l 5,-5" stroke-width="1" shape-rendering="crispEdges" stroke="black" stroke-linecap="square"></path></pattern></defs><rect width="200" height="200" style="fill: white;"></rect><rect width="200" height="200" style="fill: url(&quot;#eoszh&quot;);"></rect></svg></div><button class="download">Download</button></div><div data-id="13" data-type="line" data-color="black" id="box-13" class="box"><div class="pattern"><svg><defs><pattern id="cwcdx" patternUnits="userSpaceOnUse" width="6" height="6"><path d="M 0,6 l 6,-6 M -1.5,1.5 l 3,-3 M 4.5,7.5 l 3,-3" stroke-width="2" shape-rendering="crispEdges" stroke="black" stroke-linecap="square"></path></pattern></defs><rect width="200" height="200" style="fill: white;"></rect><rect width="200" height="200" style="fill: url(&quot;#cwcdx&quot;);"></rect></svg></div><button class="download">Download</button></div><div data-id="14" data-type="line" data-color="black" id="box-14" class="box"><div class="pattern"><svg><defs><pattern id="rykbh" patternUnits="userSpaceOnUse" width="8" height="8"><path d="M 0,8 l 8,-8 M -2,2 l 4,-4 M 6,10 l 4,-4" stroke-width="4" shape-rendering="crispEdges" stroke="black" stroke-linecap="square"></path></pattern></defs><rect width="200" height="200" style="fill: white;"></rect><rect width="200" height="200" style="fill: url(&quot;#rykbh&quot;);"></rect></svg></div><button class="download">Download</button></div><div data-id="15" data-type="line" data-color="black" id="box-15" class="box"><div class="pattern"><svg><defs><pattern id="ptmkh" patternUnits="userSpaceOnUse" width="10" height="10"><path d="M 0,10 l 10,-10 M -2.5,2.5 l 5,-5 M 7.5,12.5 l 5,-5" stroke-width="6" shape-rendering="crispEdges" stroke="black" stroke-linecap="square"></path></pattern></defs><rect width="200" height="200" style="fill: white;"></rect><rect width="200" height="200" style="fill: url(&quot;#ptmkh&quot;);"></rect></svg></div><button class="download">Download</button></div><div data-id="16" data-type="line" data-color="black" id="box-16" class="box"><div class="pattern"><svg><defs><pattern id="kmwti" patternUnits="userSpaceOnUse" width="3" height="3"><path d="M 0,1.5 l 3,0" stroke-width="0.25" shape-rendering="crispEdges" stroke="black" stroke-linecap="square"></path></pattern></defs><rect width="200" height="200" style="fill: white;"></rect><rect width="200" height="200" style="fill: url(&quot;#kmwti&quot;);"></rect></svg></div><button class="download">Download</button></div><div data-id="17" data-type="line" data-color="black" id="box-17" class="box"><div class="pattern"><svg><defs><pattern id="putbr" patternUnits="userSpaceOnUse" width="4" height="4"><path d="M 0,2 l 4,0" stroke-width="0.25" shape-rendering="crispEdges" stroke="black" stroke-linecap="square"></path></pattern></defs><rect width="200" height="200" style="fill: white;"></rect><rect width="200" height="200" style="fill: url(&quot;#putbr&quot;);"></rect></svg></div><button class="download">Download</button></div><div data-id="18" data-type="line" data-color="black" id="box-18" class="box"><div class="pattern"><svg><defs><pattern id="cqkrm" patternUnits="userSpaceOnUse" width="5" height="5"><path d="M 0,2.5 l 5,0" stroke-width="0.25" shape-rendering="crispEdges" stroke="black" stroke-linecap="square"></path></pattern></defs><rect width="200" height="200" style="fill: white;"></rect><rect width="200" height="200" style="fill: url(&quot;#cqkrm&quot;);"></rect></svg></div><button class="download">Download</button></div><div data-id="19" data-type="line" data-color="black" id="box-19" class="box"><div class="pattern"><svg><defs><pattern id="aglfu" patternUnits="userSpaceOnUse" width="3" height="3"><path d="M 0,1.5 l 3,0" stroke-width="0.5" shape-rendering="crispEdges" stroke="black" stroke-linecap="square"></path></pattern></defs><rect width="200" height="200" style="fill: white;"></rect><rect width="200" height="200" style="fill: url(&quot;#aglfu&quot;);"></rect></svg></div><button class="download">Download</button></div><div data-id="20" data-type="line" data-color="black" id="box-20" class="box"><div class="pattern"><svg><defs><pattern id="etkwu" patternUnits="userSpaceOnUse" width="5" height="5"><path d="M 0,2.5 l 5,0" stroke-width="0.5" shape-rendering="crispEdges" stroke="black" stroke-linecap="square"></path></pattern></defs><rect width="200" height="200" style="fill: white;"></rect><rect width="200" height="200" style="fill: url(&quot;#etkwu&quot;);"></rect></svg></div><button class="download">Download</button></div><div data-id="21" data-type="line" data-color="black" id="box-21" class="box"><div class="pattern"><svg><defs><pattern id="jtpdf" patternUnits="userSpaceOnUse" width="7" height="7"><path d="M 0,3.5 l 7,0" stroke-width="0.5" shape-rendering="crispEdges" stroke="black" stroke-linecap="square"></path></pattern></defs><rect width="200" height="200" style="fill: white;"></rect><rect width="200" height="200" style="fill: url(&quot;#jtpdf&quot;);"></rect></svg></div><button class="download">Download</button></div><div data-id="22" data-type="line" data-color="black" id="box-22" class="box"><div class="pattern"><svg><defs><pattern id="cedre" patternUnits="userSpaceOnUse" width="3" height="3"><path d="M 0,1.5 l 3,0" stroke-width="1" shape-rendering="crispEdges" stroke="black" stroke-linecap="square"></path></pattern></defs><rect width="200" height="200" style="fill: white;"></rect><rect width="200" height="200" style="fill: url(&quot;#cedre&quot;);"></rect></svg></div><button class="download">Download</button></div><div data-id="23" data-type="line" data-color="black" id="box-23" class="box"><div class="pattern"><svg><defs><pattern id="gqoqe" patternUnits="userSpaceOnUse" width="5" height="5"><path d="M 0,2.5 l 5,0" stroke-width="1" shape-rendering="crispEdges" stroke="black" stroke-linecap="square"></path></pattern></defs><rect width="200" height="200" style="fill: white;"></rect><rect width="200" height="200" style="fill: url(&quot;#gqoqe&quot;);"></rect></svg></div><button class="download">Download</button></div><div data-id="24" data-type="line" data-color="black" id="box-24" class="box"><div class="pattern"><svg><defs><pattern id="rwiyp" patternUnits="userSpaceOnUse" width="7" height="7"><path d="M 0,3.5 l 7,0" stroke-width="1" shape-rendering="crispEdges" stroke="black" stroke-linecap="square"></path></pattern></defs><rect width="200" height="200" style="fill: white;"></rect><rect width="200" height="200" style="fill: url(&quot;#rwiyp&quot;);"></rect></svg></div><button class="download">Download</button></div><div data-id="25" data-type="line" data-color="black" id="box-25" class="box"><div class="pattern"><svg><defs><pattern id="cqlst" patternUnits="userSpaceOnUse" width="5" height="5"><path d="M 0,2.5 l 5,0" stroke-width="2" shape-rendering="crispEdges" stroke="black" stroke-linecap="square"></path></pattern></defs><rect width="200" height="200" style="fill: white;"></rect><rect width="200" height="200" style="fill: url(&quot;#cqlst&quot;);"></rect></svg></div><button class="download">Download</button></div><div data-id="26" data-type="line" data-color="black" id="box-26" class="box"><div class="pattern"><svg><defs><pattern id="usmbl" patternUnits="userSpaceOnUse" width="6" height="6"><path d="M 0,3 l 6,0" stroke-width="4" shape-rendering="crispEdges" stroke="black" stroke-linecap="square"></path></pattern></defs><rect width="200" height="200" style="fill: white;"></rect><rect width="200" height="200" style="fill: url(&quot;#usmbl&quot;);"></rect></svg></div><button class="download">Download</button></div><div data-id="27" data-type="line" data-color="black" id="box-27" class="box"><div class="pattern"><svg><defs><pattern id="pltgg" patternUnits="userSpaceOnUse" width="8" height="8"><path d="M 0,4 l 8,0" stroke-width="6" shape-rendering="crispEdges" stroke="black" stroke-linecap="square"></path></pattern></defs><rect width="200" height="200" style="fill: white;"></rect><rect width="200" height="200" style="fill: url(&quot;#pltgg&quot;);"></rect></svg></div><button class="download">Download</button></div><div data-id="28" data-type="line" data-color="black" id="box-28" class="box"><div class="pattern"><svg><defs><pattern id="tmclh" patternUnits="userSpaceOnUse" width="3" height="3"><path d="M 1.5, 0 l 0, 3" stroke-width="0.25" shape-rendering="crispEdges" stroke="black" stroke-linecap="square"></path></pattern></defs><rect width="200" height="200" style="fill: white;"></rect><rect width="200" height="200" style="fill: url(&quot;#tmclh&quot;);"></rect></svg></div><button class="download">Download</button></div><div data-id="29" data-type="line" data-color="black" id="box-29" class="box"><div class="pattern"><svg><defs><pattern id="nqtbg" patternUnits="userSpaceOnUse" width="4" height="4"><path d="M 2, 0 l 0, 4" stroke-width="0.25" shape-rendering="crispEdges" stroke="black" stroke-linecap="square"></path></pattern></defs><rect width="200" height="200" style="fill: white;"></rect><rect width="200" height="200" style="fill: url(&quot;#nqtbg&quot;);"></rect></svg></div><button class="download">Download</button></div><div data-id="30" data-type="line" data-color="black" id="box-30" class="box"><div class="pattern"><svg><defs><pattern id="fdybt" patternUnits="userSpaceOnUse" width="5" height="5"><path d="M 2.5, 0 l 0, 5" stroke-width="0.25" shape-rendering="crispEdges" stroke="black" stroke-linecap="square"></path></pattern></defs><rect width="200" height="200" style="fill: white;"></rect><rect width="200" height="200" style="fill: url(&quot;#fdybt&quot;);"></rect></svg></div><button class="download">Download</button></div><div data-id="31" data-type="line" data-color="black" id="box-31" class="box"><div class="pattern"><svg><defs><pattern id="jsoox" patternUnits="userSpaceOnUse" width="3" height="3"><path d="M 1.5, 0 l 0, 3" stroke-width="0.5" shape-rendering="crispEdges" stroke="black" stroke-linecap="square"></path></pattern></defs><rect width="200" height="200" style="fill: white;"></rect><rect width="200" height="200" style="fill: url(&quot;#jsoox&quot;);"></rect></svg></div><button class="download">Download</button></div><div data-id="32" data-type="line" data-color="black" id="box-32" class="box"><div class="pattern"><svg><defs><pattern id="psmjp" patternUnits="userSpaceOnUse" width="5" height="5"><path d="M 2.5, 0 l 0, 5" stroke-width="0.5" shape-rendering="crispEdges" stroke="black" stroke-linecap="square"></path></pattern></defs><rect width="200" height="200" style="fill: white;"></rect><rect width="200" height="200" style="fill: url(&quot;#psmjp&quot;);"></rect></svg></div><button class="download">Download</button></div><div data-id="33" data-type="line" data-color="black" id="box-33" class="box"><div class="pattern"><svg><defs><pattern id="avvzt" patternUnits="userSpaceOnUse" width="7" height="7"><path d="M 3.5, 0 l 0, 7" stroke-width="0.5" shape-rendering="crispEdges" stroke="black" stroke-linecap="square"></path></pattern></defs><rect width="200" height="200" style="fill: white;"></rect><rect width="200" height="200" style="fill: url(&quot;#avvzt&quot;);"></rect></svg></div><button class="download">Download</button></div><div data-id="34" data-type="line" data-color="black" id="box-34" class="box"><div class="pattern"><svg><defs><pattern id="vpxkq" patternUnits="userSpaceOnUse" width="3" height="3"><path d="M 1.5, 0 l 0, 3" stroke-width="1" shape-rendering="crispEdges" stroke="black" stroke-linecap="square"></path></pattern></defs><rect width="200" height="200" style="fill: white;"></rect><rect width="200" height="200" style="fill: url(&quot;#vpxkq&quot;);"></rect></svg></div><button class="download">Download</button></div><div data-id="35" data-type="line" data-color="black" id="box-35" class="box"><div class="pattern"><svg><defs><pattern id="ztnlo" patternUnits="userSpaceOnUse" width="5" height="5"><path d="M 2.5, 0 l 0, 5" stroke-width="1" shape-rendering="crispEdges" stroke="black" stroke-linecap="square"></path></pattern></defs><rect width="200" height="200" style="fill: white;"></rect><rect width="200" height="200" style="fill: url(&quot;#ztnlo&quot;);"></rect></svg></div><button class="download">Download</button></div><div data-id="36" data-type="line" data-color="black" id="box-36" class="box"><div class="pattern"><svg><defs><pattern id="oorro" patternUnits="userSpaceOnUse" width="7" height="7"><path d="M 3.5, 0 l 0, 7" stroke-width="1" shape-rendering="crispEdges" stroke="black" stroke-linecap="square"></path></pattern></defs><rect width="200" height="200" style="fill: white;"></rect><rect width="200" height="200" style="fill: url(&quot;#oorro&quot;);"></rect></svg></div><button class="download">Download</button></div><div data-id="37" data-type="line" data-color="black" id="box-37" class="box"><div class="pattern"><svg><defs><pattern id="dxezd" patternUnits="userSpaceOnUse" width="5" height="5"><path d="M 2.5, 0 l 0, 5" stroke-width="2" shape-rendering="crispEdges" stroke="black" stroke-linecap="square"></path></pattern></defs><rect width="200" height="200" style="fill: white;"></rect><rect width="200" height="200" style="fill: url(&quot;#dxezd&quot;);"></rect></svg></div><button class="download">Download</button></div><div data-id="38" data-type="line" data-color="black" id="box-38" class="box"><div class="pattern"><svg><defs><pattern id="pxglh" patternUnits="userSpaceOnUse" width="6" height="6"><path d="M 3, 0 l 0, 6" stroke-width="4" shape-rendering="crispEdges" stroke="black" stroke-linecap="square"></path></pattern></defs><rect width="200" height="200" style="fill: white;"></rect><rect width="200" height="200" style="fill: url(&quot;#pxglh&quot;);"></rect></svg></div><button class="download">Download</button></div><div data-id="39" data-type="line" data-color="black" id="box-39" class="box"><div class="pattern"><svg><defs><pattern id="uwvwa" patternUnits="userSpaceOnUse" width="8" height="8"><path d="M 4, 0 l 0, 8" stroke-width="6" shape-rendering="crispEdges" stroke="black" stroke-linecap="square"></path></pattern></defs><rect width="200" height="200" style="fill: white;"></rect><rect width="200" height="200" style="fill: url(&quot;#uwvwa&quot;);"></rect></svg></div><button class="download">Download</button></div><div data-id="40" data-type="line" data-color="white" id="box-40" class="box"><div class="pattern"><svg><defs><pattern id="smzix" patternUnits="userSpaceOnUse" width="4" height="4"><path d="M 0,4 l 4,-4 M -1,1 l 2,-2 M 3,5 l 2,-2" stroke-width="0.25" shape-rendering="crispEdges" stroke="white" stroke-linecap="square"></path></pattern></defs><rect width="200" height="200" style="fill: black;"></rect><rect width="200" height="200" style="fill: url(&quot;#smzix&quot;);"></rect></svg></div><button class="download">Download</button></div><div data-id="41" data-type="line" data-color="white" id="box-41" class="box"><div class="pattern"><svg><defs><pattern id="ktdtd" patternUnits="userSpaceOnUse" width="5" height="5"><path d="M 0,5 l 5,-5 M -1.25,1.25 l 2.5,-2.5 M 3.75,6.25 l 2.5,-2.5" stroke-width="0.25" shape-rendering="crispEdges" stroke="white" stroke-linecap="square"></path></pattern></defs><rect width="200" height="200" style="fill: black;"></rect><rect width="200" height="200" style="fill: url(&quot;#ktdtd&quot;);"></rect></svg></div><button class="download">Download</button></div><div data-id="42" data-type="line" data-color="white" id="box-42" class="box"><div class="pattern"><svg><defs><pattern id="pwecy" patternUnits="userSpaceOnUse" width="6" height="6"><path d="M 0,6 l 6,-6 M -1.5,1.5 l 3,-3 M 4.5,7.5 l 3,-3" stroke-width="0.25" shape-rendering="crispEdges" stroke="white" stroke-linecap="square"></path></pattern></defs><rect width="200" height="200" style="fill: black;"></rect><rect width="200" height="200" style="fill: url(&quot;#pwecy&quot;);"></rect></svg></div><button class="download">Download</button></div><div data-id="43" data-type="line" data-color="white" id="box-43" class="box"><div class="pattern"><svg><defs><pattern id="npsbj" patternUnits="userSpaceOnUse" width="4" height="4"><path d="M 0,4 l 4,-4 M -1,1 l 2,-2 M 3,5 l 2,-2" stroke-width="0.5" shape-rendering="crispEdges" stroke="white" stroke-linecap="square"></path></pattern></defs><rect width="200" height="200" style="fill: black;"></rect><rect width="200" height="200" style="fill: url(&quot;#npsbj&quot;);"></rect></svg></div><button class="download">Download</button></div><div data-id="44" data-type="line" data-color="white" id="box-44" class="box"><div class="pattern"><svg><defs><pattern id="hytmm" patternUnits="userSpaceOnUse" width="5" height="5"><path d="M 0,5 l 5,-5 M -1.25,1.25 l 2.5,-2.5 M 3.75,6.25 l 2.5,-2.5" stroke-width="0.5" shape-rendering="crispEdges" stroke="white" stroke-linecap="square"></path></pattern></defs><rect width="200" height="200" style="fill: black;"></rect><rect width="200" height="200" style="fill: url(&quot;#hytmm&quot;);"></rect></svg></div><button class="download">Download</button></div><div data-id="45" data-type="line" data-color="white" id="box-45" class="box"><div class="pattern"><svg><defs><pattern id="vqipv" patternUnits="userSpaceOnUse" width="6" height="6"><path d="M 0,6 l 6,-6 M -1.5,1.5 l 3,-3 M 4.5,7.5 l 3,-3" stroke-width="0.5" shape-rendering="crispEdges" stroke="white" stroke-linecap="square"></path></pattern></defs><rect width="200" height="200" style="fill: black;"></rect><rect width="200" height="200" style="fill: url(&quot;#vqipv&quot;);"></rect></svg></div><button class="download">Download</button></div><div data-id="46" data-type="line" data-color="white" id="box-46" class="box"><div class="pattern"><svg><defs><pattern id="auxai" patternUnits="userSpaceOnUse" width="8" height="8"><path d="M 0,8 l 8,-8 M -2,2 l 4,-4 M 6,10 l 4,-4" stroke-width="0.5" shape-rendering="crispEdges" stroke="white" stroke-linecap="square"></path></pattern></defs><rect width="200" height="200" style="fill: black;"></rect><rect width="200" height="200" style="fill: url(&quot;#auxai&quot;);"></rect></svg></div><button class="download">Download</button></div><div data-id="47" data-type="line" data-color="white" id="box-47" class="box"><div class="pattern"><svg><defs><pattern id="ncvem" patternUnits="userSpaceOnUse" width="10" height="10"><path d="M 0,10 l 10,-10 M -2.5,2.5 l 5,-5 M 7.5,12.5 l 5,-5" stroke-width="0.5" shape-rendering="crispEdges" stroke="white" stroke-linecap="square"></path></pattern></defs><rect width="200" height="200" style="fill: black;"></rect><rect width="200" height="200" style="fill: url(&quot;#ncvem&quot;);"></rect></svg></div><button class="download">Download</button></div><div data-id="48" data-type="line" data-color="white" id="box-48" class="box"><div class="pattern"><svg><defs><pattern id="lghfr" patternUnits="userSpaceOnUse" width="4" height="4"><path d="M 0,4 l 4,-4 M -1,1 l 2,-2 M 3,5 l 2,-2" stroke-width="1" shape-rendering="crispEdges" stroke="white" stroke-linecap="square"></path></pattern></defs><rect width="200" height="200" style="fill: black;"></rect><rect width="200" height="200" style="fill: url(&quot;#lghfr&quot;);"></rect></svg></div><button class="download">Download</button></div><div data-id="49" data-type="line" data-color="white" id="box-49" class="box"><div class="pattern"><svg><defs><pattern id="giopi" patternUnits="userSpaceOnUse" width="5" height="5"><path d="M 0,5 l 5,-5 M -1.25,1.25 l 2.5,-2.5 M 3.75,6.25 l 2.5,-2.5" stroke-width="1" shape-rendering="crispEdges" stroke="white" stroke-linecap="square"></path></pattern></defs><rect width="200" height="200" style="fill: black;"></rect><rect width="200" height="200" style="fill: url(&quot;#giopi&quot;);"></rect></svg></div><button class="download">Download</button></div><div data-id="50" data-type="line" data-color="white" id="box-50" class="box"><div class="pattern"><svg><defs><pattern id="fvsay" patternUnits="userSpaceOnUse" width="6" height="6"><path d="M 0,6 l 6,-6 M -1.5,1.5 l 3,-3 M 4.5,7.5 l 3,-3" stroke-width="1" shape-rendering="crispEdges" stroke="white" stroke-linecap="square"></path></pattern></defs><rect width="200" height="200" style="fill: black;"></rect><rect width="200" height="200" style="fill: url(&quot;#fvsay&quot;);"></rect></svg></div><button class="download">Download</button></div><div data-id="51" data-type="line" data-color="white" id="box-51" class="box"><div class="pattern"><svg><defs><pattern id="fjelb" patternUnits="userSpaceOnUse" width="8" height="8"><path d="M 0,8 l 8,-8 M -2,2 l 4,-4 M 6,10 l 4,-4" stroke-width="1" shape-rendering="crispEdges" stroke="white" stroke-linecap="square"></path></pattern></defs><rect width="200" height="200" style="fill: black;"></rect><rect width="200" height="200" style="fill: url(&quot;#fjelb&quot;);"></rect></svg></div><button class="download">Download</button></div><div data-id="52" data-type="line" data-color="white" id="box-52" class="box"><div class="pattern"><svg><defs><pattern id="wcjmz" patternUnits="userSpaceOnUse" width="10" height="10"><path d="M 0,10 l 10,-10 M -2.5,2.5 l 5,-5 M 7.5,12.5 l 5,-5" stroke-width="1" shape-rendering="crispEdges" stroke="white" stroke-linecap="square"></path></pattern></defs><rect width="200" height="200" style="fill: black;"></rect><rect width="200" height="200" style="fill: url(&quot;#wcjmz&quot;);"></rect></svg></div><button class="download">Download</button></div><div data-id="53" data-type="line" data-color="white" id="box-53" class="box"><div class="pattern"><svg><defs><pattern id="xrxxb" patternUnits="userSpaceOnUse" width="6" height="6"><path d="M 0,6 l 6,-6 M -1.5,1.5 l 3,-3 M 4.5,7.5 l 3,-3" stroke-width="2" shape-rendering="crispEdges" stroke="white" stroke-linecap="square"></path></pattern></defs><rect width="200" height="200" style="fill: black;"></rect><rect width="200" height="200" style="fill: url(&quot;#xrxxb&quot;);"></rect></svg></div><button class="download">Download</button></div><div data-id="54" data-type="line" data-color="white" id="box-54" class="box"><div class="pattern"><svg><defs><pattern id="qlskz" patternUnits="userSpaceOnUse" width="8" height="8"><path d="M 0,8 l 8,-8 M -2,2 l 4,-4 M 6,10 l 4,-4" stroke-width="4" shape-rendering="crispEdges" stroke="white" stroke-linecap="square"></path></pattern></defs><rect width="200" height="200" style="fill: black;"></rect><rect width="200" height="200" style="fill: url(&quot;#qlskz&quot;);"></rect></svg></div><button class="download">Download</button></div><div data-id="55" data-type="line" data-color="white" id="box-55" class="box"><div class="pattern"><svg><defs><pattern id="czwbd" patternUnits="userSpaceOnUse" width="10" height="10"><path d="M 0,10 l 10,-10 M -2.5,2.5 l 5,-5 M 7.5,12.5 l 5,-5" stroke-width="6" shape-rendering="crispEdges" stroke="white" stroke-linecap="square"></path></pattern></defs><rect width="200" height="200" style="fill: black;"></rect><rect width="200" height="200" style="fill: url(&quot;#czwbd&quot;);"></rect></svg></div><button class="download">Download</button></div><div data-id="56" data-type="line" data-color="white" id="box-56" class="box"><div class="pattern"><svg><defs><pattern id="etedz" patternUnits="userSpaceOnUse" width="3" height="3"><path d="M 0,1.5 l 3,0" stroke-width="0.25" shape-rendering="crispEdges" stroke="white" stroke-linecap="square"></path></pattern></defs><rect width="200" height="200" style="fill: black;"></rect><rect width="200" height="200" style="fill: url(&quot;#etedz&quot;);"></rect></svg></div><button class="download">Download</button></div><div data-id="57" data-type="line" data-color="white" id="box-57" class="box"><div class="pattern"><svg><defs><pattern id="qltgb" patternUnits="userSpaceOnUse" width="4" height="4"><path d="M 0,2 l 4,0" stroke-width="0.25" shape-rendering="crispEdges" stroke="white" stroke-linecap="square"></path></pattern></defs><rect width="200" height="200" style="fill: black;"></rect><rect width="200" height="200" style="fill: url(&quot;#qltgb&quot;);"></rect></svg></div><button class="download">Download</button></div><div data-id="58" data-type="line" data-color="white" id="box-58" class="box"><div class="pattern"><svg><defs><pattern id="eauws" patternUnits="userSpaceOnUse" width="5" height="5"><path d="M 0,2.5 l 5,0" stroke-width="0.25" shape-rendering="crispEdges" stroke="white" stroke-linecap="square"></path></pattern></defs><rect width="200" height="200" style="fill: black;"></rect><rect width="200" height="200" style="fill: url(&quot;#eauws&quot;);"></rect></svg></div><button class="download">Download</button></div><div data-id="59" data-type="line" data-color="white" id="box-59" class="box"><div class="pattern"><svg><defs><pattern id="rikpi" patternUnits="userSpaceOnUse" width="3" height="3"><path d="M 0,1.5 l 3,0" stroke-width="0.5" shape-rendering="crispEdges" stroke="white" stroke-linecap="square"></path></pattern></defs><rect width="200" height="200" style="fill: black;"></rect><rect width="200" height="200" style="fill: url(&quot;#rikpi&quot;);"></rect></svg></div><button class="download">Download</button></div><div data-id="60" data-type="line" data-color="white" id="box-60" class="box"><div class="pattern"><svg><defs><pattern id="yxhxq" patternUnits="userSpaceOnUse" width="5" height="5"><path d="M 0,2.5 l 5,0" stroke-width="0.5" shape-rendering="crispEdges" stroke="white" stroke-linecap="square"></path></pattern></defs><rect width="200" height="200" style="fill: black;"></rect><rect width="200" height="200" style="fill: url(&quot;#yxhxq&quot;);"></rect></svg></div><button class="download">Download</button></div><div data-id="61" data-type="line" data-color="white" id="box-61" class="box"><div class="pattern"><svg><defs><pattern id="tuiiy" patternUnits="userSpaceOnUse" width="7" height="7"><path d="M 0,3.5 l 7,0" stroke-width="0.5" shape-rendering="crispEdges" stroke="white" stroke-linecap="square"></path></pattern></defs><rect width="200" height="200" style="fill: black;"></rect><rect width="200" height="200" style="fill: url(&quot;#tuiiy&quot;);"></rect></svg></div><button class="download">Download</button></div><div data-id="62" data-type="line" data-color="white" id="box-62" class="box"><div class="pattern"><svg><defs><pattern id="xhzlj" patternUnits="userSpaceOnUse" width="3" height="3"><path d="M 0,1.5 l 3,0" stroke-width="1" shape-rendering="crispEdges" stroke="white" stroke-linecap="square"></path></pattern></defs><rect width="200" height="200" style="fill: black;"></rect><rect width="200" height="200" style="fill: url(&quot;#xhzlj&quot;);"></rect></svg></div><button class="download">Download</button></div><div data-id="63" data-type="line" data-color="white" id="box-63" class="box"><div class="pattern"><svg><defs><pattern id="rqufv" patternUnits="userSpaceOnUse" width="5" height="5"><path d="M 0,2.5 l 5,0" stroke-width="1" shape-rendering="crispEdges" stroke="white" stroke-linecap="square"></path></pattern></defs><rect width="200" height="200" style="fill: black;"></rect><rect width="200" height="200" style="fill: url(&quot;#rqufv&quot;);"></rect></svg></div><button class="download">Download</button></div><div data-id="64" data-type="line" data-color="white" id="box-64" class="box"><div class="pattern"><svg><defs><pattern id="aeadf" patternUnits="userSpaceOnUse" width="7" height="7"><path d="M 0,3.5 l 7,0" stroke-width="1" shape-rendering="crispEdges" stroke="white" stroke-linecap="square"></path></pattern></defs><rect width="200" height="200" style="fill: black;"></rect><rect width="200" height="200" style="fill: url(&quot;#aeadf&quot;);"></rect></svg></div><button class="download">Download</button></div><div data-id="65" data-type="line" data-color="white" id="box-65" class="box"><div class="pattern"><svg><defs><pattern id="qeldo" patternUnits="userSpaceOnUse" width="5" height="5"><path d="M 0,2.5 l 5,0" stroke-width="2" shape-rendering="crispEdges" stroke="white" stroke-linecap="square"></path></pattern></defs><rect width="200" height="200" style="fill: black;"></rect><rect width="200" height="200" style="fill: url(&quot;#qeldo&quot;);"></rect></svg></div><button class="download">Download</button></div><div data-id="66" data-type="line" data-color="white" id="box-66" class="box"><div class="pattern"><svg><defs><pattern id="ywuzc" patternUnits="userSpaceOnUse" width="6" height="6"><path d="M 0,3 l 6,0" stroke-width="4" shape-rendering="crispEdges" stroke="white" stroke-linecap="square"></path></pattern></defs><rect width="200" height="200" style="fill: black;"></rect><rect width="200" height="200" style="fill: url(&quot;#ywuzc&quot;);"></rect></svg></div><button class="download">Download</button></div><div data-id="67" data-type="line" data-color="white" id="box-67" class="box"><div class="pattern"><svg><defs><pattern id="khkgt" patternUnits="userSpaceOnUse" width="8" height="8"><path d="M 0,4 l 8,0" stroke-width="6" shape-rendering="crispEdges" stroke="white" stroke-linecap="square"></path></pattern></defs><rect width="200" height="200" style="fill: black;"></rect><rect width="200" height="200" style="fill: url(&quot;#khkgt&quot;);"></rect></svg></div><button class="download">Download</button></div><div data-id="68" data-type="line" data-color="white" id="box-68" class="box"><div class="pattern"><svg><defs><pattern id="dotni" patternUnits="userSpaceOnUse" width="3" height="3"><path d="M 1.5, 0 l 0, 3" stroke-width="0.25" shape-rendering="crispEdges" stroke="white" stroke-linecap="square"></path></pattern></defs><rect width="200" height="200" style="fill: black;"></rect><rect width="200" height="200" style="fill: url(&quot;#dotni&quot;);"></rect></svg></div><button class="download">Download</button></div><div data-id="69" data-type="line" data-color="white" id="box-69" class="box"><div class="pattern"><svg><defs><pattern id="fqphr" patternUnits="userSpaceOnUse" width="4" height="4"><path d="M 2, 0 l 0, 4" stroke-width="0.25" shape-rendering="crispEdges" stroke="white" stroke-linecap="square"></path></pattern></defs><rect width="200" height="200" style="fill: black;"></rect><rect width="200" height="200" style="fill: url(&quot;#fqphr&quot;);"></rect></svg></div><button class="download">Download</button></div><div data-id="70" data-type="line" data-color="white" id="box-70" class="box"><div class="pattern"><svg><defs><pattern id="hzjhj" patternUnits="userSpaceOnUse" width="5" height="5"><path d="M 2.5, 0 l 0, 5" stroke-width="0.25" shape-rendering="crispEdges" stroke="white" stroke-linecap="square"></path></pattern></defs><rect width="200" height="200" style="fill: black;"></rect><rect width="200" height="200" style="fill: url(&quot;#hzjhj&quot;);"></rect></svg></div><button class="download">Download</button></div><div data-id="71" data-type="line" data-color="white" id="box-71" class="box"><div class="pattern"><svg><defs><pattern id="ehhpy" patternUnits="userSpaceOnUse" width="3" height="3"><path d="M 1.5, 0 l 0, 3" stroke-width="0.5" shape-rendering="crispEdges" stroke="white" stroke-linecap="square"></path></pattern></defs><rect width="200" height="200" style="fill: black;"></rect><rect width="200" height="200" style="fill: url(&quot;#ehhpy&quot;);"></rect></svg></div><button class="download">Download</button></div><div data-id="72" data-type="line" data-color="white" id="box-72" class="box"><div class="pattern"><svg><defs><pattern id="rczpy" patternUnits="userSpaceOnUse" width="5" height="5"><path d="M 2.5, 0 l 0, 5" stroke-width="0.5" shape-rendering="crispEdges" stroke="white" stroke-linecap="square"></path></pattern></defs><rect width="200" height="200" style="fill: black;"></rect><rect width="200" height="200" style="fill: url(&quot;#rczpy&quot;);"></rect></svg></div><button class="download">Download</button></div><div data-id="73" data-type="line" data-color="white" id="box-73" class="box"><div class="pattern"><svg><defs><pattern id="wfmia" patternUnits="userSpaceOnUse" width="7" height="7"><path d="M 3.5, 0 l 0, 7" stroke-width="0.5" shape-rendering="crispEdges" stroke="white" stroke-linecap="square"></path></pattern></defs><rect width="200" height="200" style="fill: black;"></rect><rect width="200" height="200" style="fill: url(&quot;#wfmia&quot;);"></rect></svg></div><button class="download">Download</button></div><div data-id="74" data-type="line" data-color="white" id="box-74" class="box"><div class="pattern"><svg><defs><pattern id="trges" patternUnits="userSpaceOnUse" width="3" height="3"><path d="M 1.5, 0 l 0, 3" stroke-width="1" shape-rendering="crispEdges" stroke="white" stroke-linecap="square"></path></pattern></defs><rect width="200" height="200" style="fill: black;"></rect><rect width="200" height="200" style="fill: url(&quot;#trges&quot;);"></rect></svg></div><button class="download">Download</button></div><div data-id="75" data-type="line" data-color="white" id="box-75" class="box"><div class="pattern"><svg><defs><pattern id="vqdie" patternUnits="userSpaceOnUse" width="5" height="5"><path d="M 2.5, 0 l 0, 5" stroke-width="1" shape-rendering="crispEdges" stroke="white" stroke-linecap="square"></path></pattern></defs><rect width="200" height="200" style="fill: black;"></rect><rect width="200" height="200" style="fill: url(&quot;#vqdie&quot;);"></rect></svg></div><button class="download">Download</button></div><div data-id="76" data-type="line" data-color="white" id="box-76" class="box"><div class="pattern"><svg><defs><pattern id="hqjxj" patternUnits="userSpaceOnUse" width="7" height="7"><path d="M 3.5, 0 l 0, 7" stroke-width="1" shape-rendering="crispEdges" stroke="white" stroke-linecap="square"></path></pattern></defs><rect width="200" height="200" style="fill: black;"></rect><rect width="200" height="200" style="fill: url(&quot;#hqjxj&quot;);"></rect></svg></div><button class="download">Download</button></div><div data-id="77" data-type="line" data-color="white" id="box-77" class="box"><div class="pattern"><svg><defs><pattern id="uthlq" patternUnits="userSpaceOnUse" width="5" height="5"><path d="M 2.5, 0 l 0, 5" stroke-width="2" shape-rendering="crispEdges" stroke="white" stroke-linecap="square"></path></pattern></defs><rect width="200" height="200" style="fill: black;"></rect><rect width="200" height="200" style="fill: url(&quot;#uthlq&quot;);"></rect></svg></div><button class="download">Download</button></div><div data-id="78" data-type="line" data-color="white" id="box-78" class="box"><div class="pattern"><svg><defs><pattern id="popab" patternUnits="userSpaceOnUse" width="6" height="6"><path d="M 3, 0 l 0, 6" stroke-width="4" shape-rendering="crispEdges" stroke="white" stroke-linecap="square"></path></pattern></defs><rect width="200" height="200" style="fill: black;"></rect><rect width="200" height="200" style="fill: url(&quot;#popab&quot;);"></rect></svg></div><button class="download">Download</button></div><div data-id="79" data-type="line" data-color="white" id="box-79" class="box"><div class="pattern"><svg><defs><pattern id="kkqpe" patternUnits="userSpaceOnUse" width="8" height="8"><path d="M 4, 0 l 0, 8" stroke-width="6" shape-rendering="crispEdges" stroke="white" stroke-linecap="square"></path></pattern></defs><rect width="200" height="200" style="fill: black;"></rect><rect width="200" height="200" style="fill: url(&quot;#kkqpe&quot;);"></rect></svg></div><button class="download">Download</button></div><div data-id="80" data-type="circle" data-color="black" id="box-80" class="box"><div class="pattern"><svg><defs><pattern id="lnpic" patternUnits="userSpaceOnUse" width="2" height="2"><circle cx="1" cy="1" r="0.25" fill="black" stroke="#343434" stroke-width="0"></circle></pattern></defs><rect width="200" height="200" style="fill: white;"></rect><rect width="200" height="200" style="fill: url(&quot;#lnpic&quot;);"></rect></svg></div><button class="download">Download</button></div><div data-id="81" data-type="circle" data-color="black" id="box-81" class="box"><div class="pattern"><svg><defs><pattern id="ffbvt" patternUnits="userSpaceOnUse" width="3" height="3"><circle cx="1.5" cy="1.5" r="0.25" fill="black" stroke="#343434" stroke-width="0"></circle></pattern></defs><rect width="200" height="200" style="fill: white;"></rect><rect width="200" height="200" style="fill: url(&quot;#ffbvt&quot;);"></rect></svg></div><button class="download">Download</button></div><div data-id="82" data-type="circle" data-color="black" id="box-82" class="box"><div class="pattern"><svg><defs><pattern id="jilgw" patternUnits="userSpaceOnUse" width="4" height="4"><circle cx="2" cy="2" r="0.25" fill="black" stroke="#343434" stroke-width="0"></circle></pattern></defs><rect width="200" height="200" style="fill: white;"></rect><rect width="200" height="200" style="fill: url(&quot;#jilgw&quot;);"></rect></svg></div><button class="download">Download</button></div><div data-id="83" data-type="circle" data-color="black" id="box-83" class="box"><div class="pattern"><svg><defs><pattern id="sxhte" patternUnits="userSpaceOnUse" width="5" height="5"><circle cx="2.5" cy="2.5" r="0.25" fill="black" stroke="#343434" stroke-width="0"></circle></pattern></defs><rect width="200" height="200" style="fill: white;"></rect><rect width="200" height="200" style="fill: url(&quot;#sxhte&quot;);"></rect></svg></div><button class="download">Download</button></div><div data-id="84" data-type="circle" data-color="black" id="box-84" class="box"><div class="pattern"><svg><defs><pattern id="qoony" patternUnits="userSpaceOnUse" width="6" height="6"><circle cx="3" cy="3" r="0.25" fill="black" stroke="#343434" stroke-width="0"></circle></pattern></defs><rect width="200" height="200" style="fill: white;"></rect><rect width="200" height="200" style="fill: url(&quot;#qoony&quot;);"></rect></svg></div><button class="download">Download</button></div><div data-id="85" data-type="circle" data-color="black" id="box-85" class="box"><div class="pattern"><svg><defs><pattern id="jrpki" patternUnits="userSpaceOnUse" width="3" height="3"><circle cx="1.5" cy="1.5" r="0.5" fill="black" stroke="#343434" stroke-width="0"></circle></pattern></defs><rect width="200" height="200" style="fill: white;"></rect><rect width="200" height="200" style="fill: url(&quot;#jrpki&quot;);"></rect></svg></div><button class="download">Download</button></div><div data-id="86" data-type="circle" data-color="black" id="box-86" class="box"><div class="pattern"><svg><defs><pattern id="oiyae" patternUnits="userSpaceOnUse" width="4" height="4"><circle cx="2" cy="2" r="0.5" fill="black" stroke="#343434" stroke-width="0"></circle></pattern></defs><rect width="200" height="200" style="fill: white;"></rect><rect width="200" height="200" style="fill: url(&quot;#oiyae&quot;);"></rect></svg></div><button class="download">Download</button></div><div data-id="87" data-type="circle" data-color="black" id="box-87" class="box"><div class="pattern"><svg><defs><pattern id="hqpcz" patternUnits="userSpaceOnUse" width="5" height="5"><circle cx="2.5" cy="2.5" r="0.5" fill="black" stroke="#343434" stroke-width="0"></circle></pattern></defs><rect width="200" height="200" style="fill: white;"></rect><rect width="200" height="200" style="fill: url(&quot;#hqpcz&quot;);"></rect></svg></div><button class="download">Download</button></div><div data-id="88" data-type="circle" data-color="black" id="box-88" class="box"><div class="pattern"><svg><defs><pattern id="jqnsr" patternUnits="userSpaceOnUse" width="6" height="6"><circle cx="3" cy="3" r="0.5" fill="black" stroke="#343434" stroke-width="0"></circle></pattern></defs><rect width="200" height="200" style="fill: white;"></rect><rect width="200" height="200" style="fill: url(&quot;#jqnsr&quot;);"></rect></svg></div><button class="download">Download</button></div><div data-id="89" data-type="circle" data-color="black" id="box-89" class="box"><div class="pattern"><svg><defs><pattern id="kfncy" patternUnits="userSpaceOnUse" width="4" height="4"><circle cx="2" cy="2" r="1" fill="black" stroke="#343434" stroke-width="0"></circle></pattern></defs><rect width="200" height="200" style="fill: white;"></rect><rect width="200" height="200" style="fill: url(&quot;#kfncy&quot;);"></rect></svg></div><button class="download">Download</button></div><div data-id="90" data-type="circle" data-color="black" id="box-90" class="box"><div class="pattern"><svg><defs><pattern id="xiznd" patternUnits="userSpaceOnUse" width="5" height="5"><circle cx="2.5" cy="2.5" r="1" fill="black" stroke="#343434" stroke-width="0"></circle></pattern></defs><rect width="200" height="200" style="fill: white;"></rect><rect width="200" height="200" style="fill: url(&quot;#xiznd&quot;);"></rect></svg></div><button class="download">Download</button></div><div data-id="91" data-type="circle" data-color="black" id="box-91" class="box"><div class="pattern"><svg><defs><pattern id="gdesr" patternUnits="userSpaceOnUse" width="6" height="6"><circle cx="3" cy="3" r="1" fill="black" stroke="#343434" stroke-width="0"></circle></pattern></defs><rect width="200" height="200" style="fill: white;"></rect><rect width="200" height="200" style="fill: url(&quot;#gdesr&quot;);"></rect></svg></div><button class="download">Download</button></div><div data-id="92" data-type="circle" data-color="black" id="box-92" class="box"><div class="pattern"><svg><defs><pattern id="tokqq" patternUnits="userSpaceOnUse" width="5" height="5"><circle cx="2.5" cy="2.5" r="2" fill="black" stroke="#343434" stroke-width="0"></circle></pattern></defs><rect width="200" height="200" style="fill: white;"></rect><rect width="200" height="200" style="fill: url(&quot;#tokqq&quot;);"></rect></svg></div><button class="download">Download</button></div><div data-id="93" data-type="circle" data-color="black" id="box-93" class="box"><div class="pattern"><svg><defs><pattern id="nmsyb" patternUnits="userSpaceOnUse" width="6" height="6"><circle cx="3" cy="3" r="2" fill="black" stroke="#343434" stroke-width="0"></circle></pattern></defs><rect width="200" height="200" style="fill: white;"></rect><rect width="200" height="200" style="fill: url(&quot;#nmsyb&quot;);"></rect></svg></div><button class="download">Download</button></div><div data-id="94" data-type="circle" data-color="black" id="box-94" class="box"><div class="pattern"><svg><defs><pattern id="kimps" patternUnits="userSpaceOnUse" width="7" height="7"><circle cx="3.5" cy="3.5" r="2" fill="black" stroke="#343434" stroke-width="0"></circle></pattern></defs><rect width="200" height="200" style="fill: white;"></rect><rect width="200" height="200" style="fill: url(&quot;#kimps&quot;);"></rect></svg></div><button class="download">Download</button></div><div data-id="95" data-type="circle" data-color="white" id="box-95" class="box"><div class="pattern"><svg><defs><pattern id="gesvl" patternUnits="userSpaceOnUse" width="2" height="2"><circle cx="1" cy="1" r="0.25" fill="white" stroke="#343434" stroke-width="0"></circle></pattern></defs><rect width="200" height="200" style="fill: black;"></rect><rect width="200" height="200" style="fill: url(&quot;#gesvl&quot;);"></rect></svg></div><button class="download">Download</button></div><div data-id="96" data-type="circle" data-color="white" id="box-96" class="box"><div class="pattern"><svg><defs><pattern id="hmuvn" patternUnits="userSpaceOnUse" width="3" height="3"><circle cx="1.5" cy="1.5" r="0.25" fill="white" stroke="#343434" stroke-width="0"></circle></pattern></defs><rect width="200" height="200" style="fill: black;"></rect><rect width="200" height="200" style="fill: url(&quot;#hmuvn&quot;);"></rect></svg></div><button class="download">Download</button></div><div data-id="97" data-type="circle" data-color="white" id="box-97" class="box"><div class="pattern"><svg><defs><pattern id="oairf" patternUnits="userSpaceOnUse" width="4" height="4"><circle cx="2" cy="2" r="0.25" fill="white" stroke="#343434" stroke-width="0"></circle></pattern></defs><rect width="200" height="200" style="fill: black;"></rect><rect width="200" height="200" style="fill: url(&quot;#oairf&quot;);"></rect></svg></div><button class="download">Download</button></div><div data-id="98" data-type="circle" data-color="white" id="box-98" class="box"><div class="pattern"><svg><defs><pattern id="lzkax" patternUnits="userSpaceOnUse" width="5" height="5"><circle cx="2.5" cy="2.5" r="0.25" fill="white" stroke="#343434" stroke-width="0"></circle></pattern></defs><rect width="200" height="200" style="fill: black;"></rect><rect width="200" height="200" style="fill: url(&quot;#lzkax&quot;);"></rect></svg></div><button class="download">Download</button></div><div data-id="99" data-type="circle" data-color="white" id="box-99" class="box"><div class="pattern"><svg><defs><pattern id="pwpzm" patternUnits="userSpaceOnUse" width="6" height="6"><circle cx="3" cy="3" r="0.25" fill="white" stroke="#343434" stroke-width="0"></circle></pattern></defs><rect width="200" height="200" style="fill: black;"></rect><rect width="200" height="200" style="fill: url(&quot;#pwpzm&quot;);"></rect></svg></div><button class="download">Download</button></div><div data-id="100" data-type="circle" data-color="white" id="box-100" class="box"><div class="pattern"><svg><defs><pattern id="spcgi" patternUnits="userSpaceOnUse" width="3" height="3"><circle cx="1.5" cy="1.5" r="0.5" fill="white" stroke="#343434" stroke-width="0"></circle></pattern></defs><rect width="200" height="200" style="fill: black;"></rect><rect width="200" height="200" style="fill: url(&quot;#spcgi&quot;);"></rect></svg></div><button class="download">Download</button></div><div data-id="101" data-type="circle" data-color="white" id="box-101" class="box"><div class="pattern"><svg><defs><pattern id="qpdzy" patternUnits="userSpaceOnUse" width="4" height="4"><circle cx="2" cy="2" r="0.5" fill="white" stroke="#343434" stroke-width="0"></circle></pattern></defs><rect width="200" height="200" style="fill: black;"></rect><rect width="200" height="200" style="fill: url(&quot;#qpdzy&quot;);"></rect></svg></div><button class="download">Download</button></div><div data-id="102" data-type="circle" data-color="white" id="box-102" class="box"><div class="pattern"><svg><defs><pattern id="dgxjv" patternUnits="userSpaceOnUse" width="5" height="5"><circle cx="2.5" cy="2.5" r="0.5" fill="white" stroke="#343434" stroke-width="0"></circle></pattern></defs><rect width="200" height="200" style="fill: black;"></rect><rect width="200" height="200" style="fill: url(&quot;#dgxjv&quot;);"></rect></svg></div><button class="download">Download</button></div><div data-id="103" data-type="circle" data-color="white" id="box-103" class="box"><div class="pattern"><svg><defs><pattern id="kkpsr" patternUnits="userSpaceOnUse" width="6" height="6"><circle cx="3" cy="3" r="0.5" fill="white" stroke="#343434" stroke-width="0"></circle></pattern></defs><rect width="200" height="200" style="fill: black;"></rect><rect width="200" height="200" style="fill: url(&quot;#kkpsr&quot;);"></rect></svg></div><button class="download">Download</button></div><div data-id="104" data-type="circle" data-color="white" id="box-104" class="box"><div class="pattern"><svg><defs><pattern id="yijsi" patternUnits="userSpaceOnUse" width="4" height="4"><circle cx="2" cy="2" r="1" fill="white" stroke="#343434" stroke-width="0"></circle></pattern></defs><rect width="200" height="200" style="fill: black;"></rect><rect width="200" height="200" style="fill: url(&quot;#yijsi&quot;);"></rect></svg></div><button class="download">Download</button></div><div data-id="105" data-type="circle" data-color="white" id="box-105" class="box"><div class="pattern"><svg><defs><pattern id="mkkeu" patternUnits="userSpaceOnUse" width="5" height="5"><circle cx="2.5" cy="2.5" r="1" fill="white" stroke="#343434" stroke-width="0"></circle></pattern></defs><rect width="200" height="200" style="fill: black;"></rect><rect width="200" height="200" style="fill: url(&quot;#mkkeu&quot;);"></rect></svg></div><button class="download">Download</button></div><div data-id="106" data-type="circle" data-color="white" id="box-106" class="box"><div class="pattern"><svg><defs><pattern id="rtkyf" patternUnits="userSpaceOnUse" width="6" height="6"><circle cx="3" cy="3" r="1" fill="white" stroke="#343434" stroke-width="0"></circle></pattern></defs><rect width="200" height="200" style="fill: black;"></rect><rect width="200" height="200" style="fill: url(&quot;#rtkyf&quot;);"></rect></svg></div><button class="download">Download</button></div><div data-id="107" data-type="circle" data-color="white" id="box-107" class="box"><div class="pattern"><svg><defs><pattern id="rxksx" patternUnits="userSpaceOnUse" width="5" height="5"><circle cx="2.5" cy="2.5" r="2" fill="white" stroke="#343434" stroke-width="0"></circle></pattern></defs><rect width="200" height="200" style="fill: black;"></rect><rect width="200" height="200" style="fill: url(&quot;#rxksx&quot;);"></rect></svg></div><button class="download">Download</button></div><div data-id="108" data-type="circle" data-color="white" id="box-108" class="box"><div class="pattern"><svg><defs><pattern id="jalrn" patternUnits="userSpaceOnUse" width="6" height="6"><circle cx="3" cy="3" r="2" fill="white" stroke="#343434" stroke-width="0"></circle></pattern></defs><rect width="200" height="200" style="fill: black;"></rect><rect width="200" height="200" style="fill: url(&quot;#jalrn&quot;);"></rect></svg></div><button class="download">Download</button></div><div data-id="109" data-type="circle" data-color="white" id="box-109" class="box"><div class="pattern"><svg><defs><pattern id="yftqp" patternUnits="userSpaceOnUse" width="7" height="7"><circle cx="3.5" cy="3.5" r="2" fill="white" stroke="#343434" stroke-width="0"></circle></pattern></defs><rect width="200" height="200" style="fill: black;"></rect><rect width="200" height="200" style="fill: url(&quot;#yftqp&quot;);"></rect></svg></div><button class="download">Download</button></div><div data-id="110" data-type="cross" data-color="black" id="box-110" class="box"><div class="pattern"><svg><defs><pattern id="jursb" patternUnits="userSpaceOnUse" width="5" height="5"><path d="M 1.25,1.25l2.5,2.5M1.25,3.75l2.5,-2.5" fill="transparent" stroke="black" stroke-width="1" stroke-linecap="square" shape-rendering="auto"></path></pattern></defs><rect width="200" height="200" style="fill: white;"></rect><rect width="200" height="200" style="fill: url(&quot;#jursb&quot;);"></rect></svg></div><button class="download">Download</button></div><div data-id="111" data-type="cross" data-color="black" id="box-111" class="box"><div class="pattern"><svg><defs><pattern id="vsckk" patternUnits="userSpaceOnUse" width="5" height="5"><path d="M 1.25,1.25l2.5,2.5M1.25,3.75l2.5,-2.5" fill="transparent" stroke="black" stroke-width="0.5" stroke-linecap="square" shape-rendering="auto"></path></pattern></defs><rect width="200" height="200" style="fill: white;"></rect><rect width="200" height="200" style="fill: url(&quot;#vsckk&quot;);"></rect></svg></div><button class="download">Download</button></div><div data-id="112" data-type="cross" data-color="black" id="box-112" class="box"><div class="pattern"><svg><defs><pattern id="euvgp" patternUnits="userSpaceOnUse" width="5" height="5"><path d="M 1.25,1.25l2.5,2.5M1.25,3.75l2.5,-2.5" fill="transparent" stroke="black" stroke-width="0.3333333333333333" stroke-linecap="square" shape-rendering="auto"></path></pattern></defs><rect width="200" height="200" style="fill: white;"></rect><rect width="200" height="200" style="fill: url(&quot;#euvgp&quot;);"></rect></svg></div><button class="download">Download</button></div><div data-id="113" data-type="cross" data-color="black" id="box-113" class="box"><div class="pattern"><svg><defs><pattern id="vajxs" patternUnits="userSpaceOnUse" width="6" height="6"><path d="M 1.5,1.5l3,3M1.5,4.5l3,-3" fill="transparent" stroke="black" stroke-width="1" stroke-linecap="square" shape-rendering="auto"></path></pattern></defs><rect width="200" height="200" style="fill: white;"></rect><rect width="200" height="200" style="fill: url(&quot;#vajxs&quot;);"></rect></svg></div><button class="download">Download</button></div><div data-id="114" data-type="cross" data-color="black" id="box-114" class="box"><div class="pattern"><svg><defs><pattern id="pmxnn" patternUnits="userSpaceOnUse" width="6" height="6"><path d="M 1.5,1.5l3,3M1.5,4.5l3,-3" fill="transparent" stroke="black" stroke-width="0.5" stroke-linecap="square" shape-rendering="auto"></path></pattern></defs><rect width="200" height="200" style="fill: white;"></rect><rect width="200" height="200" style="fill: url(&quot;#pmxnn&quot;);"></rect></svg></div><button class="download">Download</button></div><div data-id="115" data-type="cross" data-color="black" id="box-115" class="box"><div class="pattern"><svg><defs><pattern id="fhmwy" patternUnits="userSpaceOnUse" width="6" height="6"><path d="M 1.5,1.5l3,3M1.5,4.5l3,-3" fill="transparent" stroke="black" stroke-width="0.3333333333333333" stroke-linecap="square" shape-rendering="auto"></path></pattern></defs><rect width="200" height="200" style="fill: white;"></rect><rect width="200" height="200" style="fill: url(&quot;#fhmwy&quot;);"></rect></svg></div><button class="download">Download</button></div><div data-id="116" data-type="cross" data-color="black" id="box-116" class="box"><div class="pattern"><svg><defs><pattern id="kkngz" patternUnits="userSpaceOnUse" width="7" height="7"><path d="M 1.75,1.75l3.5,3.5M1.75,5.25l3.5,-3.5" fill="transparent" stroke="black" stroke-width="1" stroke-linecap="square" shape-rendering="auto"></path></pattern></defs><rect width="200" height="200" style="fill: white;"></rect><rect width="200" height="200" style="fill: url(&quot;#kkngz&quot;);"></rect></svg></div><button class="download">Download</button></div><div data-id="117" data-type="cross" data-color="black" id="box-117" class="box"><div class="pattern"><svg><defs><pattern id="hjjqt" patternUnits="userSpaceOnUse" width="7" height="7"><path d="M 1.75,1.75l3.5,3.5M1.75,5.25l3.5,-3.5" fill="transparent" stroke="black" stroke-width="0.5" stroke-linecap="square" shape-rendering="auto"></path></pattern></defs><rect width="200" height="200" style="fill: white;"></rect><rect width="200" height="200" style="fill: url(&quot;#hjjqt&quot;);"></rect></svg></div><button class="download">Download</button></div><div data-id="118" data-type="cross" data-color="black" id="box-118" class="box"><div class="pattern"><svg><defs><pattern id="gzlrf" patternUnits="userSpaceOnUse" width="7" height="7"><path d="M 1.75,1.75l3.5,3.5M1.75,5.25l3.5,-3.5" fill="transparent" stroke="black" stroke-width="0.3333333333333333" stroke-linecap="square" shape-rendering="auto"></path></pattern></defs><rect width="200" height="200" style="fill: white;"></rect><rect width="200" height="200" style="fill: url(&quot;#gzlrf&quot;);"></rect></svg></div><button class="download">Download</button></div><div data-id="119" data-type="cross" data-color="white" id="box-119" class="box"><div class="pattern"><svg><defs><pattern id="rjbdh" patternUnits="userSpaceOnUse" width="5" height="5"><path d="M 1.25,1.25l2.5,2.5M1.25,3.75l2.5,-2.5" fill="transparent" stroke="white" stroke-width="1" stroke-linecap="square" shape-rendering="auto"></path></pattern></defs><rect width="200" height="200" style="fill: black;"></rect><rect width="200" height="200" style="fill: url(&quot;#rjbdh&quot;);"></rect></svg></div><button class="download">Download</button></div><div data-id="120" data-type="cross" data-color="white" id="box-120" class="box"><div class="pattern"><svg><defs><pattern id="qkfzx" patternUnits="userSpaceOnUse" width="5" height="5"><path d="M 1.25,1.25l2.5,2.5M1.25,3.75l2.5,-2.5" fill="transparent" stroke="white" stroke-width="0.5" stroke-linecap="square" shape-rendering="auto"></path></pattern></defs><rect width="200" height="200" style="fill: black;"></rect><rect width="200" height="200" style="fill: url(&quot;#qkfzx&quot;);"></rect></svg></div><button class="download">Download</button></div><div data-id="121" data-type="cross" data-color="white" id="box-121" class="box"><div class="pattern"><svg><defs><pattern id="pgipo" patternUnits="userSpaceOnUse" width="5" height="5"><path d="M 1.25,1.25l2.5,2.5M1.25,3.75l2.5,-2.5" fill="transparent" stroke="white" stroke-width="0.3333333333333333" stroke-linecap="square" shape-rendering="auto"></path></pattern></defs><rect width="200" height="200" style="fill: black;"></rect><rect width="200" height="200" style="fill: url(&quot;#pgipo&quot;);"></rect></svg></div><button class="download">Download</button></div><div data-id="122" data-type="cross" data-color="white" id="box-122" class="box"><div class="pattern"><svg><defs><pattern id="gijnc" patternUnits="userSpaceOnUse" width="6" height="6"><path d="M 1.5,1.5l3,3M1.5,4.5l3,-3" fill="transparent" stroke="white" stroke-width="1" stroke-linecap="square" shape-rendering="auto"></path></pattern></defs><rect width="200" height="200" style="fill: black;"></rect><rect width="200" height="200" style="fill: url(&quot;#gijnc&quot;);"></rect></svg></div><button class="download">Download</button></div><div data-id="123" data-type="cross" data-color="white" id="box-123" class="box"><div class="pattern"><svg><defs><pattern id="wryno" patternUnits="userSpaceOnUse" width="6" height="6"><path d="M 1.5,1.5l3,3M1.5,4.5l3,-3" fill="transparent" stroke="white" stroke-width="0.5" stroke-linecap="square" shape-rendering="auto"></path></pattern></defs><rect width="200" height="200" style="fill: black;"></rect><rect width="200" height="200" style="fill: url(&quot;#wryno&quot;);"></rect></svg></div><button class="download">Download</button></div><div data-id="124" data-type="cross" data-color="white" id="box-124" class="box"><div class="pattern"><svg><defs><pattern id="eaton" patternUnits="userSpaceOnUse" width="6" height="6"><path d="M 1.5,1.5l3,3M1.5,4.5l3,-3" fill="transparent" stroke="white" stroke-width="0.3333333333333333" stroke-linecap="square" shape-rendering="auto"></path></pattern></defs><rect width="200" height="200" style="fill: black;"></rect><rect width="200" height="200" style="fill: url(&quot;#eaton&quot;);"></rect></svg></div><button class="download">Download</button></div><div data-id="125" data-type="cross" data-color="white" id="box-125" class="box"><div class="pattern"><svg><defs><pattern id="hoewn" patternUnits="userSpaceOnUse" width="7" height="7"><path d="M 1.75,1.75l3.5,3.5M1.75,5.25l3.5,-3.5" fill="transparent" stroke="white" stroke-width="1" stroke-linecap="square" shape-rendering="auto"></path></pattern></defs><rect width="200" height="200" style="fill: black;"></rect><rect width="200" height="200" style="fill: url(&quot;#hoewn&quot;);"></rect></svg></div><button class="download">Download</button></div><div data-id="126" data-type="cross" data-color="white" id="box-126" class="box"><div class="pattern"><svg><defs><pattern id="agwtl" patternUnits="userSpaceOnUse" width="7" height="7"><path d="M 1.75,1.75l3.5,3.5M1.75,5.25l3.5,-3.5" fill="transparent" stroke="white" stroke-width="0.5" stroke-linecap="square" shape-rendering="auto"></path></pattern></defs><rect width="200" height="200" style="fill: black;"></rect><rect width="200" height="200" style="fill: url(&quot;#agwtl&quot;);"></rect></svg></div><button class="download">Download</button></div><div data-id="127" data-type="cross" data-color="white" id="box-127" class="box"><div class="pattern"><svg><defs><pattern id="eujsp" patternUnits="userSpaceOnUse" width="7" height="7"><path d="M 1.75,1.75l3.5,3.5M1.75,5.25l3.5,-3.5" fill="transparent" stroke="white" stroke-width="0.3333333333333333" stroke-linecap="square" shape-rendering="auto"></path></pattern></defs><rect width="200" height="200" style="fill: black;"></rect><rect width="200" height="200" style="fill: url(&quot;#eujsp&quot;);"></rect></svg></div><button class="download">Download</button></div><div data-id="128" data-type="caret" data-color="black" id="box-128" class="box"><div class="pattern"><svg><defs><pattern id="exjww" patternUnits="userSpaceOnUse" width="6.666666666666667" height="6.666666666666667"><path d="M 1.6666666666666667,5l1.6666666666666667,-3.3333333333333335l1.6666666666666667,3.3333333333333335" fill="transparent" stroke="black" stroke-width="1" stroke-linecap="square" shape-rendering="auto"></path></pattern></defs><rect width="200" height="200" style="fill: white;"></rect><rect width="200" height="200" style="fill: url(&quot;#exjww&quot;);"></rect></svg></div><button class="download">Download</button></div><div data-id="129" data-type="caret" data-color="black" id="box-129" class="box"><div class="pattern"><svg><defs><pattern id="mangp" patternUnits="userSpaceOnUse" width="5" height="5"><path d="M 1.25,3.75l1.25,-2.5l1.25,2.5" fill="transparent" stroke="black" stroke-width="1" stroke-linecap="square" shape-rendering="auto"></path></pattern></defs><rect width="200" height="200" style="fill: white;"></rect><rect width="200" height="200" style="fill: url(&quot;#mangp&quot;);"></rect></svg></div><button class="download">Download</button></div><div data-id="130" data-type="caret" data-color="black" id="box-130" class="box"><div class="pattern"><svg><defs><pattern id="qglfo" patternUnits="userSpaceOnUse" width="4" height="4"><path d="M 1,3l1,-2l1,2" fill="transparent" stroke="black" stroke-width="1" stroke-linecap="square" shape-rendering="auto"></path></pattern></defs><rect width="200" height="200" style="fill: white;"></rect><rect width="200" height="200" style="fill: url(&quot;#qglfo&quot;);"></rect></svg></div><button class="download">Download</button></div><div data-id="131" data-type="caret" data-color="black" id="box-131" class="box"><div class="pattern"><svg><defs><pattern id="vkmcp" patternUnits="userSpaceOnUse" width="8" height="8"><path d="M 2,6l2,-4l2,4" fill="transparent" stroke="black" stroke-width="2" stroke-linecap="square" shape-rendering="auto"></path></pattern></defs><rect width="200" height="200" style="fill: white;"></rect><rect width="200" height="200" style="fill: url(&quot;#vkmcp&quot;);"></rect></svg></div><button class="download">Download</button></div><div data-id="132" data-type="caret" data-color="black" id="box-132" class="box"><div class="pattern"><svg><defs><pattern id="oepqj" patternUnits="userSpaceOnUse" width="6.666666666666667" height="6.666666666666667"><path d="M 1.6666666666666667,5l1.6666666666666667,-3.3333333333333335l1.6666666666666667,3.3333333333333335" fill="transparent" stroke="black" stroke-width="2" stroke-linecap="square" shape-rendering="auto"></path></pattern></defs><rect width="200" height="200" style="fill: white;"></rect><rect width="200" height="200" style="fill: url(&quot;#oepqj&quot;);"></rect></svg></div><button class="download">Download</button></div><div data-id="133" data-type="caret" data-color="white" id="box-133" class="box"><div class="pattern"><svg><defs><pattern id="smhow" patternUnits="userSpaceOnUse" width="6.666666666666667" height="6.666666666666667"><path d="M 1.6666666666666667,5l1.6666666666666667,-3.3333333333333335l1.6666666666666667,3.3333333333333335" fill="transparent" stroke="white" stroke-width="1" stroke-linecap="square" shape-rendering="auto"></path></pattern></defs><rect width="200" height="200" style="fill: black;"></rect><rect width="200" height="200" style="fill: url(&quot;#smhow&quot;);"></rect></svg></div><button class="download">Download</button></div><div data-id="134" data-type="caret" data-color="white" id="box-134" class="box"><div class="pattern"><svg><defs><pattern id="seugz" patternUnits="userSpaceOnUse" width="5" height="5"><path d="M 1.25,3.75l1.25,-2.5l1.25,2.5" fill="transparent" stroke="white" stroke-width="1" stroke-linecap="square" shape-rendering="auto"></path></pattern></defs><rect width="200" height="200" style="fill: black;"></rect><rect width="200" height="200" style="fill: url(&quot;#seugz&quot;);"></rect></svg></div><button class="download">Download</button></div><div data-id="135" data-type="caret" data-color="white" id="box-135" class="box"><div class="pattern"><svg><defs><pattern id="lgrcp" patternUnits="userSpaceOnUse" width="4" height="4"><path d="M 1,3l1,-2l1,2" fill="transparent" stroke="white" stroke-width="1" stroke-linecap="square" shape-rendering="auto"></path></pattern></defs><rect width="200" height="200" style="fill: black;"></rect><rect width="200" height="200" style="fill: url(&quot;#lgrcp&quot;);"></rect></svg></div><button class="download">Download</button></div><div data-id="136" data-type="caret" data-color="white" id="box-136" class="box"><div class="pattern"><svg><defs><pattern id="iwfjf" patternUnits="userSpaceOnUse" width="8" height="8"><path d="M 2,6l2,-4l2,4" fill="transparent" stroke="white" stroke-width="2" stroke-linecap="square" shape-rendering="auto"></path></pattern></defs><rect width="200" height="200" style="fill: black;"></rect><rect width="200" height="200" style="fill: url(&quot;#iwfjf&quot;);"></rect></svg></div><button class="download">Download</button></div><div data-id="137" data-type="caret" data-color="white" id="box-137" class="box"><div class="pattern"><svg><defs><pattern id="xbylm" patternUnits="userSpaceOnUse" width="6.666666666666667" height="6.666666666666667"><path d="M 1.6666666666666667,5l1.6666666666666667,-3.3333333333333335l1.6666666666666667,3.3333333333333335" fill="transparent" stroke="white" stroke-width="2" stroke-linecap="square" shape-rendering="auto"></path></pattern></defs><rect width="200" height="200" style="fill: black;"></rect><rect width="200" height="200" style="fill: url(&quot;#xbylm&quot;);"></rect></svg></div><button class="download">Download</button></div></div>
+    <script type="text/javascript" src="https://d3js.org/d3.v4.js"></script>
+    <script type="module">
+      // import textures from './main.js';
+
+      // var linesBlack = [
+      //   {
+      //     type: "line",
+      //     size: 4,
+      //     strokeWidth: 0.25,
+      //     orientation: "2/8",
+      //     color: "black",
+      //     background: "white"
+      //   },
+      //   {
+      //     type: "line",
+      //     size: 5,
+      //     strokeWidth: 0.25,
+      //     orientation: "2/8",
+      //     color: "black",
+      //     background: "white"
+      //   },
+      //   {
+      //     type: "line",
+      //     size: 6,
+      //     strokeWidth: 0.25,
+      //     orientation: "2/8",
+      //     color: "black",
+      //     background: "white"
+      //   },
+      //   {
+      //     type: "line",
+      //     size: 4,
+      //     strokeWidth: 0.5,
+      //     orientation: "2/8",
+      //     color: "black",
+      //     background: "white"
+      //   },
+      //   {
+      //     type: "line",
+      //     size: 5,
+      //     strokeWidth: 0.5,
+      //     orientation: "2/8",
+      //     color: "black",
+      //     background: "white"
+      //   },
+      //   {
+      //     type: "line",
+      //     size: 6,
+      //     strokeWidth: 0.5,
+      //     orientation: "2/8",
+      //     color: "black",
+      //     background: "white"
+      //   },
+      //   {
+      //     type: "line",
+      //     size: 8,
+      //     strokeWidth: 0.5,
+      //     orientation: "2/8",
+      //     color: "black",
+      //     background: "white"
+      //   },
+      //   {
+      //     type: "line",
+      //     size: 10,
+      //     strokeWidth: 0.5,
+      //     orientation: "2/8",
+      //     color: "black",
+      //     background: "white"
+      //   },
+      //   {
+      //     type: "line",
+      //     size: 4,
+      //     strokeWidth: 1,
+      //     orientation: "2/8",
+      //     color: "black",
+      //     background: "white"
+      //   },
+      //   {
+      //     type: "line",
+      //     size: 5,
+      //     strokeWidth: 1,
+      //     orientation: "2/8",
+      //     color: "black",
+      //     background: "white"
+      //   },
+      //   {
+      //     type: "line",
+      //     size: 6,
+      //     strokeWidth: 1,
+      //     orientation: "2/8",
+      //     color: "black",
+      //     background: "white"
+      //   },
+      //   {
+      //     type: "line",
+      //     size: 8,
+      //     strokeWidth: 1,
+      //     orientation: "2/8",
+      //     color: "black",
+      //     background: "white"
+      //   },
+      //   {
+      //     type: "line",
+      //     size: 10,
+      //     strokeWidth: 1,
+      //     orientation: "2/8",
+      //     color: "black",
+      //     background: "white"
+      //   },
+      //   {
+      //     type: "line",
+      //     size: 6,
+      //     strokeWidth: 2,
+      //     orientation: "2/8",
+      //     color: "black",
+      //     background: "white"
+      //   },
+      //   {
+      //     type: "line",
+      //     size: 8,
+      //     strokeWidth: 4,
+      //     orientation: "2/8",
+      //     color: "black",
+      //     background: "white"
+      //   },
+      //   {
+      //     type: "line",
+      //     size: 10,
+      //     strokeWidth: 6,
+      //     orientation: "2/8",
+      //     color: "black",
+      //     background: "white"
+      //   },
+      //   {
+      //     type: "line",
+      //     size: 3,
+      //     strokeWidth: 0.25,
+      //     orientation: "horizontal",
+      //     color: "black",
+      //     background: "white"
+      //   },
+      //   {
+      //     type: "line",
+      //     size: 4,
+      //     strokeWidth: 0.25,
+      //     orientation: "horizontal",
+      //     color: "black",
+      //     background: "white"
+      //   },
+      //   {
+      //     type: "line",
+      //     size: 5,
+      //     strokeWidth: 0.25,
+      //     orientation: "horizontal",
+      //     color: "black",
+      //     background: "white"
+      //   },
+      //   {
+      //     type: "line",
+      //     size: 3,
+      //     strokeWidth: 0.5,
+      //     orientation: "horizontal",
+      //     color: "black",
+      //     background: "white"
+      //   },
+      //   {
+      //     type: "line",
+      //     size: 5,
+      //     strokeWidth: 0.5,
+      //     orientation: "horizontal",
+      //     color: "black",
+      //     background: "white"
+      //   },
+      //   {
+      //     type: "line",
+      //     size: 7,
+      //     strokeWidth: 0.5,
+      //     orientation: "horizontal",
+      //     color: "black",
+      //     background: "white"
+      //   },
+      //   {
+      //     type: "line",
+      //     size: 3,
+      //     strokeWidth: 1,
+      //     orientation: "horizontal",
+      //     color: "black",
+      //     background: "white"
+      //   },
+      //   {
+      //     type: "line",
+      //     size: 5,
+      //     strokeWidth: 1,
+      //     orientation: "horizontal",
+      //     color: "black",
+      //     background: "white"
+      //   },
+      //   {
+      //     type: "line",
+      //     size: 7,
+      //     strokeWidth: 1,
+      //     orientation: "horizontal",
+      //     color: "black",
+      //     background: "white"
+      //   },
+      //   {
+      //     type: "line",
+      //     size: 5,
+      //     strokeWidth: 2,
+      //     orientation: "horizontal",
+      //     color: "black",
+      //     background: "white"
+      //   },
+      //   {
+      //     type: "line",
+      //     size: 6,
+      //     strokeWidth: 4,
+      //     orientation: "horizontal",
+      //     color: "black",
+      //     background: "white"
+      //   },
+      //   {
+      //     type: "line",
+      //     size: 8,
+      //     strokeWidth: 6,
+      //     orientation: "horizontal",
+      //     color: "black",
+      //     background: "white"
+      //   },
+      //   {
+      //     type: "line",
+      //     size: 3,
+      //     strokeWidth: 0.25,
+      //     orientation: "vertical",
+      //     color: "black",
+      //     background: "white"
+      //   },
+      //   {
+      //     type: "line",
+      //     size: 4,
+      //     strokeWidth: 0.25,
+      //     orientation: "vertical",
+      //     color: "black",
+      //     background: "white"
+      //   },
+      //   {
+      //     type: "line",
+      //     size: 5,
+      //     strokeWidth: 0.25,
+      //     orientation: "vertical",
+      //     color: "black",
+      //     background: "white"
+      //   },
+      //   {
+      //     type: "line",
+      //     size: 3,
+      //     strokeWidth: 0.5,
+      //     orientation: "vertical",
+      //     color: "black",
+      //     background: "white"
+      //   },
+      //   {
+      //     type: "line",
+      //     size: 5,
+      //     strokeWidth: 0.5,
+      //     orientation: "vertical",
+      //     color: "black",
+      //     background: "white"
+      //   },
+      //   {
+      //     type: "line",
+      //     size: 7,
+      //     strokeWidth: 0.5,
+      //     orientation: "vertical",
+      //     color: "black",
+      //     background: "white"
+      //   },
+      //   {
+      //     type: "line",
+      //     size: 3,
+      //     strokeWidth: 1,
+      //     orientation: "vertical",
+      //     color: "black",
+      //     background: "white"
+      //   },
+      //   {
+      //     type: "line",
+      //     size: 5,
+      //     strokeWidth: 1,
+      //     orientation: "vertical",
+      //     color: "black",
+      //     background: "white"
+      //   },
+      //   {
+      //     type: "line",
+      //     size: 7,
+      //     strokeWidth: 1,
+      //     orientation: "vertical",
+      //     color: "black",
+      //     background: "white"
+      //   },
+      //   {
+      //     type: "line",
+      //     size: 5,
+      //     strokeWidth: 2,
+      //     orientation: "vertical",
+      //     color: "black",
+      //     background: "white"
+      //   },
+      //   {
+      //     type: "line",
+      //     size: 6,
+      //     strokeWidth: 4,
+      //     orientation: "vertical",
+      //     color: "black",
+      //     background: "white"
+      //   },
+      //   {
+      //     type: "line",
+      //     size: 8,
+      //     strokeWidth: 6,
+      //     orientation: "vertical",
+      //     color: "black",
+      //     background: "white"
+      //   },
+      //   {
+      //     type: "line",
+      //     size: 4,
+      //     strokeWidth: 0.25,
+      //     orientation: "2/8",
+      //     color: "white",
+      //     background: "black"
+      //   },
+      //   {
+      //     type: "line",
+      //     size: 5,
+      //     strokeWidth: 0.25,
+      //     orientation: "2/8",
+      //     color: "white",
+      //     background: "black"
+      //   },
+      //   {
+      //     type: "line",
+      //     size: 6,
+      //     strokeWidth: 0.25,
+      //     orientation: "2/8",
+      //     color: "white",
+      //     background: "black"
+      //   },
+      //   {
+      //     type: "line",
+      //     size: 4,
+      //     strokeWidth: 0.5,
+      //     orientation: "2/8",
+      //     color: "white",
+      //     background: "black"
+      //   },
+      //   {
+      //     type: "line",
+      //     size: 5,
+      //     strokeWidth: 0.5,
+      //     orientation: "2/8",
+      //     color: "white",
+      //     background: "black"
+      //   },
+      //   {
+      //     type: "line",
+      //     size: 6,
+      //     strokeWidth: 0.5,
+      //     orientation: "2/8",
+      //     color: "white",
+      //     background: "black"
+      //   },
+      //   {
+      //     type: "line",
+      //     size: 8,
+      //     strokeWidth: 0.5,
+      //     orientation: "2/8",
+      //     color: "white",
+      //     background: "black"
+      //   },
+      //   {
+      //     type: "line",
+      //     size: 10,
+      //     strokeWidth: 0.5,
+      //     orientation: "2/8",
+      //     color: "white",
+      //     background: "black"
+      //   },
+      //   {
+      //     type: "line",
+      //     size: 4,
+      //     strokeWidth: 1,
+      //     orientation: "2/8",
+      //     color: "white",
+      //     background: "black"
+      //   },
+      //   {
+      //     type: "line",
+      //     size: 5,
+      //     strokeWidth: 1,
+      //     orientation: "2/8",
+      //     color: "white",
+      //     background: "black"
+      //   },
+      //   {
+      //     type: "line",
+      //     size: 6,
+      //     strokeWidth: 1,
+      //     orientation: "2/8",
+      //     color: "white",
+      //     background: "black"
+      //   },
+      //   {
+      //     type: "line",
+      //     size: 8,
+      //     strokeWidth: 1,
+      //     orientation: "2/8",
+      //     color: "white",
+      //     background: "black"
+      //   },
+      //   {
+      //     type: "line",
+      //     size: 10,
+      //     strokeWidth: 1,
+      //     orientation: "2/8",
+      //     color: "white",
+      //     background: "black"
+      //   },
+      //   {
+      //     type: "line",
+      //     size: 6,
+      //     strokeWidth: 2,
+      //     orientation: "2/8",
+      //     color: "white",
+      //     background: "black"
+      //   },
+      //   {
+      //     type: "line",
+      //     size: 8,
+      //     strokeWidth: 4,
+      //     orientation: "2/8",
+      //     color: "white",
+      //     background: "black"
+      //   },
+      //   {
+      //     type: "line",
+      //     size: 10,
+      //     strokeWidth: 6,
+      //     orientation: "2/8",
+      //     color: "white",
+      //     background: "black"
+      //   },
+      //   {
+      //     type: "line",
+      //     size: 3,
+      //     strokeWidth: 0.25,
+      //     orientation: "horizontal",
+      //     color: "white",
+      //     background: "black"
+      //   },
+      //   {
+      //     type: "line",
+      //     size: 4,
+      //     strokeWidth: 0.25,
+      //     orientation: "horizontal",
+      //     color: "white",
+      //     background: "black"
+      //   },
+      //   {
+      //     type: "line",
+      //     size: 5,
+      //     strokeWidth: 0.25,
+      //     orientation: "horizontal",
+      //     color: "white",
+      //     background: "black"
+      //   },
+      //   {
+      //     type: "line",
+      //     size: 3,
+      //     strokeWidth: 0.5,
+      //     orientation: "horizontal",
+      //     color: "white",
+      //     background: "black"
+      //   },
+      //   {
+      //     type: "line",
+      //     size: 5,
+      //     strokeWidth: 0.5,
+      //     orientation: "horizontal",
+      //     color: "white",
+      //     background: "black"
+      //   },
+      //   {
+      //     type: "line",
+      //     size: 7,
+      //     strokeWidth: 0.5,
+      //     orientation: "horizontal",
+      //     color: "white",
+      //     background: "black"
+      //   },
+      //   {
+      //     type: "line",
+      //     size: 3,
+      //     strokeWidth: 1,
+      //     orientation: "horizontal",
+      //     color: "white",
+      //     background: "black"
+      //   },
+      //   {
+      //     type: "line",
+      //     size: 5,
+      //     strokeWidth: 1,
+      //     orientation: "horizontal",
+      //     color: "white",
+      //     background: "black"
+      //   },
+      //   {
+      //     type: "line",
+      //     size: 7,
+      //     strokeWidth: 1,
+      //     orientation: "horizontal",
+      //     color: "white",
+      //     background: "black"
+      //   },
+      //   {
+      //     type: "line",
+      //     size: 5,
+      //     strokeWidth: 2,
+      //     orientation: "horizontal",
+      //     color: "white",
+      //     background: "black"
+      //   },
+      //   {
+      //     type: "line",
+      //     size: 6,
+      //     strokeWidth: 4,
+      //     orientation: "horizontal",
+      //     color: "white",
+      //     background: "black"
+      //   },
+      //   {
+      //     type: "line",
+      //     size: 8,
+      //     strokeWidth: 6,
+      //     orientation: "horizontal",
+      //     color: "white",
+      //     background: "black"
+      //   },
+      //   {
+      //     type: "line",
+      //     size: 3,
+      //     strokeWidth: 0.25,
+      //     orientation: "vertical",
+      //     color: "white",
+      //     background: "black"
+      //   },
+      //   {
+      //     type: "line",
+      //     size: 4,
+      //     strokeWidth: 0.25,
+      //     orientation: "vertical",
+      //     color: "white",
+      //     background: "black"
+      //   },
+      //   {
+      //     type: "line",
+      //     size: 5,
+      //     strokeWidth: 0.25,
+      //     orientation: "vertical",
+      //     color: "white",
+      //     background: "black"
+      //   },
+      //   {
+      //     type: "line",
+      //     size: 3,
+      //     strokeWidth: 0.5,
+      //     orientation: "vertical",
+      //     color: "white",
+      //     background: "black"
+      //   },
+      //   {
+      //     type: "line",
+      //     size: 5,
+      //     strokeWidth: 0.5,
+      //     orientation: "vertical",
+      //     color: "white",
+      //     background: "black"
+      //   },
+      //   {
+      //     type: "line",
+      //     size: 7,
+      //     strokeWidth: 0.5,
+      //     orientation: "vertical",
+      //     color: "white",
+      //     background: "black"
+      //   },
+      //   {
+      //     type: "line",
+      //     size: 3,
+      //     strokeWidth: 1,
+      //     orientation: "vertical",
+      //     color: "white",
+      //     background: "black"
+      //   },
+      //   {
+      //     type: "line",
+      //     size: 5,
+      //     strokeWidth: 1,
+      //     orientation: "vertical",
+      //     color: "white",
+      //     background: "black"
+      //   },
+      //   {
+      //     type: "line",
+      //     size: 7,
+      //     strokeWidth: 1,
+      //     orientation: "vertical",
+      //     color: "white",
+      //     background: "black"
+      //   },
+      //   {
+      //     type: "line",
+      //     size: 5,
+      //     strokeWidth: 2,
+      //     orientation: "vertical",
+      //     color: "white",
+      //     background: "black"
+      //   },
+      //   {
+      //     type: "line",
+      //     size: 6,
+      //     strokeWidth: 4,
+      //     orientation: "vertical",
+      //     color: "white",
+      //     background: "black"
+      //   },
+      //   {
+      //     type: "line",
+      //     size: 8,
+      //     strokeWidth: 6,
+      //     orientation: "vertical",
+      //     color: "white",
+      //     background: "black"
+      //   },
+      //   {
+      //     type: "circle",
+      //     size: 2,
+      //     radius: 0.25,
+      //     color: "black",
+      //     background: "white"
+      //   },
+      //   {
+      //     type: "circle",
+      //     size: 3,
+      //     radius: 0.25,
+      //     color: "black",
+      //     background: "white"
+      //   },
+      //   {
+      //     type: "circle",
+      //     size: 4,
+      //     radius: 0.25,
+      //     color: "black",
+      //     background: "white"
+      //   },
+      //   {
+      //     type: "circle",
+      //     size: 5,
+      //     radius: 0.25,
+      //     color: "black",
+      //     background: "white"
+      //   },
+      //   {
+      //     type: "circle",
+      //     size: 6,
+      //     radius: 0.25,
+      //     color: "black",
+      //     background: "white"
+      //   },
+      //   {
+      //     type: "circle",
+      //     size: 3,
+      //     radius: 0.5,
+      //     color: "black",
+      //     background: "white"
+      //   },
+      //   {
+      //     type: "circle",
+      //     size: 4,
+      //     radius: 0.5,
+      //     color: "black",
+      //     background: "white"
+      //   },
+      //   {
+      //     type: "circle",
+      //     size: 5,
+      //     radius: 0.5,
+      //     color: "black",
+      //     background: "white"
+      //   },
+      //   {
+      //     type: "circle",
+      //     size: 6,
+      //     radius: 0.5,
+      //     color: "black",
+      //     background: "white"
+      //   },
+      //   {
+      //     type: "circle",
+      //     size: 4,
+      //     radius: 1,
+      //     color: "black",
+      //     background: "white"
+      //   },
+      //   {
+      //     type: "circle",
+      //     size: 5,
+      //     radius: 1,
+      //     color: "black",
+      //     background: "white"
+      //   },
+      //   {
+      //     type: "circle",
+      //     size: 6,
+      //     radius: 1,
+      //     color: "black",
+      //     background: "white"
+      //   },
+      //   {
+      //     type: "circle",
+      //     size: 5,
+      //     radius: 2,
+      //     color: "black",
+      //     background: "white"
+      //   },
+      //   {
+      //     type: "circle",
+      //     size: 6,
+      //     radius: 2,
+      //     color: "black",
+      //     background: "white"
+      //   },
+      //   {
+      //     type: "circle",
+      //     size: 7,
+      //     radius: 2,
+      //     color: "black",
+      //     background: "white"
+      //   },
+      //   {
+      //     type: "circle",
+      //     size: 2,
+      //     radius: 0.25,
+      //     color: "white",
+      //     background: "black"
+      //   },
+      //   {
+      //     type: "circle",
+      //     size: 3,
+      //     radius: 0.25,
+      //     color: "white",
+      //     background: "black"
+      //   },
+      //   {
+      //     type: "circle",
+      //     size: 4,
+      //     radius: 0.25,
+      //     color: "white",
+      //     background: "black"
+      //   },
+      //   {
+      //     type: "circle",
+      //     size: 5,
+      //     radius: 0.25,
+      //     color: "white",
+      //     background: "black"
+      //   },
+      //   {
+      //     type: "circle",
+      //     size: 6,
+      //     radius: 0.25,
+      //     color: "white",
+      //     background: "black"
+      //   },
+      //   {
+      //     type: "circle",
+      //     size: 3,
+      //     radius: 0.5,
+      //     color: "white",
+      //     background: "black"
+      //   },
+      //   {
+      //     type: "circle",
+      //     size: 4,
+      //     radius: 0.5,
+      //     color: "white",
+      //     background: "black"
+      //   },
+      //   {
+      //     type: "circle",
+      //     size: 5,
+      //     radius: 0.5,
+      //     color: "white",
+      //     background: "black"
+      //   },
+      //   {
+      //     type: "circle",
+      //     size: 6,
+      //     radius: 0.5,
+      //     color: "white",
+      //     background: "black"
+      //   },
+      //   {
+      //     type: "circle",
+      //     size: 4,
+      //     radius: 1,
+      //     color: "white",
+      //     background: "black"
+      //   },
+      //   {
+      //     type: "circle",
+      //     size: 5,
+      //     radius: 1,
+      //     color: "white",
+      //     background: "black"
+      //   },
+      //   {
+      //     type: "circle",
+      //     size: 6,
+      //     radius: 1,
+      //     color: "white",
+      //     background: "black"
+      //   },
+      //   {
+      //     type: "circle",
+      //     size: 5,
+      //     radius: 2,
+      //     color: "white",
+      //     background: "black"
+      //   },
+      //   {
+      //     type: "circle",
+      //     size: 6,
+      //     radius: 2,
+      //     color: "white",
+      //     background: "black"
+      //   },
+      //   {
+      //     type: "circle",
+      //     size: 7,
+      //     radius: 2,
+      //     color: "white",
+      //     background: "black"
+      //   },
+      //   {
+      //     type: "cross",
+      //     lighter: 1,
+      //     thinner: 0.125,
+      //     color: "black",
+      //     background: "white"
+      //   },
+      //   {
+      //     type: "cross",
+      //     lighter: 2,
+      //     thinner: 0.125,
+      //     color: "black",
+      //     background: "white"
+      //   },
+      //   {
+      //     type: "cross",
+      //     lighter: 3,
+      //     thinner: 0.125,
+      //     color: "black",
+      //     background: "white"
+      //   },
+      //   {
+      //     type: "cross",
+      //     lighter: 1,
+      //     thinner: 0.15,
+      //     color: "black",
+      //     background: "white"
+      //   },
+      //   {
+      //     type: "cross",
+      //     lighter: 2,
+      //     thinner: 0.15,
+      //     color: "black",
+      //     background: "white"
+      //   },
+      //   {
+      //     type: "cross",
+      //     lighter: 3,
+      //     thinner: 0.15,
+      //     color: "black",
+      //     background: "white"
+      //   },
+      //   {
+      //     type: "cross",
+      //     lighter: 1,
+      //     thinner: 0.175,
+      //     color: "black",
+      //     background: "white"
+      //   },
+      //   {
+      //     type: "cross",
+      //     lighter: 2,
+      //     thinner: 0.175,
+      //     color: "black",
+      //     background: "white"
+      //   },
+      //   {
+      //     type: "cross",
+      //     lighter: 3,
+      //     thinner: 0.175,
+      //     color: "black",
+      //     background: "white"
+      //   },
+      //   {
+      //     type: "cross",
+      //     lighter: 1,
+      //     thinner: 0.125,
+      //     color: "white",
+      //     background: "black"
+      //   },
+      //   {
+      //     type: "cross",
+      //     lighter: 2,
+      //     thinner: 0.125,
+      //     color: "white",
+      //     background: "black"
+      //   },
+      //   {
+      //     type: "cross",
+      //     lighter: 3,
+      //     thinner: 0.125,
+      //     color: "white",
+      //     background: "black"
+      //   },
+      //   {
+      //     type: "cross",
+      //     lighter: 1,
+      //     thinner: 0.15,
+      //     color: "white",
+      //     background: "black"
+      //   },
+      //   {
+      //     type: "cross",
+      //     lighter: 2,
+      //     thinner: 0.15,
+      //     color: "white",
+      //     background: "black"
+      //   },
+      //   {
+      //     type: "cross",
+      //     lighter: 3,
+      //     thinner: 0.15,
+      //     color: "white",
+      //     background: "black"
+      //   },
+      //   {
+      //     type: "cross",
+      //     lighter: 1,
+      //     thinner: 0.175,
+      //     color: "white",
+      //     background: "black"
+      //   },
+      //   {
+      //     type: "cross",
+      //     lighter: 2,
+      //     thinner: 0.175,
+      //     color: "white",
+      //     background: "black"
+      //   },
+      //   {
+      //     type: "cross",
+      //     lighter: 3,
+      //     thinner: 0.175,
+      //     color: "white",
+      //     background: "black"
+      //   },
+      //   {
+      //     type: "caret",
+      //     lighter: 1,
+      //     thicker: 1.5,
+      //     color: "black",
+      //     background: "white"
+      //   },
+      //   {
+      //     type: "caret",
+      //     lighter: 1,
+      //     thicker: 2,
+      //     color: "black",
+      //     background: "white"
+      //   },
+      //   {
+      //     type: "caret",
+      //     lighter: 1,
+      //     thicker: 2.5,
+      //     color: "black",
+      //     background: "white"
+      //   },
+      //   {
+      //     type: "caret",
+      //     lighter: 0.5,
+      //     thicker: 1.25,
+      //     color: "black",
+      //     background: "white"
+      //   },
+      //   {
+      //     type: "caret",
+      //     lighter: 0.5,
+      //     thicker: 1.5,
+      //     color: "black",
+      //     background: "white"
+      //   },
+      //   {
+      //     type: "caret",
+      //     lighter: 1,
+      //     thicker: 1.5,
+      //     color: "white",
+      //     background: "black"
+      //   },
+      //   {
+      //     type: "caret",
+      //     lighter: 1,
+      //     thicker: 2,
+      //     color: "white",
+      //     background: "black"
+      //   },
+      //   {
+      //     type: "caret",
+      //     lighter: 1,
+      //     thicker: 2.5,
+      //     color: "white",
+      //     background: "black"
+      //   },
+      //   {
+      //     type: "caret",
+      //     lighter: 0.5,
+      //     thicker: 1.25,
+      //     color: "white",
+      //     background: "black"
+      //   },
+      //   {
+      //     type: "caret",
+      //     lighter: 0.5,
+      //     thicker: 1.5,
+      //     color: "white",
+      //     background: "black"
+      //   }
+      // ]
+
+      // var allPatterns = [...linesBlack];
+
+      // function getLinePattern(patternDefinition) {
+      //   return textures
+      //     .lines()
+      //     .size(patternDefinition.size)
+      //     .strokeWidth(patternDefinition.strokeWidth)
+      //     .orientation(patternDefinition.orientation)
+      //     .stroke(patternDefinition.color)
+      //     .shapeRendering("crispEdges");
+      // }
+
+      // function getCirclePattern(patternDefinition) {
+      //   return textures
+      //     .circles()
+      //     .size(patternDefinition.size)
+      //     .radius(patternDefinition.radius)
+      //     .fill(patternDefinition.color);
+      // }
+
+      // function getCrossPattern(patternDefinition) {
+      //   return textures
+      //     .paths()
+      //     .d("crosses")
+      //     .lighter(patternDefinition.lighter)
+      //     .thinner(patternDefinition.thinner)
+      //     .stroke(patternDefinition.color);
+      // }
+
+      // function getWavesPattern(patternDefinition) {
+      //   return textures
+      //     .paths()
+      //     .d("waves")
+      //     .size(patternDefinition.size)
+      //     .stroke(patternDefinition.color);
+      // }
+
+      // function getCaretPattern(patternDefinition) {
+      //   return textures
+      //     .paths()
+      //     .d("caps")
+      //     .lighter(patternDefinition.lighter)
+      //     .thicker(patternDefinition.thicker)
+      //     .stroke(patternDefinition.color);
+      // }
+
+      // function makePattern(index, patternDefinition) {
+      //   const svg = d3
+      //     .select(`#box-${index}`)
+      //     .select(`.pattern`)
+      //     .append("svg");
+
+      //   let texture;
+
+      //   if (patternDefinition.type === 'line') {
+      //     texture = getLinePattern(patternDefinition);
+      //   } else if (patternDefinition.type === 'circle') {
+      //     texture = getCirclePattern(patternDefinition);
+      //   } else if (patternDefinition.type === 'cross') {
+      //     texture = getCrossPattern(patternDefinition);
+      //   } else if (patternDefinition.type === 'waves') {
+      //     texture = getWavesPattern(patternDefinition);
+      //   } else if (patternDefinition.type === 'caret') {
+      //     texture = getCaretPattern(patternDefinition);
+      //   }
+
+      //   svg.call(texture);
+
+      //   svg
+      //     .append('rect')
+      //     .attr('width', 200)
+      //     .attr('height', 200)
+      //     .style('fill', patternDefinition.background);
+
+      //   svg
+      //     .append('rect')
+      //     .attr('width', 200)
+      //     .attr('height', 200)
+      //     .style('fill', texture.url());
+      // }
+
+
+
+      const downloadFile = (data, fileName, type="image/svg+xml") => {
+        // Create an invisible A element
+        const a = document.createElement("a");
+        a.style.display = "none";
+        document.body.appendChild(a);
+
+        // Set the HREF to a Blob representation of the data to be downloaded
+        a.href = window.URL.createObjectURL(
+          new Blob([data], { type })
+        );
+
+        // Use download attribute to set set desired file name
+        a.setAttribute("download", fileName);
+
+        // Trigger the download by simulating click
+        a.click();
+
+        // Cleanup
+        window.URL.revokeObjectURL(a.href);
+        document.body.removeChild(a);
+      }
+
+      var downloadButtons = document.getElementsByClassName('download');
+
+      document.addEventListener('click', function (event) {
+
+        if (event.target.matches('.download')) {
+          var svg = event.target.parentNode;
+          var patternNumber = svg.getAttribute("data-id");
+          var patternColor = svg.getAttribute("data-color");
+          var patternType = svg.getAttribute("data-type");
+          downloadFile(svg.querySelectorAll('defs')[0].innerHTML.replace(' patternUnits="userSpaceOnUse"', '').replace("<pattern", "<svg").replace("</pattern>", "</svg>"), `texturemap-${patternType}-${patternColor}-${patternNumber}`);
+        }
+
+      }, false);
+
+      // allPatterns.forEach((patternDefinition, index)=> {
+      //   if (patternDefinition.type === "line") {
+      //     makePattern(index, patternDefinition);
+      //   } else if (patternDefinition.type === "circle") {
+      //     makePattern(index, patternDefinition);
+      //   } else if (patternDefinition.type === "cross") {
+      //     makePattern(index, patternDefinition);
+      //   } else if (patternDefinition.type === "waves") {
+      //     makePattern(index, patternDefinition);
+      //   } else if (patternDefinition.type === "caret") {
+      //     makePattern(index, patternDefinition);
+      //   }
+      // })
+    </script>
+
+
+</body></html>
