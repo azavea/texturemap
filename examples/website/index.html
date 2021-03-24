@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>TextureMap Demo</title>
+    <meta
+      name="viewport"
+      content="initial-scale=1,maximum-scale=1,user-scalable=no"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://api.mapbox.com/mapbox-gl-js/v2.0.1/mapbox-gl.css"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: #000;
+        font-family: "IBM Plex Sans", sans-serif;
+      }
+      body.focus .mapboxgl-popup {
+        display: none;
+      }
+      #map {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 100%;
+      }
+      .mapboxgl-canvas {
+        outline: none;
+      }
+      .mapboxgl-popup-close-button {
+        display: none;
+      }
+      .mapboxgl-popup-tip {
+        border-top-color: #161616 !important;
+      }
+      .mapboxgl-popup-content {
+        padding: 8px;
+        font-weight: 500;
+        color: #000;
+        font-family: "IBM Plex Sans", sans-serif;
+        background: #161616;
+      }
+      .actions {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        z-index: 1;
+        display: none;
+        justify-content: center;
+      }
+
+      body.focus .actions {
+        display: block;
+      }
+
+      .buttons button {
+        flex: 1;
+        border: 0;
+        border-radius: 100px;
+        padding: 4px 12px;
+      }
+      button {
+        font-family: "IBM Plex Sans", sans-serif;
+        height: 30px;
+        user-select: none;
+        font-size: 15px;
+        background-color: #ac9167;
+        color: #000;
+        cursor: pointer;
+      }
+      button:active,
+      button:focus {
+        outline: 0;
+      }
+      .intro {
+        z-index: 1;
+        position: absolute;
+        top: 15px;
+        left: 15px;
+        width: 320px;
+        background: #fff;
+        padding: 15px 15px;
+            box-shadow: 0 0 0 1px rgb(16 22 26 / 10%), 0 1px 1px rgb(16 22 26 / 20%), 0 2px 6px rgb(16 22 26 / 20%);
+      }
+      .intro h1,
+      .intro a,
+      .intro p {
+        color: #000;
+      }
+      .actions h1,
+      .actions p {
+        color: #000;
+      }
+      h1 {
+        margin: 0;
+        margin-bottom: 12px;
+        font-size: 22px;
+      }
+      p {
+        font-size: 15px;
+        margin: 0;
+        line-height: 1.5;
+      }
+      .logo {
+        width: 85px;
+      }
+      hr {
+        height: 1px;
+        border: none;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        background-color: #ccc;
+      }
+      .legend {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        column-count: 3;
+      }
+      .legend-item {
+        height: 18px;
+        width: 18px;
+        display: inline-block;
+        position: relative;
+        top: 6px;
+        margin-bottom: 4px;
+      }
+      body:not(.tm-on) .legend-item {
+        background-image: none !important;
+      }
+      .legend-item-1 {
+        background-color: #2965cc;
+        background-image: url("/textures/tm-circle-medium-100.svg");
+      }
+      .legend-item-2 {
+        background-color: #29a634;
+      }
+      .legend-item-3 {
+        background-color: #d99e0b;
+        background-image: url("/textures/tm-grid-light-200.svg");
+      }
+      .legend-item-4 {
+        background-color: #d13913;
+        background-image: url("/textures/tm-line-vertical-down-light-100.svg");
+      }
+      .legend-item-5 {
+        background-color: #8f398f;
+        background-image: url("/bg.png");
+      }
+      .legend-item-6 {
+        background-color: #00b3a4;
+        background-image: url("/textures/tm-circle-alt-light-200.svg");
+      }
+      .legend-item-7 {
+        background-color: #db2c6f;
+        background-image: url("/textures/tm-slash-forward-100.svg");
+      }
+      .legend-item-8 {
+        background-color: #9bbf30;
+        background-image: url("/textures/tm-crosshatch-light-200.svg");
+      }
+      .legend-item-9 {
+        background-color: #96622d;
+        background-image: url("/textures/tm-circle-medium-100.svg");
+      }
+      input[type="checkbox"] {
+        margin: 0;
+        margin-right: 4px;
+      }
+      label {
+        font-weight: 600;
+        margin-bottom: 10px;
+        display: inline-block;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body id="body">
+    <div class="intro">
+      <h1>TextureMap Demo</h1>
+      An open source collection of patterns designed for Mapbox GL JS and
+      Maplibre GL JS. Add style and accessibility to your maps.
+      <hr />
+      <label
+        ><input type="checkbox" id="toggle" onclick="toggleTM()" /> Toggle
+        TextureMap</label
+      >
+      <ul class="legend">
+        <li>
+          <div class="legend-item legend-item-1"></div>
+          Bar
+        </li>
+        <li>
+          <div class="legend-item legend-item-2"></div>
+          Rodeo
+        </li>
+        <li>
+          <div class="legend-item legend-item-3"></div>
+          House
+        </li>
+        <li>
+          <div class="legend-item legend-item-4"></div>
+          Grocery
+        </li>
+        <li>
+          <div class="legend-item legend-item-5"></div>
+          Park
+        </li>
+        <li>
+          <div class="legend-item legend-item-6"></div>
+          Factory
+        </li>
+        <li>
+          <div class="legend-item legend-item-7"></div>
+          Airport
+        </li>
+        <li>
+          <div class="legend-item legend-item-8"></div>
+          Church
+        </li>
+        <li>
+          <div class="legend-item legend-item-9"></div>
+          School
+        </li>
+      </ul>
+    </div>
+    <div id="map"></div>
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.0.1/mapbox-gl.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Turf.js/6.3.0/turf.min.js"></script>
+    <script>
+      mapboxgl.accessToken =
+        "pk.eyJ1IjoiYXphdmVhIiwiYSI6IkFmMFBYUUUifQ.eYn6znWt8NzYOa3OrWop8A";
+      var defaultCenter = { lat: 39.98246, lng: -75.174073 };
+      var defaultZoom = 17;
+      var toggleTextureMap = false;
+
+      function toggleTM() {
+        toggleTextureMap = !toggleTextureMap;
+        if (toggleTextureMap) {
+          document.getElementById("body").classList.add("tm-on");
+          map.setLayoutProperty('land-use-pattern', 'visibility', 'visible');
+        } else {
+          document.getElementById("body").classList.remove("tm-on");
+          map.setLayoutProperty('land-use-pattern', 'visibility', 'none');
+        }
+      }
+
+      var map = new mapboxgl.Map({
+        container: "map", // container id
+        style: "mapbox://styles/azavea/ckmnt6qwo0t3v17o7623r2dd8", // style URL
+        center: defaultCenter, // starting position [lng, lat]
+        zoom: defaultZoom,
+      });
+
+      map.on("load", function () {
+         map.setLayoutProperty('land-use-pattern', 'visibility', 'none');
+      });
+    </script>
+  </body>
+</html>
