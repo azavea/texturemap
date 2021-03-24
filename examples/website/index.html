@@ -88,7 +88,8 @@
         width: 320px;
         background: #fff;
         padding: 15px 15px;
-            box-shadow: 0 0 0 1px rgb(16 22 26 / 10%), 0 1px 1px rgb(16 22 26 / 20%), 0 2px 6px rgb(16 22 26 / 20%);
+        box-shadow: 0 0 0 1px rgb(16 22 26 / 10%), 0 1px 1px rgb(16 22 26 / 20%),
+          0 2px 6px rgb(16 22 26 / 20%);
       }
       .intro h1,
       .intro a,
@@ -126,12 +127,14 @@
         column-count: 3;
       }
       .legend-item {
-        height: 18px;
-        width: 18px;
+        height: 13px;
+        width: 13px;
         display: inline-block;
         position: relative;
-        top: 6px;
-        margin-bottom: 4px;
+        top: 10px;
+        margin-bottom: 10px;
+        transform: scale(1.5) translateX(2px);
+        margin-right: 8px;
       }
       body:not(.tm-on) .legend-item {
         background-image: none !important;
@@ -154,6 +157,7 @@
       .legend-item-5 {
         background-color: #8f398f;
         background-image: url("bg.png");
+                transform: scale(1.5) translateX(2px) !important;
       }
       .legend-item-6 {
         background-color: #00b3a4;
@@ -170,6 +174,8 @@
       .legend-item-9 {
         background-color: #96622d;
         background-image: url("textures/tm-circle-medium-100.svg");
+        background-position-x: 2px;
+        background-position-y: 2px;
       }
       input[type="checkbox"] {
         margin: 0;
@@ -194,10 +200,6 @@
         TextureMap</label
       >
       <ul class="legend">
-        <li>
-          <div class="legend-item legend-item-1"></div>
-          Bar
-        </li>
         <li>
           <div class="legend-item legend-item-2"></div>
           Rodeo
@@ -247,10 +249,10 @@
         toggleTextureMap = !toggleTextureMap;
         if (toggleTextureMap) {
           document.getElementById("body").classList.add("tm-on");
-          map.setLayoutProperty('land-use-pattern', 'visibility', 'visible');
+          map.setLayoutProperty("land-use-pattern", "visibility", "visible");
         } else {
           document.getElementById("body").classList.remove("tm-on");
-          map.setLayoutProperty('land-use-pattern', 'visibility', 'none');
+          map.setLayoutProperty("land-use-pattern", "visibility", "none");
         }
       }
 
@@ -264,7 +266,7 @@
       });
 
       map.on("load", function () {
-         map.setLayoutProperty('land-use-pattern', 'visibility', 'none');
+        map.setLayoutProperty("land-use-pattern", "visibility", "none");
       });
     </script>
   </body>
