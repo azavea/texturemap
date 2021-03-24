@@ -238,8 +238,9 @@
     <script>
       mapboxgl.accessToken =
         "pk.eyJ1IjoiYXphdmVhIiwiYSI6IkFmMFBYUUUifQ.eYn6znWt8NzYOa3OrWop8A";
-      var defaultCenter = { lat: 39.98246, lng: -75.174073 };
-      var defaultZoom = 17;
+      var defaultCenter = { lat: 39.98886, lng: -75.157787 };
+      var defaultZoom = 17.5;
+
       var toggleTextureMap = false;
 
       function toggleTM() {
@@ -256,6 +257,8 @@
       var map = new mapboxgl.Map({
         container: "map", // container id
         style: "mapbox://styles/azavea/ckmnt6qwo0t3v17o7623r2dd8", // style URL
+        minZoom: 15.5,
+        hash: true,
         center: defaultCenter, // starting position [lng, lat]
         zoom: defaultZoom,
       });
