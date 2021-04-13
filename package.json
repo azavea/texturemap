@@ -1,0 +1,23 @@
+{
+  "name": "texturemap",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/azavea/texturemap"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/azavea/texturemap/issues"
+  },
+  "homepage": "https://github.com/azavea/texturemap",
+  "dependencies": {
+    "replace-in-file": "^6.2.0"
+  }
+}
