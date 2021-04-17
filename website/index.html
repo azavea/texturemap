@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>
+      TextureMap: textures, patterns, and shapes for web map accessibility
+    </title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <meta property="og:title" content="" />
+    <meta property="og:type" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="" />
+
+    <link rel="manifest" href="site.webmanifest" />
+    <link rel="apple-touch-icon" href="icon.png" />
+    <!-- Place favicon.ico in the root directory -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link
+      href="//cdnjs.cloudflare.com/ajax/libs/mapbox-gl/1.13.1/mapbox-gl.min.css"
+      rel="stylesheet"
+    />
+    <meta name="theme-color" content="#fafafa" />
+  </head>
+
+  <body>
+    <header class="header-primary">
+      <div class="container header-primary__container">
+        <h1 class="sr-only">TextureMap</h1>
+        <div class="header-primary__logo">
+          <img src="img/texturemap-logo.svg" alt="TextureMap logo" />
+        </div>
+        <nav class="header-primary__nav">
+          <a class="header-primary__link" href="#">Documentation</a>
+          <a class="header-primary__link" href="#">Download</a>
+          <a class="header-primary__link" href="#">Github</a>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="section-hero">
+        <div class="container">
+          <div class="hero">
+            <div>
+              <h2 class="heading-size--500">Make your map accessible</h2>
+              <p class="large">
+                Textures, patterns, and shapes that make web maps work for
+                people with color vision deficiency. Designed for Mapbox GL and
+                MapLibre GL. Free and open source, easy to use with your next
+                map.
+              </p>
+              <div class="hero__buttons">
+                <a href="" class="hero__button-gettingstarted"
+                  >Getting started</a
+                >
+                <a href="" class="hero__button-download">Download</a>
+              </div>
+            </div>
+            <div id="map" class="map texturemap-on"></div>
+          </div>
+        </div>
+      </section>
+      <section class="section-types">
+        <h2 class="sr-only heading-size--500">Styles provided by TextureMap</h2>
+        <div class="container">
+          <ul class="types">
+            <li class="types__item">
+              <h3 class="types__heading heading-size--400">Polygons</h3>
+              <p>
+                Mix and match from 60 simple patterns, adding an additional
+                layer of symbology on top of color.
+              </p>
+
+              <img
+                class="types__image"
+                src="img/texturemap-screenshot-polygons.png"
+                alt="Screenshot of TextureMap applied to polygons"
+              />
+              <div class="types__links">
+                <a href=""
+                  >Documentation<span class="sr-only"> for polygons</span></a
+                >
+                / <a href="">Demo<span class="sr-only"> for polygons</span></a>
+              </div>
+            </li>
+            <li class="types__item">
+              <h3 class="types__heading heading-size--400">Lines</h3>
+              <p>
+                Made with a creative assortment of line dashes and gaps. The
+                result is 10 uniquely identifiable line styles.
+              </p>
+
+              <img
+                class="types__image"
+                src="img/texturemap-screenshot-lines.png"
+                alt="Screenshot of TextureMap applied to lines"
+              />
+              <div class="types__links">
+                <a href=""
+                  >Documentation<span class="sr-only"> for lines</span></a
+                >
+                / <a href="">Demo<span class="sr-only"> for lines</span></a>
+              </div>
+            </li>
+            <li class="types__item">
+              <h3 class="types__heading heading-size--400">Points</h3>
+              <p>
+                20 distinct geometric shapes to use as markers. For when a
+                conventional icon doesn’t fit the meaning of your data.
+              </p>
+
+              <img
+                class="types__image"
+                src="img/texturemap-screenshot-points.png"
+                alt="Screenshot of TextureMap applied to points"
+              />
+              <div class="types__links">
+                <a href=""
+                  >Documentation<span class="sr-only"> for points</span></a
+                >
+                / <a href="">Demo<span class="sr-only"> for points</span></a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="section-accessibility">
+        <h2 class="sr-only">Accessibility</h2>
+
+        <div class="container">
+          <section class="accessibility__primary">
+            <div>
+              <h3 class="heading-size--400">About maps and accessibility</h3>
+              <p>
+                A map can be an impassible barrier. During the Covid-19
+                pandemic, blind people were
+                <a
+                  href="https://www.nbcnews.com/business/consumer/blind-americans-face-roadblocks-booking-online-vaccine-appointments-n1260954"
+                  >blocked from booking vaccine appointments</a
+                >
+                because a website required users to interact with a map to move
+                forward in the process. As cartographers, designers, and
+                developers, we can do better.
+              </p>
+              <p>
+                One rule of thumb is to think of a map as a supplement to more
+                accessible forms of information and interaction. Offer data in
+                other formats, such as tables and lists. Design workflows that
+                don’t depend on using a map to get to the next step. If the map
+                disappeared, could you still complete your task?
+              </p>
+              <p>
+                TextureMap can make your map work better for people with color
+                vision deficiency, but we want to be clear that it isn’t a
+                complete solution. For a truly accessible experience, provide an
+                alternative option.
+              </p>
+            </div>
+            <div>
+              <img
+                class="accessibility__image"
+                src="img/accessibility-photos.jpg"
+                alt="A collage of three photos intended: one photo of a hand holding a phone displaying a map, one photo of a woman holding a paper map, one photo of a close up paper map"
+              />
+            </div>
+          </section>
+        </div>
+        <section class="accessibility__secondary">
+          <div class="container">
+            <h3 class="heading-size--300">Other resources</h3>
+            <ul class="resources">
+              <li class="resources__item">
+                <a
+                  class="resources__link"
+                  href="https://riccardoscalco.it/textures/"
+                  >Textures.js</a
+                >
+                <p>Patterns for D3 visualizations</p>
+              </li>
+              <li class="resources__item">
+                <a class="resources__link" href="http://colorbrewer2.org/"
+                  >ColorBrewer</a
+                >
+                <p>“Colorblind safe” color palettes</p>
+              </li>
+              <li class="resources__item">
+                <a
+                  class="resources__link"
+                  href="https://michelf.ca/projects/sim-daltonism/"
+                  >Sim Daltonism</a
+                >
+                <p>Simulate colorblind vision</p>
+              </li>
+              <li class="resources__item">
+                <a
+                  class="resources__link"
+                  href="https://webaim.org/resources/contrastchecker/"
+                  >WebAIM Contrast Checker</a
+                >
+                <p>Test color contrast for map labels</p>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </section>
+    </main>
+    <footer class="footer-primary">
+      <div class="container">
+        <div class="container">Made by Azavea</div>
+        <nav class="header-primary__nav">
+          <a class="header-primary__link" href="#">Documentation</a>
+          <a class="header-primary__link" href="#">Download</a>
+          <a class="header-primary__link" href="#">Github</a>
+        </nav>
+      </div>
+    </footer>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/mapbox-gl/1.13.1/mapbox-gl.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/Turf.js/6.3.0/turf.min.js"></script>
+    <script src="js/map.js"></script>
+  </body>
+</html>

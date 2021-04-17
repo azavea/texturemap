@@ -19,5 +19,8 @@
   "homepage": "https://github.com/azavea/texturemap",
   "dependencies": {
     "replace-in-file": "^6.2.0"
+  },
+  "devDependencies": {
+    "svgo": "^2.3.0"
   }
 }
