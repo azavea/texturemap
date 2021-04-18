@@ -124,7 +124,7 @@ p:last-child {
 }
 
 p.large {
-  font-size: 19px;
+  font-size: 23px;
 }
 
 h1,
@@ -145,7 +145,7 @@ h4:first-child {
 }
 
 .container {
-  max-width: 1208px;
+  max-width: 1300px;
   margin-left: auto;
   margin-right: auto;
   padding: 0 15px;
@@ -153,6 +153,12 @@ h4:first-child {
 
 img {
   max-width: 100%;
+}
+
+@media only screen and (max-width: 1120px) {
+  p.large {
+    font-size: 19px;
+  }
 }
 
 @media only screen and (max-width: 480px) {
@@ -169,17 +175,17 @@ img {
    ========================================================================== */
 
 .heading-size--500 {
-  font-size: 46px;
+  font-size: 54px;
   margin-bottom: 24px;
 }
 
 .heading-size--400 {
-  font-size: 31px;
+  font-size: 32px;
   margin-bottom: 24px;
 }
 
 .heading-size--300 {
-  font-size: 24px;
+  font-size: 23px;
   margin-bottom: 18px;
 }
 
@@ -195,12 +201,12 @@ img {
 
 @media only screen and (max-width: 480px) {
   .heading-size--500 {
-    font-size: 31px;
+    font-size: 32px;
     margin-bottom: 24px;
   }
 
   .heading-size--400 {
-    font-size: 24px;
+    font-size: 23px;
     margin-bottom: 18px;
   }
 
@@ -318,8 +324,9 @@ img {
 
 .map {
   max-width: 900px;
-  height: 390px;
+  height: 420px;
   box-shadow: black 0 0 10px;
+  border-radius: 3px 3px 0 0;
 }
 
 .mapboxgl-ctrl-top-right {
@@ -337,7 +344,14 @@ img {
   }
 }
 
-@media only screen and (max-width: 860px) {
+@media only screen and (max-width: 1020px) {
+  .map {
+    height: 480px;
+    margin-right: -15px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
   .map {
     display: none;
   }
@@ -349,7 +363,7 @@ img {
 
 .hero {
   display: grid;
-  column-gap: 40px;
+  column-gap: 60px;
   grid-template-columns: repeat(2, 1fr);
 }
 
@@ -366,39 +380,44 @@ img {
   color: #fff;
 }
 
+.hero__content {
+  max-width: 600px;
+}
+
 .hero__buttons {
   margin-top: 36px;
   font-size: 19px;
 }
 
 .hero__button-gettingstarted {
-  background: transparent;
-  border: 2px solid #fff;
-  color: #fff;
-  border-radius: 2px;
-  text-decoration: none;
-  font-weight: 700;
-  margin-right: 10px;
-  width: 180px;
-  display: inline-block;
-  text-align: center;
-  line-height: 0;
-  padding: 24px 0;
-  transition: 100ms ease-in-out all;
-}
-.hero__button-download {
   background: #fff;
   border: 2px solid #fff;
   color: #333;
   text-decoration: none;
-  border-radius: 2px;
+  border-radius: 3px;
   font-weight: 700;
   margin-right: 10px;
   width: 180px;
   display: inline-block;
   text-align: center;
   line-height: 0;
-  padding: 24px 0;
+  padding: 22px 0 25px;
+  transition: 100ms ease-in-out all;
+}
+
+.hero__button-download {
+  background: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+  border-radius: 3px;
+  text-decoration: none;
+  font-weight: 700;
+  margin-right: 10px;
+  width: 180px;
+  display: inline-block;
+  text-align: center;
+  line-height: 0;
+  padding: 22px 0 25px;
   transition: 100ms ease-in-out all;
 }
 
@@ -409,7 +428,7 @@ img {
   color: #333;
 }
 
-@media only screen and (max-width: 860px) {
+@media only screen and (max-width: 768px) {
   .hero {
     grid-template-columns: 1fr;
   }
@@ -421,6 +440,19 @@ img {
   }
 }
 
+@media only screen and (max-width: 870px) {
+  .hero__button-gettingstarted {
+    width: auto;
+    padding: 22px 15px 25px;
+    margin-right: 4px;
+  }
+  .hero__button-download {
+    width: auto;
+    padding: 22px 15px 25px;
+    margin-right: 4px;
+  }
+}
+
 @media only screen and (max-width: 480px) {
   .hero__buttons {
     font-size: 16px;
@@ -429,12 +461,12 @@ img {
 
   .hero__button-gettingstarted {
     width: auto;
-    padding: 18px 12px;
+    padding: 17px 12px 19px;
     margin-right: 4px;
   }
   .hero__button-download {
     width: auto;
-    padding: 18px 12px;
+    padding: 17px 12px 19px;
     margin-right: 4px;
   }
   .section-hero {
@@ -473,7 +505,7 @@ img {
   background-color: #fff;
   padding: 60px 30px;
   flex: 1;
-  border-right: 1px solid #f0f0f0;
+  border-right: 1px solid #eee;
   display: grid;
   column-gap: 40px;
   row-gap: 20px;
@@ -490,10 +522,13 @@ img {
 }
 
 .types__image {
-  border: 1px solid #f0f0f0;
+  border: 1px solid #eee;
+  width: 391px;
+  box-sizing: content-box;
+  border-radius: 3px;
 }
 
-@media only screen and (max-width: 860px) {
+@media only screen and (max-width: 768px) {
   .types {
     display: block;
   }
@@ -501,7 +536,7 @@ img {
     column-gap: 40px;
     grid-template-columns: 1fr 1fr;
     border-right-width: 0;
-    border-bottom: 1px solid #f0f0f0;
+    border-bottom: 1px solid #eee;
     padding: 30px 0;
   }
 }
@@ -562,7 +597,7 @@ img {
   border-top: 1px solid #c9c9c9;
 }
 
-@media only screen and (max-width: 860px) {
+@media only screen and (max-width: 768px) {
   .accessibility__primary {
     grid-template-columns: 1fr;
   }
