@@ -12,12 +12,11 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/azavea/texturemap/issues"
   },
   "homepage": "https://github.com/azavea/texturemap",
-  "dependencies": {
-    "replace-in-file": "^6.2.0"
-  }
+  "dependencies": {},
+  "devDependencies": {}
 }
