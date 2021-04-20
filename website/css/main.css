@@ -90,14 +90,29 @@ html {
   box-sizing: inherit;
 }
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
+@font-face {
+  font-family: "Graphik Web";
+  src: url("../fonts/Graphik-Black-Web.woff2") format("woff2"),
+    url("../fonts/Graphik-Black-Web.woff") format("woff");
+  font-weight: 800;
+  font-style: normal;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: "Graphik Web";
+  src: url("../fonts/Graphik-Regular-Web.woff2") format("woff2"),
+    url("../fonts/Graphik-Regular-Web.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
 }
 
 body {
   font-size: 16px;
-  font-family: graphik, -apple-system, BlinkMacSystemFont, avenir next, avenir,
-    segoe ui, helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif;
+  font-family: "Graphik Web", graphik, -apple-system, BlinkMacSystemFont,
+    avenir next, avenir, segoe ui, helvetica neue, helvetica, Ubuntu, roboto,
+    noto, arial, sans-serif;
   font-weight: 400;
   line-height: 1.6;
   color: #333;
@@ -375,8 +390,9 @@ img {
 }
 
 .hero .mapboxgl-map {
-  font-family: graphik, -apple-system, BlinkMacSystemFont, avenir next, avenir,
-    segoe ui, helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif;
+  font-family: "Graphik Web", graphik, -apple-system, BlinkMacSystemFont,
+    avenir next, avenir, segoe ui, helvetica neue, helvetica, Ubuntu, roboto,
+    noto, arial, sans-serif;
 }
 
 .mapboxgl-ctrl-top-right {
