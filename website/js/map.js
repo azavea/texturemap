@@ -10,7 +10,7 @@ var map = new mapboxgl.Map({
     version: 8,
     name: "Blank",
     id: "blank",
-    sprite: window.location.origin + "/website/js/polygons-sprite@2x",
+    sprite: window.location.href + "js/polygons-sprite@2x",
     sources: {
       polygons: {
         type: "geojson",
@@ -136,7 +136,3 @@ map.addControl(
 );
 
 map.scrollZoom.disable();
-
-map.on("load", function () {
-  // map.setLayoutProperty("land-use-pattern", "visibility", "visible");
-});
