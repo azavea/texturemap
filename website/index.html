@@ -32,7 +32,7 @@
         <div class="header-primary__logo">
           <img src="img/texturemap-logo.svg" alt="TextureMap logo" />
         </div>
-        <nav class="header-primary__nav">
+        <nav aria-label="Header navigation" class="header-primary__nav">
           <a class="header-primary__link" href="#">Documentation</a>
           <a class="header-primary__link" href="#">Download</a>
           <a class="header-primary__link" href="#">Github</a>
@@ -49,8 +49,8 @@
               </h2>
               <p class="large">
                 Textures, patterns, and shapes that make web maps work for
-                people with color vision deficiency. Built for the Mapbox GL and
-                MapLibre GL libraries.
+                people with color vision deficiency. Built for Mapbox GL and
+                MapLibre GL.
               </p>
               <div class="hero__buttons">
                 <a href="" class="hero__button-gettingstarted"
@@ -59,20 +59,43 @@
                 <a href="" class="hero__button-download">Download</a>
               </div>
             </div>
-            <div id="map" class="map texturemap-on"></div>
+            <div id="map" class="map texturemap-on">
+              <div class="map__controls">
+                <label class="map__label"
+                  ><input
+                    id="checkbox-monochromacy"
+                    class="map__checkbox"
+                    onclick="toggleMonochromacy()"
+                    type="checkbox"
+                    checked
+                  />
+                  Simulate monochromacy</label
+                >
+                <label class="map__label"
+                  ><input
+                    id="checkbox-texturemap"
+                    class="map__checkbox"
+                    onclick="toggleTexturemap()"
+                    type="checkbox"
+                    checked
+                  />
+                  Use TextureMap</label
+                >
+              </div>
+            </div>
           </div>
         </div>
       </section>
       <section class="section-types">
-        <h2 class="sr-only heading-size--500">Styles provided by TextureMap</h2>
+        <h2 class="sr-only heading-size--500">Use cases</h2>
         <div class="container">
           <ul class="types">
             <li class="types__item">
               <div class="types__left">
                 <h3 class="types__heading heading-size--400">Polygons</h3>
                 <p>
-                  Mix and match from 60 simple patterns, adding an additional
-                  layer of symbology on top of color.
+                  Mix and match from 60 minimalist patterns, for an additional
+                  symbology besides color.
                 </p>
                 <div class="types__links">
                   <a href=""
@@ -95,8 +118,8 @@
               <div class="types__left">
                 <h3 class="types__heading heading-size--400">Lines</h3>
                 <p>
-                  Made with a creative assortment of line dashes and gaps. The
-                  result is 10 uniquely identifiable line styles.
+                  A selection of 10 unique line styles with an assortment of
+                  dashes and gaps.
                 </p>
                 <div class="types__links">
                   <a href=""
@@ -118,8 +141,8 @@
               <div class="types__left">
                 <h3 class="types__heading heading-size--400">Points</h3>
                 <p>
-                  20 distinct geometric shapes to use as markers. For when a
-                  conventional icon doesn’t fit the meaning of your data.
+                  20 shapes to use as markers. For when an icon doesn’t fit the
+                  meaning of your data.
                 </p>
                 <div class="types__links">
                   <a href=""
@@ -140,7 +163,7 @@
         </div>
       </section>
       <section class="section-accessibility">
-        <h2 class="sr-only">Accessibility</h2>
+        <h2 class="sr-only">More about accessibility</h2>
 
         <div class="container">
           <section class="accessibility__primary">
@@ -227,10 +250,10 @@
             ><img class="footer__logo" src="img/azavea-logo.svg" alt="Azavea"
           /></a>
         </div>
-        <nav class="header-primary__nav">
-          <a class="header-primary__link" href="#">Documentation</a>
-          <a class="header-primary__link" href="#">Download</a>
-          <a class="header-primary__link" href="#">Github</a>
+        <nav aria-label="Footer navigation" class="footer-primary__nav">
+          <a class="footer-primary__link" href="#">Documentation</a>
+          <a class="footer-primary__link" href="#">Download</a>
+          <a class="footer-primary__link" href="#">Github</a>
         </nav>
       </div>
     </footer>

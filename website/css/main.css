@@ -299,6 +299,20 @@ img {
   padding: 40px 15px;
 }
 
+.footer-primary__nav {
+  flex: 1;
+  text-align: right;
+}
+
+.footer-primary__link {
+  margin-left: 10px;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 800;
+}
+
 @media only screen and (max-width: 480px) {
   .footer-primary {
     padding: 0;
@@ -307,8 +321,13 @@ img {
     display: flex;
     padding: 28px 15px 24px;
   }
+  .footer-primary__nav {
+    display: none;
+  }
 }
 
+@media only screen and (max-width: 480px) {
+}
 /* ==========================================================================
    Map
    ========================================================================== */
@@ -327,6 +346,37 @@ img {
   height: 420px;
   box-shadow: black 0 0 10px;
   border-radius: 3px 3px 0 0;
+}
+
+.map__controls {
+  background-color: #eeeeee;
+  color: #000;
+  z-index: 5000;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  font-size: 14px;
+  padding: 4px 8px;
+}
+
+.map__label:last-child {
+  margin-right: 0;
+}
+
+.map__label {
+  margin-right: 8px;
+  user-select: none;
+}
+
+.map__checkbox {
+  position: relative;
+  top: 1px;
+  margin-right: 2px;
+}
+
+.hero .mapboxgl-map {
+  font-family: graphik, -apple-system, BlinkMacSystemFont, avenir next, avenir,
+    segoe ui, helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif;
 }
 
 .mapboxgl-ctrl-top-right {

@@ -4,19 +4,6 @@ var defaultCenter = { lng: -75.17705316570994, lat: 39.97833441433514 };
 var defaultZoom = 16.5;
 var defaultBearing = 0;
 
-var toggleTextureMap = false;
-
-function toggleTM() {
-  toggleTextureMap = !toggleTextureMap;
-  if (toggleTextureMap) {
-    document.getElementById("body").classList.add("tm-on");
-    map.setLayoutProperty("land-use-pattern", "visibility", "visible");
-  } else {
-    document.getElementById("body").classList.remove("tm-on");
-    map.setLayoutProperty("land-use-pattern", "visibility", "none");
-  }
-}
-
 var map = new mapboxgl.Map({
   container: "map",
   style: {
@@ -117,6 +104,29 @@ var map = new mapboxgl.Map({
     39.979849588073435,
   ],
 });
+
+var state = {
+  monochromacy: true,
+  texturemap: true,
+};
+
+function toggleTexturemap() {
+  state.texturemap = !state.texturemap;
+  if (state.texturemap) {
+    map.setLayoutProperty("polygons-texture", "visibility", "visible");
+  } else {
+    map.setLayoutProperty("polygons-texture", "visibility", "none");
+  }
+}
+
+function toggleMonochromacy() {
+  state.monochromacy = !state.monochromacy;
+  if (state.monochromacy) {
+    document.getElementById("map").classList.add("texturemap-on");
+  } else {
+    document.getElementById("map").classList.remove("texturemap-on");
+  }
+}
 
 map.on("style.load", () => {});
 
