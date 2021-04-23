@@ -89,20 +89,18 @@ html {
 *:after {
   box-sizing: inherit;
 }
-
 @font-face {
-  font-family: "Graphik Web";
-  src: url("../fonts/Graphik-Black-Web.woff2") format("woff2"),
-    url("../fonts/Graphik-Black-Web.woff") format("woff");
-  font-weight: 800;
+  font-family: "Atlas Grotesk Web";
+  src: url("../fonts/AtlasGrotesk-Medium-Web.woff2") format("woff2"),
+    url("../fonts/AtlasGrotesk-Medium-Web.woff") format("woff");
+  font-weight: 500;
   font-style: normal;
   font-stretch: normal;
 }
-
 @font-face {
-  font-family: "Graphik Web";
-  src: url("../fonts/Graphik-Regular-Web.woff2") format("woff2"),
-    url("../fonts/Graphik-Regular-Web.woff") format("woff");
+  font-family: "Atlas Grotesk Web";
+  src: url("../fonts/AtlasGrotesk-Regular-Web.woff2") format("woff2"),
+    url("../fonts/AtlasGrotesk-Regular-Web.woff") format("woff");
   font-weight: 400;
   font-style: normal;
   font-stretch: normal;
@@ -110,23 +108,23 @@ html {
 
 body {
   font-size: 16px;
-  font-family: "Graphik Web", graphik, -apple-system, BlinkMacSystemFont,
+  font-family: "Atlas Grotesk Web", -apple-system, BlinkMacSystemFont,
     avenir next, avenir, segoe ui, helvetica neue, helvetica, Ubuntu, roboto,
     noto, arial, sans-serif;
   font-weight: 400;
   line-height: 1.6;
-  color: #333;
-  text-rendering: geometricPrecision;
+  color: #424242;
+  text-rendering: optimizeLegibility;
 }
 
 a {
-  color: #333;
+  color: #212121;
   text-decoration: underline;
   transition: 100ms ease-in-out all;
 }
 
 a:hover {
-  color: #15bece;
+  color: #008fa2;
 }
 
 p {
@@ -146,10 +144,10 @@ h1,
 h2,
 h3,
 h4 {
-  font-weight: 700;
+  font-weight: 500;
   max-width: 640px;
   line-height: 1.2;
-  color: #000;
+  color: #212121;
 }
 
 h1:first-child,
@@ -246,7 +244,7 @@ img {
    ========================================================================== */
 
 .header-primary {
-  background-color: #333;
+  background-color: #212121;
 }
 
 .header-primary__container {
@@ -270,13 +268,12 @@ img {
   margin-left: 10px;
   color: #fff;
   text-decoration: none;
-  text-transform: uppercase;
-  font-size: 14px;
-  font-weight: 800;
+  font-size: 16px;
+  font-weight: 500;
 }
 
 .header-primary__link:hover {
-  color: #15bece;
+  color: #008fa2;
 }
 
 @media only screen and (max-width: 480px) {
@@ -290,20 +287,18 @@ img {
    ========================================================================== */
 
 .footer-primary {
-  background: #333;
+  background: #222;
   color: #fff;
   padding: 40px 0;
 }
 
 .footer__logo {
   position: relative;
-  top: -4px;
-  margin-left: 10px;
+  height: 32px;
 }
 
 .footer__brand {
-  text-transform: uppercase;
-  font-weight: 700;
+  font-weight: 500;
   font-size: 14px;
   align-items: center;
   display: flex;
@@ -323,9 +318,8 @@ img {
   margin-left: 10px;
   color: #fff;
   text-decoration: none;
-  text-transform: uppercase;
-  font-size: 14px;
-  font-weight: 800;
+  font-size: 16px;
+  font-weight: 500;
 }
 
 @media only screen and (max-width: 480px) {
@@ -358,14 +352,13 @@ img {
 
 .map {
   max-width: 900px;
-  height: 420px;
-  box-shadow: black 0 0 10px;
+  height: 440px;
   border-radius: 3px 3px 0 0;
 }
 
 .map__controls {
   background-color: #eeeeee;
-  color: #000;
+  color: #212121;
   z-index: 5000;
   position: absolute;
   bottom: 0;
@@ -390,7 +383,7 @@ img {
 }
 
 .hero .mapboxgl-map {
-  font-family: "Graphik Web", graphik, -apple-system, BlinkMacSystemFont,
+  font-family: "Atlas Grotesk Web", -apple-system, BlinkMacSystemFont,
     avenir next, avenir, segoe ui, helvetica neue, helvetica, Ubuntu, roboto,
     noto, arial, sans-serif;
 }
@@ -405,7 +398,7 @@ img {
 
 @media only screen and (max-width: 1120px) {
   .map {
-    height: 450px;
+    height: 400px;
     margin-right: -15px;
   }
 }
@@ -434,7 +427,7 @@ img {
 }
 
 .section-hero {
-  background-color: #333;
+  background-color: #212121;
   margin-top: 0;
   padding-top: 40px;
 }
@@ -447,7 +440,7 @@ img {
 }
 
 .hero__content {
-  max-width: 600px;
+  max-width: 550px;
 }
 
 .hero__buttons {
@@ -456,18 +449,18 @@ img {
 }
 
 .hero__button-gettingstarted {
-  background: #fff;
-  border: 2px solid #fff;
-  color: #333;
+  background: #008fa2;
+  border: 2px solid #008fa2;
+  color: #fff;
   text-decoration: none;
-  border-radius: 3px;
-  font-weight: 700;
+  border-radius: 5px;
+  font-weight: 500;
   margin-right: 10px;
   width: 180px;
   display: inline-block;
   text-align: center;
   line-height: 0;
-  padding: 22px 0 25px;
+  padding: 23px 0 23px;
   transition: 100ms ease-in-out all;
 }
 
@@ -475,23 +468,22 @@ img {
   background: transparent;
   border: 2px solid #fff;
   color: #fff;
-  border-radius: 3px;
+  border-radius: 5px;
   text-decoration: none;
-  font-weight: 700;
-  margin-right: 10px;
+  font-weight: 00;
   width: 180px;
   display: inline-block;
   text-align: center;
   line-height: 0;
-  padding: 22px 0 25px;
+  padding: 23px 0 23px;
   transition: 100ms ease-in-out all;
 }
 
 .hero__button-gettingstarted:hover,
 .hero__button-download:hover {
-  background-color: #15bece;
-  border-color: #15bece;
-  color: #333;
+  background-color: #007180;
+  border-color: #007180;
+  color: #fff;
 }
 
 @media only screen and (max-width: 768px) {
@@ -506,35 +498,24 @@ img {
   }
 }
 
-@media only screen and (max-width: 870px) {
+@media only screen and (max-width: 1120px) {
+  .hero__buttons {
+    font-size: 16px;
+    margin-top: 32px;
+  }
+
   .hero__button-gettingstarted {
     width: auto;
-    padding: 22px 15px 25px;
-    margin-right: 4px;
+    padding: 17px 12px 19px;
+    margin-right: 6px;
   }
   .hero__button-download {
     width: auto;
-    padding: 22px 15px 25px;
-    margin-right: 4px;
+    padding: 17px 12px 19px;
   }
 }
 
 @media only screen and (max-width: 480px) {
-  .hero__buttons {
-    font-size: 16px;
-    margin-top: 24px;
-  }
-
-  .hero__button-gettingstarted {
-    width: auto;
-    padding: 17px 12px 19px;
-    margin-right: 4px;
-  }
-  .hero__button-download {
-    width: auto;
-    padding: 17px 12px 19px;
-    margin-right: 4px;
-  }
   .section-hero {
     padding: 0 0 30px;
   }
@@ -561,6 +542,7 @@ img {
 .types__links {
   color: #ccc;
   margin-top: 16px;
+  display: none;
 }
 
 .types__heading {
@@ -574,7 +556,7 @@ img {
   border-right: 1px solid #eee;
   display: grid;
   column-gap: 40px;
-  row-gap: 20px;
+  row-gap: 2px;
   grid-template-columns: 1fr;
 }
 
@@ -639,7 +621,7 @@ img {
 .resources__link {
   font-size: 19px;
   font-weight: 500;
-  color: #000;
+  color: #212121;
   margin: 8px 0;
   display: inline-block;
 }
