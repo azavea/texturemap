@@ -1,0 +1,752 @@
+/*! HTML5 Boilerplate v8.0.0 | MIT License | https://html5boilerplate.com/ */
+
+/* main.css 2.1.0 | MIT License | https://github.com/h5bp/main.css#readme */
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Vendor-prefixed and regular ::selection selectors cannot be combined:
+ * https://stackoverflow.com/a/16982510/7133471
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+  resize: vertical;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+/* ==========================================================================
+   Base styles
+   ========================================================================== */
+
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+@font-face {
+  font-family: "Atlas Grotesk Web";
+  src: url("../fonts/AtlasGrotesk-Medium-Web.woff2") format("woff2"),
+    url("../fonts/AtlasGrotesk-Medium-Web.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+}
+@font-face {
+  font-family: "Atlas Grotesk Web";
+  src: url("../fonts/AtlasGrotesk-Regular-Web.woff2") format("woff2"),
+    url("../fonts/AtlasGrotesk-Regular-Web.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+}
+
+body {
+  font-size: 16px;
+  font-family: "Atlas Grotesk Web", -apple-system, BlinkMacSystemFont,
+    avenir next, avenir, segoe ui, helvetica neue, helvetica, Ubuntu, roboto,
+    noto, arial, sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+  color: #424242;
+  text-rendering: optimizeLegibility;
+}
+
+a {
+  color: #212121;
+  text-decoration: underline;
+  transition: 100ms ease-in-out all;
+}
+
+a:hover {
+  color: #008fa2;
+}
+
+p {
+  max-width: 640px;
+  margin: 0 0 21px;
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+p.large {
+  font-size: 23px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 500;
+  max-width: 640px;
+  line-height: 1.2;
+  color: #212121;
+}
+
+h1:first-child,
+h2:first-child,
+h3:first-child,
+h4:first-child {
+  margin-top: 0;
+}
+
+.container {
+  max-width: 1300px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 15px;
+}
+
+img {
+  max-width: 100%;
+}
+
+@media only screen and (max-width: 1120px) {
+  p.large {
+    font-size: 19px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  body {
+    font-size: 14px;
+  }
+  p.large {
+    font-size: 16px;
+  }
+}
+
+/* ==========================================================================
+   Font size definitions
+   ========================================================================== */
+
+.heading-size--500 {
+  font-size: 54px;
+  margin-bottom: 24px;
+}
+
+.heading-size--400 {
+  font-size: 32px;
+  margin-bottom: 24px;
+}
+
+.heading-size--300 {
+  font-size: 23px;
+  margin-bottom: 18px;
+}
+
+.heading-size--200 {
+  font-size: 19px;
+  margin-bottom: 16px;
+}
+
+.heading-size--100 {
+  font-size: 16px;
+  margin-bottom: 16px;
+}
+
+@media only screen and (max-width: 480px) {
+  .heading-size--500 {
+    font-size: 32px;
+    margin-bottom: 24px;
+  }
+
+  .heading-size--400 {
+    font-size: 23px;
+    margin-bottom: 18px;
+  }
+
+  .heading-size--300 {
+    font-size: 19px;
+    margin-bottom: 16px;
+  }
+
+  .heading-size--200 {
+    font-size: 16px;
+    margin-bottom: 16px;
+  }
+
+  .heading-size--100 {
+    font-size: 14px;
+    margin-bottom: 16px;
+  }
+}
+
+/* ==========================================================================
+   Header
+   ========================================================================== */
+
+.header-primary {
+  background-color: #212121;
+}
+
+.header-primary__container {
+  display: flex;
+  padding: 30px 15px;
+}
+
+.header-primary__logo {
+}
+
+.header-primary__logo > img {
+  height: 32px;
+}
+
+.header-primary__nav {
+  flex: 1;
+  text-align: right;
+}
+
+.header-primary__link {
+  margin-left: 10px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.header-primary__link:hover {
+  color: #008fa2;
+}
+
+@media only screen and (max-width: 480px) {
+  .header-primary__nav {
+    display: none;
+  }
+}
+
+/* ==========================================================================
+   footer
+   ========================================================================== */
+
+.footer-primary {
+  background: #222;
+  color: #fff;
+  padding: 40px 0;
+}
+
+.footer__logo {
+  position: relative;
+  height: 32px;
+}
+
+.footer__brand {
+  font-weight: 500;
+  font-size: 14px;
+  align-items: center;
+  display: flex;
+}
+
+.footer-primary__container {
+  display: flex;
+  padding: 40px 15px;
+}
+
+.footer-primary__nav {
+  flex: 1;
+  text-align: right;
+}
+
+.footer-primary__link {
+  margin-left: 10px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+@media only screen and (max-width: 480px) {
+  .footer-primary {
+    padding: 0;
+  }
+  .footer-primary__container {
+    display: flex;
+    padding: 28px 15px 24px;
+  }
+  .footer-primary__nav {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+}
+/* ==========================================================================
+   Map
+   ========================================================================== */
+
+.mapboxgl-canvas {
+  outline: none;
+}
+
+.mapboxgl-canvas:focus-visible {
+  outline: 5px auto focus-ring-color;
+  outline: 5px auto -webkit-focus-ring-color;
+}
+
+.map-container {
+  max-width: 900px;
+  height: 440px;
+  border-radius: 3px 3px 0 0;
+  position: relative;
+}
+
+.map {
+  position: absolute !important;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+#after {
+  filter: grayscale(1);
+}
+
+.mapboxgl-compare {
+  background-color: #222;
+}
+.mapboxgl-compare .compare-swiper-vertical {
+transform: scale(.8);
+    box-shadow: none;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #222;
+}
+
+.map__controls {
+  background-color: #eeeeee;
+  color: #212121;
+  z-index: 5000;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  font-size: 14px;
+  padding: 4px 8px;
+}
+
+.map__label:last-child {
+  margin-right: 0;
+}
+
+.map__label {
+  margin-right: 8px;
+  user-select: none;
+}
+
+.map__checkbox {
+  position: relative;
+  top: 1px;
+  margin-right: 2px;
+}
+
+.hero .mapboxgl-map {
+  font-family: "Atlas Grotesk Web", -apple-system, BlinkMacSystemFont,
+    avenir next, avenir, segoe ui, helvetica neue, helvetica, Ubuntu, roboto,
+    noto, arial, sans-serif;
+}
+
+.mapboxgl-ctrl-top-right {
+  transform: scale(0.8);
+}
+
+.map.texturemap-on .mapboxgl-canvas {
+  filter: grayscale(1);
+}
+
+@media only screen and (max-width: 1120px) {
+  .map-container {
+    height: 400px;
+    margin-right: -15px;
+  }
+}
+
+@media only screen and (max-width: 1020px) {
+  .map-container {
+    height: 480px;
+    margin-right: -15px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .map-container {
+    display: none;
+  }
+}
+
+/* ==========================================================================
+   Hero
+   ========================================================================== */
+
+.hero {
+  display: grid;
+  column-gap: 60px;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.section-hero {
+  background-color: #212121;
+  margin-top: 0;
+  padding-top: 40px;
+}
+
+.section-hero h1,
+.section-hero h2,
+.section-hero h3,
+.section-hero p {
+  color: #fff;
+}
+
+.hero__content {
+  max-width: 550px;
+}
+
+.hero__buttons {
+  margin-top: 36px;
+  font-size: 19px;
+}
+
+.hero__button-gettingstarted {
+  background: #008fa2;
+  border: 2px solid #008fa2;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: 500;
+  margin-right: 10px;
+  width: 180px;
+  display: inline-block;
+  text-align: center;
+  line-height: 0;
+  padding: 23px 0 23px;
+  transition: 100ms ease-in-out all;
+}
+
+.hero__button-download {
+  background: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 00;
+  width: 180px;
+  display: inline-block;
+  text-align: center;
+  line-height: 0;
+  padding: 23px 0 23px;
+  transition: 100ms ease-in-out all;
+}
+
+.hero__button-gettingstarted:hover,
+.hero__button-download:hover {
+  background-color: #007180;
+  border-color: #007180;
+  color: #fff;
+}
+
+@media only screen and (max-width: 768px) {
+  .hero {
+    grid-template-columns: 1fr;
+  }
+  .map {
+    display: none;
+  }
+  .section-hero {
+    padding: 20px 0 40px;
+  }
+}
+
+@media only screen and (max-width: 1120px) {
+  .hero__buttons {
+    font-size: 16px;
+    margin-top: 32px;
+  }
+
+  .hero__button-gettingstarted {
+    width: auto;
+    padding: 17px 12px 19px;
+    margin-right: 6px;
+  }
+  .hero__button-download {
+    width: auto;
+    padding: 17px 12px 19px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .section-hero {
+    padding: 0 0 30px;
+  }
+}
+
+/* ==========================================================================
+   Types
+   ========================================================================== */
+
+.types {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.section-types {
+  margin: 0;
+  z-index: 2;
+  position: relative;
+  background: #fff;
+}
+
+.types__links {
+  color: #ccc;
+  margin-top: 16px;
+  display: none;
+}
+
+.types__heading {
+  margin-bottom: 19px;
+}
+
+.types__item {
+  background-color: #fff;
+  padding: 60px 30px;
+  flex: 1;
+  border-right: 1px solid #eee;
+  display: grid;
+  column-gap: 40px;
+  row-gap: 2px;
+  grid-template-columns: 1fr;
+}
+
+.types__item:first-of-type {
+  padding-left: 0;
+}
+
+.types__item:last-of-type {
+  padding-right: 0;
+  border-right: none;
+}
+
+.types__image {
+  border: 1px solid #eee;
+  width: 391px;
+  box-sizing: content-box;
+  border-radius: 3px;
+}
+
+@media only screen and (max-width: 768px) {
+  .types {
+    display: block;
+  }
+  .types__item {
+    column-gap: 40px;
+    grid-template-columns: 1fr 1fr;
+    border-right-width: 0;
+    border-bottom: 1px solid #eee;
+    padding: 30px 0;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .types {
+    display: block;
+  }
+  .types__item {
+    grid-template-columns: 1fr;
+    padding: 30px 0;
+  }
+}
+
+/* ==========================================================================
+   Resources
+   ========================================================================== */
+
+.section-accessibility {
+  background: #eeeeee;
+  padding: 60px 0;
+}
+
+.resources {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  column-gap: 20px;
+  row-gap: 15px;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.resources__link {
+  font-size: 19px;
+  font-weight: 500;
+  color: #212121;
+  margin: 8px 0;
+  display: inline-block;
+}
+
+.accessibility__primary {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  column-gap: 60px;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 40px;
+}
+
+.accessibility__image {
+  width: 513px;
+}
+
+.accessibility__secondary {
+  padding-top: 60px;
+  margin-top: 60px;
+  border-top: 1px solid #c9c9c9;
+}
+
+@media only screen and (max-width: 768px) {
+  .accessibility__primary {
+    grid-template-columns: 1fr;
+  }
+  .resources {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .section-accessibility {
+    padding: 30px 0;
+  }
+  .accessibility__secondary {
+    grid-template-columns: 1fr;
+    padding-top: 30px;
+    margin-top: 30px;
+  }
+  .resources {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden,
+[hidden] {
+  display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ *
+ * 1. For long content, line feeds are not interpreted as spaces and small width
+ *    causes content to wrap 1 word per line:
+ *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+ */
+
+.sr-only {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  /* 1 */
+}
+
+/*
+ * Extends the .sr-only class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.sr-only.focusable:active,
+.sr-only.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  white-space: inherit;
+  width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+  visibility: hidden;
+}
