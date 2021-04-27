@@ -274,10 +274,6 @@ img {
 .header-primary__logo {
 }
 
-.header-primary__logo > img {
-  height: 32px;
-}
-
 .header-primary__nav {
   flex: 1;
   text-align: right;
@@ -373,6 +369,7 @@ img {
   max-width: 900px;
   height: 440px;
   border-radius: 3px 3px 0 0;
+  background-color: #424242;
 }
 
 .map__controls {
