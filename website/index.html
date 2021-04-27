@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link defer href="css/mapboxgl.css" rel="stylesheet" />
+    <script defer src="js/mapboxgl.js"></script>
     <meta charset="utf-8" />
     <title>
       TextureMap: textures, patterns, and shapes for web map accessibility
@@ -48,7 +50,6 @@
     <meta name="theme-color" content="#333333" />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/main.css" />
-    <link href="css/mapboxgl.css" rel="stylesheet" />
     <meta name="theme-color" content="#fafafa" />
   </head>
 
@@ -332,12 +333,5 @@
         </nav>
       </div>
     </footer>
-    <script>
-      if (window.innerWidth > 768) {
-        console.log("wide enough");
-        document.write('<script src="js/mapboxgl.js"><\/script>');
-        document.write('<script src="js/map.js"><\/script>');
-      }
-    </script>
   </body>
 </html>

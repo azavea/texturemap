@@ -113,7 +113,6 @@ html {
   font-weight: 500;
   font-style: normal;
   font-stretch: normal;
-  font-display: swap;
 }
 
 @font-face {
@@ -123,7 +122,6 @@ html {
   font-weight: 400;
   font-style: normal;
   font-stretch: normal;
-  font-display: swap;
 }
 
 body {

@@ -128,8 +128,6 @@ function toggleMonochromacy() {
   }
 }
 
-map.on("style.load", () => {});
-
 map.addControl(
   new mapboxgl.NavigationControl({ showCompass: false }),
   "top-right"
