@@ -360,7 +360,9 @@ img {
   max-width: 900px;
   height: 440px;
   border-radius: 3px 3px 0 0;
-  background-color: #424242;
+  background-color: var(--color-gray-400);
+  background-image: url('../img/placeholder.webp');
+  background-size: cover;
 }
 
 .map__iframe {
