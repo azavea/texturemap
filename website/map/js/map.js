@@ -22,7 +22,7 @@ var map = new mapboxgl.Map({
         id: "background",
         type: "background",
         paint: {
-          "background-color": "#424242"
+          "background-color": "#fff"
         }
       },
 

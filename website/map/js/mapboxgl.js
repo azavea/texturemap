@@ -64,7 +64,7 @@ var map = new mapboxgl.Map({
         id: "background",
         type: "background",
         paint: {
-          "background-color": "#424242"
+          "background-color": "#fff"
         }
       },
 
@@ -169,8 +169,6 @@ function toggleMonochromacy() {
     document.getElementById("map").classList.remove("texturemap-on");
   }
 }
-
-map.on("style.load", () => {});
 
 map.addControl(
   new mapboxgl.NavigationControl({ showCompass: false }),
