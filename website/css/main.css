@@ -360,7 +360,7 @@ img {
   max-width: 900px;
   height: 440px;
   border-radius: 3px 3px 0 0;
-  background-color: var(--color-gray-400);
+  background-color: #fff;
 }
 
 .map__iframe {
