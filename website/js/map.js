@@ -10,20 +10,20 @@ var map = new mapboxgl.Map({
     version: 8,
     name: "Blank",
     id: "blank",
-    sprite: window.location.href + "js/polygons-sprite@2x",
+    sprite: window.location.href + "js/polygons-sprite",
     sources: {
       polygons: {
         type: "geojson",
-        data: "js/polygon.geojson",
-      },
+        data: "js/polygon.geojson"
+      }
     },
     layers: [
       {
         id: "background",
         type: "background",
         paint: {
-          "background-color": "#fff",
-        },
+          "background-color": "#fff"
+        }
       },
 
       {
@@ -53,10 +53,10 @@ var map = new mapboxgl.Map({
             8,
             "#17becf",
             9,
-            "#8c564b",
+            "#8c564b"
           ],
-          "fill-opacity": 1,
-        },
+          "fill-opacity": 1
+        }
       },
       {
         id: "polygons-texture",
@@ -83,12 +83,12 @@ var map = new mapboxgl.Map({
             8,
             "tmpoly-line-vertical-light-100-black",
             9,
-            "tmpoly-plus-200-black",
+            "tmpoly-plus-200-black"
           ],
-          "fill-opacity": 0.75,
-        },
-      },
-    ],
+          "fill-opacity": 0.75
+        }
+      }
+    ]
   },
   minZoom: defaultZoom,
   center: defaultCenter,
@@ -101,13 +101,13 @@ var map = new mapboxgl.Map({
     -75.17986178398132,
     39.976330828104786,
     -75.17422914505005,
-    39.979849588073435,
-  ],
+    39.979849588073435
+  ]
 });
 
 var state = {
   monochromacy: true,
-  texturemap: true,
+  texturemap: true
 };
 
 function toggleTexturemap() {

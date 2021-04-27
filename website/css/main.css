@@ -81,6 +81,22 @@ textarea {
    Base styles
    ========================================================================== */
 
+:root {
+  --color-gray-500: #212121;
+  --color-gray-400: #424242;
+  --color-primary-500: #007180;
+  --color-primary-400: #008fa2;
+  --font-size-500: 54px;
+  --font-size-400: 32px;
+  --font-size-300: 23px;
+  --font-size-200: 19px;
+  --font-size-100: 16px;
+  --font-size-50: 14px;
+  --font-family: "Atlas Grotesk Web", -apple-system, BlinkMacSystemFont,
+    avenir next, avenir, segoe ui, helvetica neue, helvetica, Ubuntu, roboto,
+    noto, arial, sans-serif;
+}
+
 html {
   box-sizing: border-box;
 }
@@ -89,6 +105,7 @@ html {
 *:after {
   box-sizing: inherit;
 }
+
 @font-face {
   font-family: "Atlas Grotesk Web";
   src: url("../fonts/AtlasGrotesk-Medium-Web.woff2") format("woff2"),
@@ -97,6 +114,7 @@ html {
   font-style: normal;
   font-stretch: normal;
 }
+
 @font-face {
   font-family: "Atlas Grotesk Web";
   src: url("../fonts/AtlasGrotesk-Regular-Web.woff2") format("woff2"),
@@ -107,24 +125,22 @@ html {
 }
 
 body {
-  font-size: 16px;
-  font-family: "Atlas Grotesk Web", -apple-system, BlinkMacSystemFont,
-    avenir next, avenir, segoe ui, helvetica neue, helvetica, Ubuntu, roboto,
-    noto, arial, sans-serif;
+  font-size: var(--font-size-100);
+  font-family: var(--font-family);
   font-weight: 400;
   line-height: 1.6;
-  color: #424242;
+  color: var(--color-gray-400);
   text-rendering: optimizeLegibility;
 }
 
 a {
-  color: #212121;
+  color: var(--color-gray-500);
   text-decoration: underline;
   transition: 100ms ease-in-out all;
 }
 
 a:hover {
-  color: #008fa2;
+  color: var(--color-primary-400);
 }
 
 p {
@@ -137,7 +153,7 @@ p:last-child {
 }
 
 p.large {
-  font-size: 23px;
+  font-size: var(--font-size-300);
 }
 
 h1,
@@ -147,7 +163,7 @@ h4 {
   font-weight: 500;
   max-width: 640px;
   line-height: 1.2;
-  color: #212121;
+  color: var(--color-gray-500);
 }
 
 h1:first-child,
@@ -170,16 +186,16 @@ img {
 
 @media only screen and (max-width: 1120px) {
   p.large {
-    font-size: 19px;
+    font-size: var(--font-size-200);
   }
 }
 
 @media only screen and (max-width: 560px) {
   body {
-    font-size: 14px;
+    font-size: var(--font-size-50);
   }
   p.large {
-    font-size: 16px;
+    font-size: var(--font-size-100);
   }
 }
 
@@ -188,53 +204,53 @@ img {
    ========================================================================== */
 
 .heading-size--500 {
-  font-size: 54px;
+  font-size: var(--font-size-500);
   margin-bottom: 24px;
 }
 
 .heading-size--400 {
-  font-size: 32px;
+  font-size: var(--font-size-400);
   margin-bottom: 24px;
 }
 
 .heading-size--300 {
-  font-size: 23px;
+  font-size: var(--font-size-300);
   margin-bottom: 18px;
 }
 
 .heading-size--200 {
-  font-size: 19px;
+  font-size: var(--font-size-200);
   margin-bottom: 16px;
 }
 
 .heading-size--100 {
-  font-size: 16px;
+  font-size: var(--font-size-100);
   margin-bottom: 16px;
 }
 
 @media only screen and (max-width: 560px) {
   .heading-size--500 {
-    font-size: 32px;
+    font-size: var(--font-size-400);
     margin-bottom: 24px;
   }
 
   .heading-size--400 {
-    font-size: 23px;
+    font-size: var(--font-size-300);
     margin-bottom: 18px;
   }
 
   .heading-size--300 {
-    font-size: 19px;
+    font-size: var(--font-size-200);
     margin-bottom: 16px;
   }
 
   .heading-size--200 {
-    font-size: 16px;
+    font-size: var(--font-size-100);
     margin-bottom: 16px;
   }
 
   .heading-size--100 {
-    font-size: 14px;
+    font-size: var(--font-size-50);
     margin-bottom: 16px;
   }
 }
@@ -244,7 +260,7 @@ img {
    ========================================================================== */
 
 .header-primary {
-  background-color: #212121;
+  background-color: var(--color-gray-500);
 }
 
 .header-primary__container {
@@ -268,12 +284,12 @@ img {
   margin-left: 10px;
   color: #fff;
   text-decoration: none;
-  font-size: 16px;
+  font-size: var(--font-size-100);
   font-weight: 500;
 }
 
 .header-primary__link:hover {
-  color: #008fa2;
+  color: var(--color-primary-400);
 }
 
 @media only screen and (max-width: 560px) {
@@ -287,7 +303,7 @@ img {
    ========================================================================== */
 
 .footer-primary {
-  background: #222;
+  background-color: var(--color-gray-500);
   color: #fff;
   padding: 40px 0;
 }
@@ -299,7 +315,7 @@ img {
 
 .footer__brand {
   font-weight: 500;
-  font-size: 14px;
+  font-size: var(--font-size-50);
   align-items: center;
   display: flex;
 }
@@ -318,7 +334,7 @@ img {
   margin-left: 10px;
   color: #fff;
   text-decoration: none;
-  font-size: 16px;
+  font-size: var(--font-size-100);
   font-weight: 500;
 }
 
@@ -358,12 +374,12 @@ img {
 
 .map__controls {
   background-color: #eeeeee;
-  color: #212121;
+  color: var(--color-gray-500);
   z-index: 5000;
   position: absolute;
   bottom: 0;
   right: 0;
-  font-size: 14px;
+  font-size: var(--font-size-50);
   padding: 4px 8px;
 }
 
@@ -383,9 +399,7 @@ img {
 }
 
 .hero .mapboxgl-map {
-  font-family: "Atlas Grotesk Web", -apple-system, BlinkMacSystemFont,
-    avenir next, avenir, segoe ui, helvetica neue, helvetica, Ubuntu, roboto,
-    noto, arial, sans-serif;
+  font-family: var(--font-family);
 }
 
 .mapboxgl-ctrl-top-right {
@@ -427,7 +441,7 @@ img {
 }
 
 .section-hero {
-  background-color: #212121;
+  background-color: var(--color-gray-500);
   margin-top: 0;
   padding-top: 40px;
 }
@@ -445,12 +459,12 @@ img {
 
 .hero__buttons {
   margin-top: 36px;
-  font-size: 19px;
+  font-size: var(--font-size-200);
 }
 
 .hero__button-gettingstarted {
-  background: #008fa2;
-  border: 2px solid #008fa2;
+  background-color: var(--color-primary-400);
+  border: 2px solid var(--color-primary-400);
   color: #fff;
   text-decoration: none;
   border-radius: 5px;
@@ -465,12 +479,12 @@ img {
 }
 
 .hero__button-download {
-  background: transparent;
+  background-color: transparent;
   border: 2px solid #fff;
   color: #fff;
   border-radius: 5px;
   text-decoration: none;
-  font-weight: 00;
+  font-weight: 500;
   width: 180px;
   display: inline-block;
   text-align: center;
@@ -481,8 +495,8 @@ img {
 
 .hero__button-gettingstarted:hover,
 .hero__button-download:hover {
-  background-color: #007180;
-  border-color: #007180;
+  background-color: var(--color-primary-500);
+  border-color: var(--color-primary-500);
   color: #fff;
 }
 
@@ -500,7 +514,7 @@ img {
 
 @media only screen and (max-width: 1120px) {
   .hero__buttons {
-    font-size: 16px;
+    font-size: var(--font-size-100);
     margin-top: 32px;
   }
 
@@ -536,7 +550,7 @@ img {
   margin: 0;
   z-index: 2;
   position: relative;
-  background: #fff;
+  background-color: #fff;
 }
 
 .types__links {
@@ -570,8 +584,7 @@ img {
 }
 
 .types__image {
-  border: 1px solid #eee;
-  width: 391px;
+  width: 383px;
   box-sizing: content-box;
   border-radius: 3px;
 }
@@ -604,7 +617,7 @@ img {
    ========================================================================== */
 
 .section-accessibility {
-  background: #eeeeee;
+  background-color: #eeeeee;
   padding: 60px 0;
 }
 
@@ -619,9 +632,9 @@ img {
 }
 
 .resources__link {
-  font-size: 19px;
+  font-size: var(--font-size-200);
   font-weight: 500;
-  color: #212121;
+  color: var(--color-gray-500);
   margin: 8px 0;
   display: inline-block;
 }
@@ -665,6 +678,9 @@ img {
   }
   .resources {
     grid-template-columns: 1fr;
+  }
+  .resources__link {
+    font-size: var(--font-size-100);
   }
 }
 
