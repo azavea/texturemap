@@ -49,7 +49,7 @@
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/main.css" />
     <link
-      href="//cdnjs.cloudflare.com/ajax/libs/mapbox-gl/1.13.1/mapbox-gl.min.css"
+      href="css/mapboxgl.css"
       rel="stylesheet"
     />
     <meta name="theme-color" content="#fafafa" />
@@ -325,8 +325,16 @@
         </nav>
       </div>
     </footer>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/mapbox-gl/1.13.1/mapbox-gl.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/Turf.js/6.3.0/turf.min.js"></script>
-    <script src="js/map.js"></script>
+    <script>
+      if (window.innerWidth > 768) {
+        console.log('wide enough')
+        document.write(
+          '<script src="js/mapboxgl.js"><\/script>'
+        );
+        document.write(
+          '<script src="js/map.js"><\/script>'
+        );
+      }
+    </script>
   </body>
 </html>
