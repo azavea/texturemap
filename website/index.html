@@ -90,7 +90,25 @@
                 <a href="" class="hero__button-download">Download</a>
               </div>
             </div>
-            <div id="map" class="map texturemap-on"></div>
+            <div id="map" class="map texturemap-on">
+              <picture>
+                  <source
+                    srcset="img/placeholder.webp"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="img/placeholder.png"
+                    type="image/png"
+                  />
+                  <img
+                    loading="lazy"
+                    width="100%"
+                    height="auto"
+                    src="img/placeholder.png"
+                    alt="Screenshot of TextureMap"
+                  />
+                </picture>
+            </div>
           </div>
         </div>
       </section>
