@@ -90,14 +90,7 @@
                 <a href="" class="hero__button-download">Download</a>
               </div>
             </div>
-            <div id="map" class="map texturemap-on">
-              <iframe
-                class="map__iframe"
-                loading="lazy"
-                src="map"
-                title="Demo of TextureMap"
-              ></iframe>
-            </div>
+            <div id="map" class="map texturemap-on"></div>
           </div>
         </div>
       </section>
@@ -327,5 +320,11 @@
         </nav>
       </div>
     </footer>
+    <script>
+      if (window.innerWidth > 768) {
+        document.getElementById("map").innerHTML =
+          '<iframe class="map__iframe" loading="lazy" src="map" title="Demo of TextureMap"></iframe>';
+      }
+    </script>
   </body>
 </html>
