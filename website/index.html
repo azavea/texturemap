@@ -321,10 +321,16 @@
       </div>
     </footer>
     <script>
-      if (window.innerWidth > 768) {
-        document.getElementById("map").innerHTML =
-          '<iframe class="map__iframe" loading="lazy" src="map" title="Demo of TextureMap"></iframe>';
+      let mapLoaded = false;
+      function loadMap() {
+        if (!mapLoaded && window.innerWidth > 768) {
+          document.getElementById("map").innerHTML =
+            '<iframe class="map__iframe" loading="lazy" src="map" title="Demo of TextureMap"></iframe>';
+          mapLoaded = true;
+        }
       }
+      window.addEventListener("resize", loadMap);
+      loadMap();
     </script>
   </body>
 </html>
