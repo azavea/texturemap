@@ -48,10 +48,7 @@
     <meta name="theme-color" content="#333333" />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/main.css" />
-    <link
-      href="css/mapboxgl.css"
-      rel="stylesheet"
-    />
+    <link href="css/mapboxgl.css" rel="stylesheet" />
     <meta name="theme-color" content="#fafafa" />
   </head>
 
@@ -147,6 +144,9 @@
                   />
                   <img
                     class="types__image"
+                    loading="lazy"
+                    width="383"
+                    height="260"
                     src="img/texturemap-screenshot-polygons.png"
                     alt="Screenshot of TextureMap applied to polygons"
                   />
@@ -180,6 +180,9 @@
                   />
                   <img
                     class="types__image"
+                    loading="lazy"
+                    width="383"
+                    height="260"
                     src="img/texturemap-screenshot-lines.png"
                     alt="Screenshot of TextureMap applied to lines"
                   />
@@ -212,6 +215,9 @@
                   />
                   <img
                     class="types__image"
+                    loading="lazy"
+                    width="383"
+                    height="260"
                     src="img/texturemap-screenshot-points.png"
                     alt="Screenshot of TextureMap applied to points"
                   />
@@ -266,6 +272,7 @@
                 <img
                   class="accessibility__image"
                   src="img/accessibility-photos.jpg"
+                  loading="lazy"
                   alt="A collage of three photos intended: one photo of a hand holding a phone displaying a map, one photo of a woman holding a paper map, one photo of a close up paper map"
                 />
               </picture>
@@ -327,13 +334,9 @@
     </footer>
     <script>
       if (window.innerWidth > 768) {
-        console.log('wide enough')
-        document.write(
-          '<script src="js/mapboxgl.js"><\/script>'
-        );
-        document.write(
-          '<script src="js/map.js"><\/script>'
-        );
+        console.log("wide enough");
+        document.write('<script src="js/mapboxgl.js"><\/script>');
+        document.write('<script src="js/map.js"><\/script>');
       }
     </script>
   </body>
