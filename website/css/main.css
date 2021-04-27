@@ -274,6 +274,7 @@ img {
 }
 
 .header-primary__logo > img {
+  width: 170px;
   height: 32px;
 }
 
@@ -313,6 +314,7 @@ img {
 .footer__logo {
   position: relative;
   height: 32px;
+  width: 131px;
 }
 
 .footer__brand {
@@ -587,6 +589,7 @@ img {
 
 .types__image {
   width: 383px;
+  height: 260px;
   box-sizing: content-box;
   border-radius: 3px;
 }
@@ -652,6 +655,7 @@ img {
 
 .accessibility__image {
   width: 513px;
+  height: 429px;
 }
 
 .accessibility__secondary {
