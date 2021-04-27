@@ -1,0 +1,54 @@
+
+.mapboxgl-canvas {
+  outline: none;
+}
+
+.mapboxgl-canvas:focus-visible {
+  outline: 5px auto focus-ring-color;
+  outline: 5px auto -webkit-focus-ring-color;
+}
+
+.map {
+  max-width: 900px;
+  height: 440px;
+  border-radius: 3px 3px 0 0;
+  background-color: #424242;
+}
+
+.map__controls {
+  background-color: #eeeeee;
+  color: var(--color-gray-500);
+  z-index: 5000;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  font-size: var(--font-size-50);
+  padding: 4px 8px;
+}
+
+.map__label:last-child {
+  margin-right: 0;
+}
+
+.map__label {
+  margin-right: 8px;
+  user-select: none;
+}
+
+.map__checkbox {
+  position: relative;
+  top: 1px;
+  margin-right: 2px;
+}
+
+.hero .mapboxgl-map {
+  font-family: var(--font-family);
+}
+
+.mapboxgl-ctrl-top-right {
+  transform: scale(0.8);
+}
+
+.map.texturemap-on .mapboxgl-canvas {
+  filter: grayscale(1);
+}
