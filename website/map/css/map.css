@@ -55,5 +55,5 @@ html, body, main, aside {
 }
 
 .map.texturemap-on .mapboxgl-canvas {
-  filter: grayscale(1);
+    /*filter: grayscale(1);*/
 }

@@ -40,8 +40,6 @@ return mapboxgl;
 
 })));
 
-mapboxgl.accessToken =
-  "pk.eyJ1IjoiYXphdmVhIiwiYSI6IkFmMFBYUUUifQ.eYn6znWt8NzYOa3OrWop8A";
 var defaultCenter = { lng: -75.17705316570994, lat: 39.97833441433514 };
 var defaultZoom = 16.5;
 var defaultBearing = 0;
@@ -118,6 +116,8 @@ var map = new mapboxgl.Map({
             "tmpoly-line-vertical-down-light-100-black",
             4,
             "tmpoly-caret-200-black",
+            5,
+            "transparent",
             6,
             "tmpoly-square-100-black",
             7,
