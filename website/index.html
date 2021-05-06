@@ -366,11 +366,11 @@
           document.getElementById("map").innerHTML =
             '<iframe class="map__iframe" loading="lazy" src="map" title="Demo of TextureMap"></iframe>';
           mapLoaded = true;
-          document
-            .getElementById("toggle-monochromacy")
-            .addEventListener("click", toggleMonochromacy);
         }
       }
+           document
+            .getElementById("toggle-monochromacy")
+            .addEventListener("click", toggleMonochromacy);
       loadMap();
       window.addEventListener("resize", loadMap);
     </script>

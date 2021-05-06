@@ -136,7 +136,7 @@ body {
   text-rendering: optimizeLegibility;
 }
 
-html.simulate-monochromacy {
+html.simulate-monochromacy header,html.simulate-monochromacy main,  {
   filter: grayscale(1);
 }
 
