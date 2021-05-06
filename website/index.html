@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html id="html" lang="en">
   <head>
     <link defer rel="stylesheet" href="css/normalize.css" />
     <link defer rel="stylesheet" href="css/main.css" />
@@ -51,7 +51,7 @@
     <meta name="theme-color" content="#fafafa" />
   </head>
 
-  <body id="body">
+  <body>
     <header class="header-primary">
       <div class="container header-primary__container">
         <h1 class="sr-only">TextureMap</h1>
@@ -64,12 +64,11 @@
           />
         </div>
         <nav aria-label="Header navigation" class="header-primary__nav">
-          <a class="header-primary__link" href="#">Documentation</a>
-          <a class="header-primary__link" href="#">Github</a>
-                    <div class="header-primary__divider"></div>
-
-          <button class="header-primary__button" id="toggle-monochromacy"><img src="img/eye-solid.svg" alt="">Simulate monochromacy</button>
+          <a class="footer-primary__link" href="#">Documentation</a>
+          <a class="footer-primary__link" href="#">Download</a>
+          <a class="footer-primary__link" href="#">Github</a>
         </nav>
+
       </div>
     </header>
     <main>
@@ -86,9 +85,7 @@
                 MapLibre GL.
               </p>
               <div class="hero__buttons">
-                <a href="" class="hero__button-gettingstarted"
-                  >Get started</a
-                >
+                <a href="" class="hero__button-gettingstarted">Get started</a>
                 <a href="" class="hero__button-download">Download</a>
               </div>
             </div>
@@ -104,7 +101,8 @@
               <div class="types__left">
                 <h3 class="types__heading heading-size--400">Polygons</h3>
                 <p>
-                  Shape up your polygon layers by offering an accessibility-boosting pattern fill.
+                  Shape up your polygon layers by offering an
+                  accessibility-boosting pattern fill.
                 </p>
                 <div class="types__links">
                   <a href=""
@@ -139,10 +137,8 @@
               <div class="types__left">
                 <h3 class="types__heading heading-size--400">Lines</h3>
                 <p>
-
-                  Use dashes and gaps for unique line styles.
-                  People will line up to see your maps.
-
+                  Use dashes and gaps for unique line styles. People will line
+                  up to see your maps.
                 </p>
                 <div class="types__links">
                   <a href=""
@@ -177,8 +173,8 @@
               <div class="types__left">
                 <h3 class="types__heading heading-size--400">Points</h3>
                 <p>
-                  Allow everyone to get your point. These symbols are as
-                  fun as they are functional.
+                  Allow everyone to get your point. These symbols are as fun as
+                  they are functional.
                 </p>
                 <div class="types__links">
                   <a href=""
@@ -219,8 +215,9 @@
             <div>
               <h3 class="heading-size--400">About maps and accessibility</h3>
               <p>
-              Digital maps have enabled a revolution
-                in wayfinding, planning, and analysis. But for many people, a map can be a barrier to using a website.
+                Digital maps have enabled a revolution in wayfinding, planning,
+                and analysis. But for many people, a map can be a barrier to
+                using a website.
               </p>
               <p>
                 During the Covid-19 pandemic, blind people were
@@ -242,8 +239,9 @@
               <p>
                 TextureMap can make your map work better for people with color
                 vision deficiency. But we want to be clear that it isn’t a
-                complete solution. For a truly accessible
-                experience, you will need to provide your users with a great experience that is not centered on a map.
+                complete solution. For a truly accessible experience, you will
+                need to provide your users with a great experience that is not
+                centered on a map.
               </p>
             </div>
             <div>
@@ -325,6 +323,28 @@
           <a class="footer-primary__link" href="#">Github</a>
         </nav>
       </div>
+      <div class="simulate-button">
+
+            <button class="header-primary__button" id="toggle-monochromacy">
+              <svg
+                aria-hidden="true"
+                focusable="false"
+                data-prefix="fas"
+                data-icon="eye"
+                class="svg-inline--fa fa-eye fa-w-18"
+                role="img"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 576 512"
+              >
+                <path
+                  fill="currentColor"
+                  d="M572.52 241.4C518.29 135.59 410.93 64 288 64S57.68 135.64 3.48 241.41a32.35 32.35 0 0 0 0 29.19C57.71 376.41 165.07 448 288 448s230.32-71.64 284.52-177.41a32.35 32.35 0 0 0 0-29.19zM288 400a144 144 0 1 1 144-144 143.93 143.93 0 0 1-144 144zm0-240a95.31 95.31 0 0 0-25.31 3.79 47.85 47.85 0 0 1-66.9 66.9A95.78 95.78 0 1 0 288 160z"
+                ></path>
+              </svg>
+              Simulate monochromacy
+            </button>
+
+        </div>
     </footer>
     <script>
       let mapLoaded = false;
@@ -332,9 +352,13 @@
       function toggleMonochromacy() {
         monochromacySimulation = !monochromacySimulation;
         if (monochromacySimulation) {
-           document.getElementById("body").classList.add("simulate-monochromacy");
+          document
+            .getElementById("html")
+            .classList.add("simulate-monochromacy");
         } else {
-           document.getElementById("body").classList.remove("simulate-monochromacy");
+          document
+            .getElementById("html")
+            .classList.remove("simulate-monochromacy");
         }
       }
       function loadMap() {
@@ -342,7 +366,9 @@
           document.getElementById("map").innerHTML =
             '<iframe class="map__iframe" loading="lazy" src="map" title="Demo of TextureMap"></iframe>';
           mapLoaded = true;
-          document.getElementById("toggle-monochromacy").addEventListener("click", toggleMonochromacy);
+          document
+            .getElementById("toggle-monochromacy")
+            .addEventListener("click", toggleMonochromacy);
         }
       }
       loadMap();

@@ -92,6 +92,7 @@ textarea {
   --font-size-200: 19px;
   --font-size-100: 16px;
   --font-size-50: 14px;
+  --container-width: 1300px;
   --font-family: "Atlas Grotesk Web", -apple-system, BlinkMacSystemFont,
     avenir next, avenir, segoe ui, helvetica neue, helvetica, Ubuntu, roboto,
     noto, arial, sans-serif;
@@ -135,7 +136,7 @@ body {
   text-rendering: optimizeLegibility;
 }
 
-body.simulate-monochromacy {
+html.simulate-monochromacy {
   filter: grayscale(1);
 }
 
@@ -294,53 +295,51 @@ img {
 
 .header-primary__button {
   margin-left: 10px;
-  color: #fff;
+  color: var(--color-gray-500);
   text-decoration: none;
   font-size: var(--font-size-100);
   font-weight: 500;
-  border: 2px solid transparent;
+  border: 2px solid var(--color-gray-500);
   padding-left: 10px;
-  background: transparent;
+  background: #fff;
   padding: 8px 10px;
   cursor: pointer;
   border-radius: 100px;
+  box-shadow: 0 1px 6px 0 rgb(0 0 0 / 6%), 0 2px 32px 0 rgb(0 0 0 / 16%);
 }
 
-.header-primary__button:hover {
-  border-color: #fff;
+.simulate-button {
+  position: fixed;
+  z-index: 200000000;
+  bottom: 20px;
+  right: 0;
+  left: 0;
+  max-width: var(--container-width);
+  margin-left: auto;
+  margin-right: auto;
+  text-align: right;
+  padding: 0 15px;
 }
 
-body.simulate-monochromacy .header-primary__button {
-  background: #cccccc24;
-}
-
-.header-primary__divider {
-  height: 20px;
-  width: 1px;
-  display: inline-block;
-  position: relative;
-  left: 10px;
-  top: -6px;
-  opacity: 0.2;
-  margin: 0 4px;
-}
-
-.header-primary__divider:after {
-  content: "";
-  position: absolute;
-  width: 1px;
-  height: 38px;
-  background: #fff;
-}
-
-@media only screen and (max-width: 768px) {
-  .header-primary__divider {
+@media only screen and (max-width: 560px) {
+  .simulate-button {
     display: none;
   }
 }
 
+.header-primary__button:hover {
+  background-color: var(--color-primary-400);
+  border: 2px solid var(--color-primary-400);
+  color: #fff;
+}
 
-.header-primary__button > img {
+html.simulate-monochromacy .header-primary__button {
+  background-color: var(--color-primary-500);
+  border: 2px solid var(--color-primary-500);
+  color: #fff;
+}
+
+.header-primary__button > svg {
   width: 22px;
   margin-right: 8px;
   margin-top: -6px;
@@ -403,9 +402,14 @@ body.simulate-monochromacy .header-primary__button {
   .footer-primary__container {
     display: flex;
     padding: 28px 15px 24px;
+    flex-direction: column;
   }
   .footer-primary__nav {
-    display: none;
+    display: flex;
+    text-align: left;
+    margin-left: -10px;
+    margin-bottom: 20px;
+    order: -1;
   }
 }
 
@@ -419,7 +423,7 @@ body.simulate-monochromacy .header-primary__button {
   max-width: 900px;
   height: 440px;
   border-radius: 3px 3px 0 0;
-  background-color: #fff;
+  background-color: var(--color-gray-500);
   overflow: hidden;
 }
 
