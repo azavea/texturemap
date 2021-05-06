@@ -135,6 +135,10 @@ body {
   text-rendering: optimizeLegibility;
 }
 
+body.simulate-monochromacy {
+  filter: grayscale(1);
+}
+
 a {
   color: var(--color-gray-500);
   text-decoration: underline;
@@ -285,6 +289,61 @@ img {
   text-decoration: none;
   font-size: var(--font-size-100);
   font-weight: 500;
+  background: none;
+}
+
+.header-primary__button {
+  margin-left: 10px;
+  color: #fff;
+  text-decoration: none;
+  font-size: var(--font-size-100);
+  font-weight: 500;
+  border: 2px solid transparent;
+  padding-left: 10px;
+  background: transparent;
+  padding: 8px 10px;
+  cursor: pointer;
+  border-radius: 100px;
+}
+
+.header-primary__button:hover {
+  border-color: #fff;
+}
+
+body.simulate-monochromacy .header-primary__button {
+  background: #cccccc24;
+}
+
+.header-primary__divider {
+  height: 20px;
+  width: 1px;
+  display: inline-block;
+  position: relative;
+  left: 10px;
+  top: -6px;
+  opacity: 0.2;
+  margin: 0 4px;
+}
+
+.header-primary__divider:after {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 38px;
+  background: #fff;
+}
+
+@media only screen and (max-width: 768px) {
+  .header-primary__divider {
+    display: none;
+  }
+}
+
+
+.header-primary__button > img {
+  width: 22px;
+  margin-right: 8px;
+  margin-top: -6px;
 }
 
 .header-primary__link:hover {
@@ -361,6 +420,7 @@ img {
   height: 440px;
   border-radius: 3px 3px 0 0;
   background-color: #fff;
+  overflow: hidden;
 }
 
 .map__iframe {
@@ -429,7 +489,7 @@ img {
   border-radius: 5px;
   font-weight: 500;
   margin-right: 10px;
-  width: 180px;
+  width: 160px;
   display: inline-block;
   text-align: center;
   line-height: 0;
@@ -444,7 +504,7 @@ img {
   border-radius: 5px;
   text-decoration: none;
   font-weight: 500;
-  width: 180px;
+  width: 160px;
   display: inline-block;
   text-align: center;
   line-height: 0;

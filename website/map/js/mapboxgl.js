@@ -117,7 +117,7 @@ var map = new mapboxgl.Map({
             4,
             "tmpoly-caret-200-black",
             5,
-            "transparent",
+            "none",
             6,
             "tmpoly-square-100-black",
             7,

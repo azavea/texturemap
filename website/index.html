@@ -51,7 +51,7 @@
     <meta name="theme-color" content="#fafafa" />
   </head>
 
-  <body>
+  <body id="body">
     <header class="header-primary">
       <div class="container header-primary__container">
         <h1 class="sr-only">TextureMap</h1>
@@ -65,8 +65,10 @@
         </div>
         <nav aria-label="Header navigation" class="header-primary__nav">
           <a class="header-primary__link" href="#">Documentation</a>
-          <a class="header-primary__link" href="#">Download</a>
           <a class="header-primary__link" href="#">Github</a>
+                    <div class="header-primary__divider"></div>
+
+          <button class="header-primary__button" id="toggle-monochromacy"><img src="img/eye-solid.svg" alt="">Simulate monochromacy</button>
         </nav>
       </div>
     </header>
@@ -85,7 +87,7 @@
               </p>
               <div class="hero__buttons">
                 <a href="" class="hero__button-gettingstarted"
-                  >Getting started</a
+                  >Get started</a
                 >
                 <a href="" class="hero__button-download">Download</a>
               </div>
@@ -139,7 +141,7 @@
                 <p>
 
                   Use dashes and gaps for unique line styles.
-                  People will line up to see your maps!
+                  People will line up to see your maps.
 
                 </p>
                 <div class="types__links">
@@ -326,11 +328,21 @@
     </footer>
     <script>
       let mapLoaded = false;
+      let monochromacySimulation = false;
+      function toggleMonochromacy() {
+        monochromacySimulation = !monochromacySimulation;
+        if (monochromacySimulation) {
+           document.getElementById("body").classList.add("simulate-monochromacy");
+        } else {
+           document.getElementById("body").classList.remove("simulate-monochromacy");
+        }
+      }
       function loadMap() {
         if (!mapLoaded && window.innerWidth > 768) {
           document.getElementById("map").innerHTML =
             '<iframe class="map__iframe" loading="lazy" src="map" title="Demo of TextureMap"></iframe>';
           mapLoaded = true;
+          document.getElementById("toggle-monochromacy").addEventListener("click", toggleMonochromacy);
         }
       }
       loadMap();
