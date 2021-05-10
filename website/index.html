@@ -9,7 +9,7 @@
     </title>
     <meta
       name="description"
-      content="Textures, patterns, and shapes that make web maps work for people with color vision deficiency. Built for Mapbox GL and MapLibre GL."
+      content="Textures, patterns, and shapes that make web maps work for people with colorblindness. Built for Mapbox GL and MapLibre GL."
     />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
@@ -68,7 +68,6 @@
           <a class="footer-primary__link" href="#">Download</a>
           <a class="footer-primary__link" href="#">Github</a>
         </nav>
-
       </div>
     </header>
     <main>
@@ -81,8 +80,7 @@
               </h2>
               <p class="large">
                 Textures, patterns, and shapes that make web maps work for
-                people with color vision deficiency. Built for Mapbox GL and
-                MapLibre GL.
+                people with colorblindness. Built for Mapbox GL and MapLibre GL.
               </p>
               <div class="hero__buttons">
                 <a href="" class="hero__button-gettingstarted">Get started</a>
@@ -220,10 +218,11 @@
                 using a website.
               </p>
               <p>
-                During the Covid-19 pandemic, blind people were
+                During the Covid-19 pandemic,
                 <a
                   href="https://www.nbcnews.com/business/consumer/blind-americans-face-roadblocks-booking-online-vaccine-appointments-n1260954"
-                  >blocked from booking vaccine appointments</a
+                  >blind people were blocked from booking vaccine
+                  appointments</a
                 >
                 because a website required users to interact with a map to
                 complete the process. As cartographers, designers, and
@@ -231,17 +230,16 @@
               </p>
               <p>
                 One rule of thumb is to think of a map as a supplement to more
-                accessible forms of information and interaction. Offer data in
-                other formats, such as tables and lists. Design workflows that
-                don’t depend on a map to get to the next step. Ask: if the map
-                disappeared, could a user still complete their task?
+                accessible forms of information and interaction. Offer data as
+                tables, lists, and text. Design workflows that don’t depend on a
+                map to get to the next step. Ask: if the map disappeared, could
+                a user still complete their task?
               </p>
               <p>
-                TextureMap can make your map work better for people with color
-                vision deficiency. But we want to be clear that it isn’t a
-                complete solution. For a truly accessible experience, you will
-                need to provide your users with a great experience that is not
-                centered on a map.
+                TextureMap can make your map work better for colorblind users.
+                But we want to be clear that it isn’t a complete solution. For a
+                truly accessible experience, you will need to provide your users
+                with a great experience that is not centered on a map.
               </p>
             </div>
             <div>
@@ -324,27 +322,25 @@
         </nav>
       </div>
       <div class="simulate-button">
-
-            <button class="header-primary__button" id="toggle-monochromacy">
-              <svg
-                aria-hidden="true"
-                focusable="false"
-                data-prefix="fas"
-                data-icon="eye"
-                class="svg-inline--fa fa-eye fa-w-18"
-                role="img"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 576 512"
-              >
-                <path
-                  fill="currentColor"
-                  d="M572.52 241.4C518.29 135.59 410.93 64 288 64S57.68 135.64 3.48 241.41a32.35 32.35 0 0 0 0 29.19C57.71 376.41 165.07 448 288 448s230.32-71.64 284.52-177.41a32.35 32.35 0 0 0 0-29.19zM288 400a144 144 0 1 1 144-144 143.93 143.93 0 0 1-144 144zm0-240a95.31 95.31 0 0 0-25.31 3.79 47.85 47.85 0 0 1-66.9 66.9A95.78 95.78 0 1 0 288 160z"
-                ></path>
-              </svg>
-              Simulate monochromacy
-            </button>
-
-        </div>
+        <button class="header-primary__button" id="toggle-monochromacy">
+          <svg
+            aria-hidden="true"
+            focusable="false"
+            data-prefix="fas"
+            data-icon="eye"
+            class="svg-inline--fa fa-eye fa-w-18"
+            role="img"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 576 512"
+          >
+            <path
+              fill="currentColor"
+              d="M572.52 241.4C518.29 135.59 410.93 64 288 64S57.68 135.64 3.48 241.41a32.35 32.35 0 0 0 0 29.19C57.71 376.41 165.07 448 288 448s230.32-71.64 284.52-177.41a32.35 32.35 0 0 0 0-29.19zM288 400a144 144 0 1 1 144-144 143.93 143.93 0 0 1-144 144zm0-240a95.31 95.31 0 0 0-25.31 3.79 47.85 47.85 0 0 1-66.9 66.9A95.78 95.78 0 1 0 288 160z"
+            ></path>
+          </svg>
+          Simulate monochromacy
+        </button>
+      </div>
     </footer>
     <script>
       let mapLoaded = false;
@@ -368,9 +364,9 @@
           mapLoaded = true;
         }
       }
-           document
-            .getElementById("toggle-monochromacy")
-            .addEventListener("click", toggleMonochromacy);
+      document
+        .getElementById("toggle-monochromacy")
+        .addEventListener("click", toggleMonochromacy);
       loadMap();
       window.addEventListener("resize", loadMap);
     </script>
