@@ -17,7 +17,7 @@ TextureMap polygons use the Mapbox `fill-pattern` property to add a pattern laye
 1. Open a project in Mapbox Studio
 2. Open the "Images" tab from header
 3. Switch to the "Custom" tab
-4. Upload images from `dist/polygons`
+4. Upload images from [`dist/polygons`](`dist/polygons`)
 5. Create or edit a fill (polygons) or symbol (points) layer
 6. Set the "Pattern" property to an image from TextureMap
 
@@ -71,13 +71,13 @@ TextureMap points use the Mapbox `icon-image` property on a `symbol` layer.
 1. Open a project in Mapbox Studio
 2. Open the "Images" tab from header
 3. Switch to the "Custom" tab
-4. Upload images from `dist/points`
+4. Upload images from [`dist/points`](`dist/points`)
 5. Create or edit a symbol layer
 6. Under the "Icon" tab, set the "Image" property to a image from TextureMap
 
 #### Mapbox GL (without Mapbox Studio) or MapLibre GL
 
-If you are working directly with the Mapbox GL or MapLibre libraries, you will need the TextureMap images as a [sprite](https://docs.mapbox.com/help/glossary/sprite/). You can download these from `dist/sprites` or generate them yourself using [spritezero](https://github.com/mapbox/spritezero). See `examples/polygons` for an example that uses a sprite generated from this method.
+If you are working directly with the Mapbox GL or MapLibre libraries, you will need the TextureMap images as a [sprite](https://docs.mapbox.com/help/glossary/sprite/). You can download these from `dist/sprites` or generate them yourself using [spritezero](https://github.com/mapbox/spritezero). See `examples/points` for an example that uses a sprite generated from this method.
 
 ## Best Practices
 
