@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>TextureMap Demo</title>
+    <meta
+      name="viewport"
+      content="initial-scale=1,maximum-scale=1,user-scalable=no"
+    />
+    <link
+      href="https://cdn.maptiler.com/maplibre-gl-js/v1.13.0-rc.4/mapbox-gl.css"
+      rel="stylesheet"
+    />
+    <link href="css/main.css" rel="stylesheet" />
+  </head>
+  <body id="body">
+    <div class="intro">
+      <h1>TextureMap Demo</h1>
+      An open source collection of patterns designed for Mapbox GL JS and
+      Maplibre GL JS. Add style and accessibility to your maps.
+      <hr />
+      <label
+        ><input type="checkbox" id="toggle" onclick="toggleTM()" /> Toggle
+        TextureMap</label
+      >
+      <ul class="legend">
+        <li>
+          <div class="legend-item legend-item-2"></div>
+          Rodeo
+        </li>
+        <li>
+          <div class="legend-item legend-item-3"></div>
+          House
+        </li>
+        <li>
+          <div class="legend-item legend-item-4"></div>
+          Grocery
+        </li>
+        <li>
+          <div class="legend-item legend-item-5"></div>
+          Park
+        </li>
+        <li>
+          <div class="legend-item legend-item-6"></div>
+          Factory
+        </li>
+        <li>
+          <div class="legend-item legend-item-7"></div>
+          Airport
+        </li>
+        <li>
+          <div class="legend-item legend-item-8"></div>
+          Church
+        </li>
+        <li>
+          <div class="legend-item legend-item-9"></div>
+          School
+        </li>
+      </ul>
+    </div>
+    <div id="map"></div>
+    <script src="https://cdn.maptiler.com/maplibre-gl-js/v1.13.0-rc.4/mapbox-gl.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

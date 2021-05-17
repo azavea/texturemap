@@ -1,0 +1,1402 @@
+{
+  "tmpoint-asterisk-blue": {
+    "height": 42,
+    "pixelRatio": 2,
+    "width": 40,
+    "x": 228,
+    "y": 116
+  },
+  "tmpoint-asterisk-brown": {
+    "height": 42,
+    "pixelRatio": 2,
+    "width": 40,
+    "x": 268,
+    "y": 116
+  },
+  "tmpoint-asterisk-green": {
+    "height": 42,
+    "pixelRatio": 2,
+    "width": 40,
+    "x": 308,
+    "y": 116
+  },
+  "tmpoint-asterisk-grey": {
+    "height": 42,
+    "pixelRatio": 2,
+    "width": 40,
+    "x": 348,
+    "y": 116
+  },
+  "tmpoint-asterisk-orange": {
+    "height": 42,
+    "pixelRatio": 2,
+    "width": 40,
+    "x": 388,
+    "y": 116
+  },
+  "tmpoint-asterisk-pink": {
+    "height": 42,
+    "pixelRatio": 2,
+    "width": 40,
+    "x": 0,
+    "y": 230
+  },
+  "tmpoint-asterisk-purple": {
+    "height": 42,
+    "pixelRatio": 2,
+    "width": 40,
+    "x": 40,
+    "y": 230
+  },
+  "tmpoint-asterisk-red": {
+    "height": 42,
+    "pixelRatio": 2,
+    "width": 40,
+    "x": 80,
+    "y": 230
+  },
+  "tmpoint-asterisk-slime": {
+    "height": 42,
+    "pixelRatio": 2,
+    "width": 40,
+    "x": 120,
+    "y": 230
+  },
+  "tmpoint-asterisk-teal": {
+    "height": 42,
+    "pixelRatio": 2,
+    "width": 40,
+    "x": 160,
+    "y": 230
+  },
+  "tmpoint-circle-blue": {
+    "height": 44,
+    "pixelRatio": 2,
+    "width": 44,
+    "x": 232,
+    "y": 0
+  },
+  "tmpoint-circle-brown": {
+    "height": 44,
+    "pixelRatio": 2,
+    "width": 44,
+    "x": 276,
+    "y": 0
+  },
+  "tmpoint-circle-green": {
+    "height": 44,
+    "pixelRatio": 2,
+    "width": 44,
+    "x": 320,
+    "y": 0
+  },
+  "tmpoint-circle-grey": {
+    "height": 44,
+    "pixelRatio": 2,
+    "width": 44,
+    "x": 364,
+    "y": 0
+  },
+  "tmpoint-circle-orange": {
+    "height": 44,
+    "pixelRatio": 2,
+    "width": 44,
+    "x": 408,
+    "y": 0
+  },
+  "tmpoint-circle-pink": {
+    "height": 44,
+    "pixelRatio": 2,
+    "width": 44,
+    "x": 232,
+    "y": 58
+  },
+  "tmpoint-circle-purple": {
+    "height": 44,
+    "pixelRatio": 2,
+    "width": 44,
+    "x": 276,
+    "y": 58
+  },
+  "tmpoint-circle-red": {
+    "height": 44,
+    "pixelRatio": 2,
+    "width": 44,
+    "x": 320,
+    "y": 58
+  },
+  "tmpoint-circle-slime": {
+    "height": 44,
+    "pixelRatio": 2,
+    "width": 44,
+    "x": 364,
+    "y": 58
+  },
+  "tmpoint-circle-teal": {
+    "height": 44,
+    "pixelRatio": 2,
+    "width": 44,
+    "x": 408,
+    "y": 58
+  },
+  "tmpoint-hexagon-blue": {
+    "height": 42,
+    "pixelRatio": 2,
+    "width": 44,
+    "x": 200,
+    "y": 230
+  },
+  "tmpoint-hexagon-brown": {
+    "height": 42,
+    "pixelRatio": 2,
+    "width": 44,
+    "x": 244,
+    "y": 230
+  },
+  "tmpoint-hexagon-green": {
+    "height": 42,
+    "pixelRatio": 2,
+    "width": 44,
+    "x": 288,
+    "y": 230
+  },
+  "tmpoint-hexagon-grey": {
+    "height": 42,
+    "pixelRatio": 2,
+    "width": 44,
+    "x": 332,
+    "y": 230
+  },
+  "tmpoint-hexagon-orange": {
+    "height": 42,
+    "pixelRatio": 2,
+    "width": 44,
+    "x": 376,
+    "y": 230
+  },
+  "tmpoint-hexagon-pink": {
+    "height": 42,
+    "pixelRatio": 2,
+    "width": 44,
+    "x": 420,
+    "y": 230
+  },
+  "tmpoint-hexagon-purple": {
+    "height": 42,
+    "pixelRatio": 2,
+    "width": 44,
+    "x": 0,
+    "y": 272
+  },
+  "tmpoint-hexagon-red": {
+    "height": 42,
+    "pixelRatio": 2,
+    "width": 44,
+    "x": 44,
+    "y": 272
+  },
+  "tmpoint-hexagon-slime": {
+    "height": 42,
+    "pixelRatio": 2,
+    "width": 44,
+    "x": 88,
+    "y": 272
+  },
+  "tmpoint-hexagon-teal": {
+    "height": 42,
+    "pixelRatio": 2,
+    "width": 44,
+    "x": 132,
+    "y": 272
+  },
+  "tmpoint-octagon-blue": {
+    "height": 40,
+    "pixelRatio": 2,
+    "width": 40,
+    "x": 638,
+    "y": 116
+  },
+  "tmpoint-octagon-brown": {
+    "height": 40,
+    "pixelRatio": 2,
+    "width": 40,
+    "x": 678,
+    "y": 116
+  },
+  "tmpoint-octagon-green": {
+    "height": 40,
+    "pixelRatio": 2,
+    "width": 40,
+    "x": 718,
+    "y": 116
+  },
+  "tmpoint-octagon-grey": {
+    "height": 40,
+    "pixelRatio": 2,
+    "width": 40,
+    "x": 758,
+    "y": 116
+  },
+  "tmpoint-octagon-orange": {
+    "height": 40,
+    "pixelRatio": 2,
+    "width": 40,
+    "x": 798,
+    "y": 116
+  },
+  "tmpoint-octagon-pink": {
+    "height": 40,
+    "pixelRatio": 2,
+    "width": 40,
+    "x": 838,
+    "y": 116
+  },
+  "tmpoint-octagon-purple": {
+    "height": 40,
+    "pixelRatio": 2,
+    "width": 40,
+    "x": 878,
+    "y": 116
+  },
+  "tmpoint-octagon-red": {
+    "height": 40,
+    "pixelRatio": 2,
+    "width": 40,
+    "x": 0,
+    "y": 440
+  },
+  "tmpoint-octagon-slime": {
+    "height": 40,
+    "pixelRatio": 2,
+    "width": 40,
+    "x": 40,
+    "y": 440
+  },
+  "tmpoint-octagon-teal": {
+    "height": 40,
+    "pixelRatio": 2,
+    "width": 40,
+    "x": 80,
+    "y": 440
+  },
+  "tmpoint-oval-h-blue": {
+    "height": 42,
+    "pixelRatio": 2,
+    "width": 42,
+    "x": 176,
+    "y": 272
+  },
+  "tmpoint-oval-h-brown": {
+    "height": 42,
+    "pixelRatio": 2,
+    "width": 42,
+    "x": 218,
+    "y": 272
+  },
+  "tmpoint-oval-h-green": {
+    "height": 42,
+    "pixelRatio": 2,
+    "width": 42,
+    "x": 260,
+    "y": 272
+  },
+  "tmpoint-oval-h-grey": {
+    "height": 42,
+    "pixelRatio": 2,
+    "width": 42,
+    "x": 302,
+    "y": 272
+  },
+  "tmpoint-oval-h-orange": {
+    "height": 42,
+    "pixelRatio": 2,
+    "width": 42,
+    "x": 344,
+    "y": 272
+  },
+  "tmpoint-oval-h-pink": {
+    "height": 42,
+    "pixelRatio": 2,
+    "width": 42,
+    "x": 386,
+    "y": 272
+  },
+  "tmpoint-oval-h-purple": {
+    "height": 42,
+    "pixelRatio": 2,
+    "width": 42,
+    "x": 0,
+    "y": 314
+  },
+  "tmpoint-oval-h-red": {
+    "height": 42,
+    "pixelRatio": 2,
+    "width": 42,
+    "x": 42,
+    "y": 314
+  },
+  "tmpoint-oval-h-slime": {
+    "height": 42,
+    "pixelRatio": 2,
+    "width": 42,
+    "x": 84,
+    "y": 314
+  },
+  "tmpoint-oval-h-teal": {
+    "height": 42,
+    "pixelRatio": 2,
+    "width": 42,
+    "x": 126,
+    "y": 314
+  },
+  "tmpoint-oval-v-blue": {
+    "height": 42,
+    "pixelRatio": 2,
+    "width": 42,
+    "x": 168,
+    "y": 314
+  },
+  "tmpoint-oval-v-brown": {
+    "height": 42,
+    "pixelRatio": 2,
+    "width": 42,
+    "x": 210,
+    "y": 314
+  },
+  "tmpoint-oval-v-green": {
+    "height": 42,
+    "pixelRatio": 2,
+    "width": 42,
+    "x": 252,
+    "y": 314
+  },
+  "tmpoint-oval-v-grey": {
+    "height": 42,
+    "pixelRatio": 2,
+    "width": 42,
+    "x": 294,
+    "y": 314
+  },
+  "tmpoint-oval-v-orange": {
+    "height": 42,
+    "pixelRatio": 2,
+    "width": 42,
+    "x": 336,
+    "y": 314
+  },
+  "tmpoint-oval-v-pink": {
+    "height": 42,
+    "pixelRatio": 2,
+    "width": 42,
+    "x": 378,
+    "y": 314
+  },
+  "tmpoint-oval-v-purple": {
+    "height": 42,
+    "pixelRatio": 2,
+    "width": 42,
+    "x": 420,
+    "y": 314
+  },
+  "tmpoint-oval-v-red": {
+    "height": 42,
+    "pixelRatio": 2,
+    "width": 42,
+    "x": 0,
+    "y": 356
+  },
+  "tmpoint-oval-v-slime": {
+    "height": 42,
+    "pixelRatio": 2,
+    "width": 42,
+    "x": 42,
+    "y": 356
+  },
+  "tmpoint-oval-v-teal": {
+    "height": 42,
+    "pixelRatio": 2,
+    "width": 42,
+    "x": 84,
+    "y": 356
+  },
+  "tmpoint-parallelogram-blue": {
+    "height": 42,
+    "pixelRatio": 2,
+    "width": 42,
+    "x": 126,
+    "y": 356
+  },
+  "tmpoint-parallelogram-brown": {
+    "height": 42,
+    "pixelRatio": 2,
+    "width": 42,
+    "x": 168,
+    "y": 356
+  },
+  "tmpoint-parallelogram-green": {
+    "height": 42,
+    "pixelRatio": 2,
+    "width": 42,
+    "x": 210,
+    "y": 356
+  },
+  "tmpoint-parallelogram-grey": {
+    "height": 42,
+    "pixelRatio": 2,
+    "width": 42,
+    "x": 252,
+    "y": 356
+  },
+  "tmpoint-parallelogram-orange": {
+    "height": 42,
+    "pixelRatio": 2,
+    "width": 42,
+    "x": 294,
+    "y": 356
+  },
+  "tmpoint-parallelogram-pink": {
+    "height": 42,
+    "pixelRatio": 2,
+    "width": 42,
+    "x": 336,
+    "y": 356
+  },
+  "tmpoint-parallelogram-purple": {
+    "height": 42,
+    "pixelRatio": 2,
+    "width": 42,
+    "x": 378,
+    "y": 356
+  },
+  "tmpoint-parallelogram-red": {
+    "height": 42,
+    "pixelRatio": 2,
+    "width": 42,
+    "x": 420,
+    "y": 356
+  },
+  "tmpoint-parallelogram-slime": {
+    "height": 42,
+    "pixelRatio": 2,
+    "width": 42,
+    "x": 0,
+    "y": 398
+  },
+  "tmpoint-parallelogram-teal": {
+    "height": 42,
+    "pixelRatio": 2,
+    "width": 42,
+    "x": 42,
+    "y": 398
+  },
+  "tmpoint-pentagon-blue": {
+    "height": 42,
+    "pixelRatio": 2,
+    "width": 42,
+    "x": 84,
+    "y": 398
+  },
+  "tmpoint-pentagon-brown": {
+    "height": 42,
+    "pixelRatio": 2,
+    "width": 42,
+    "x": 126,
+    "y": 398
+  },
+  "tmpoint-pentagon-green": {
+    "height": 42,
+    "pixelRatio": 2,
+    "width": 42,
+    "x": 168,
+    "y": 398
+  },
+  "tmpoint-pentagon-grey": {
+    "height": 42,
+    "pixelRatio": 2,
+    "width": 42,
+    "x": 210,
+    "y": 398
+  },
+  "tmpoint-pentagon-orange": {
+    "height": 42,
+    "pixelRatio": 2,
+    "width": 42,
+    "x": 252,
+    "y": 398
+  },
+  "tmpoint-pentagon-pink": {
+    "height": 42,
+    "pixelRatio": 2,
+    "width": 42,
+    "x": 294,
+    "y": 398
+  },
+  "tmpoint-pentagon-purple": {
+    "height": 42,
+    "pixelRatio": 2,
+    "width": 42,
+    "x": 336,
+    "y": 398
+  },
+  "tmpoint-pentagon-red": {
+    "height": 42,
+    "pixelRatio": 2,
+    "width": 42,
+    "x": 378,
+    "y": 398
+  },
+  "tmpoint-pentagon-slime": {
+    "height": 42,
+    "pixelRatio": 2,
+    "width": 42,
+    "x": 420,
+    "y": 398
+  },
+  "tmpoint-pentagon-teal": {
+    "height": 42,
+    "pixelRatio": 2,
+    "width": 42,
+    "x": 464,
+    "y": 230
+  },
+  "tmpoint-rectangle-h-blue": {
+    "height": 42,
+    "pixelRatio": 2,
+    "width": 42,
+    "x": 506,
+    "y": 230
+  },
+  "tmpoint-rectangle-h-brown": {
+    "height": 42,
+    "pixelRatio": 2,
+    "width": 42,
+    "x": 548,
+    "y": 230
+  },
+  "tmpoint-rectangle-h-green": {
+    "height": 42,
+    "pixelRatio": 2,
+    "width": 42,
+    "x": 590,
+    "y": 230
+  },
+  "tmpoint-rectangle-h-grey": {
+    "height": 42,
+    "pixelRatio": 2,
+    "width": 42,
+    "x": 632,
+    "y": 230
+  },
+  "tmpoint-rectangle-h-orange": {
+    "height": 42,
+    "pixelRatio": 2,
+    "width": 42,
+    "x": 674,
+    "y": 230
+  },
+  "tmpoint-rectangle-h-pink": {
+    "height": 42,
+    "pixelRatio": 2,
+    "width": 42,
+    "x": 716,
+    "y": 230
+  },
+  "tmpoint-rectangle-h-purple": {
+    "height": 42,
+    "pixelRatio": 2,
+    "width": 42,
+    "x": 758,
+    "y": 230
+  },
+  "tmpoint-rectangle-h-red": {
+    "height": 42,
+    "pixelRatio": 2,
+    "width": 42,
+    "x": 800,
+    "y": 230
+  },
+  "tmpoint-rectangle-h-slime": {
+    "height": 42,
+    "pixelRatio": 2,
+    "width": 42,
+    "x": 842,
+    "y": 230
+  },
+  "tmpoint-rectangle-h-teal": {
+    "height": 42,
+    "pixelRatio": 2,
+    "width": 42,
+    "x": 884,
+    "y": 230
+  },
+  "tmpoint-rectangle-v-blue": {
+    "height": 42,
+    "pixelRatio": 2,
+    "width": 42,
+    "x": 428,
+    "y": 272
+  },
+  "tmpoint-rectangle-v-brown": {
+    "height": 42,
+    "pixelRatio": 2,
+    "width": 42,
+    "x": 470,
+    "y": 272
+  },
+  "tmpoint-rectangle-v-green": {
+    "height": 42,
+    "pixelRatio": 2,
+    "width": 42,
+    "x": 512,
+    "y": 272
+  },
+  "tmpoint-rectangle-v-grey": {
+    "height": 42,
+    "pixelRatio": 2,
+    "width": 42,
+    "x": 554,
+    "y": 272
+  },
+  "tmpoint-rectangle-v-orange": {
+    "height": 42,
+    "pixelRatio": 2,
+    "width": 42,
+    "x": 596,
+    "y": 272
+  },
+  "tmpoint-rectangle-v-pink": {
+    "height": 42,
+    "pixelRatio": 2,
+    "width": 42,
+    "x": 638,
+    "y": 272
+  },
+  "tmpoint-rectangle-v-purple": {
+    "height": 42,
+    "pixelRatio": 2,
+    "width": 42,
+    "x": 680,
+    "y": 272
+  },
+  "tmpoint-rectangle-v-red": {
+    "height": 42,
+    "pixelRatio": 2,
+    "width": 42,
+    "x": 722,
+    "y": 272
+  },
+  "tmpoint-rectangle-v-slime": {
+    "height": 42,
+    "pixelRatio": 2,
+    "width": 42,
+    "x": 764,
+    "y": 272
+  },
+  "tmpoint-rectangle-v-teal": {
+    "height": 42,
+    "pixelRatio": 2,
+    "width": 42,
+    "x": 806,
+    "y": 272
+  },
+  "tmpoint-rhombus-blue": {
+    "height": 42,
+    "pixelRatio": 2,
+    "width": 42,
+    "x": 848,
+    "y": 272
+  },
+  "tmpoint-rhombus-brown": {
+    "height": 42,
+    "pixelRatio": 2,
+    "width": 42,
+    "x": 462,
+    "y": 314
+  },
+  "tmpoint-rhombus-green": {
+    "height": 42,
+    "pixelRatio": 2,
+    "width": 42,
+    "x": 504,
+    "y": 314
+  },
+  "tmpoint-rhombus-grey": {
+    "height": 42,
+    "pixelRatio": 2,
+    "width": 42,
+    "x": 546,
+    "y": 314
+  },
+  "tmpoint-rhombus-orange": {
+    "height": 42,
+    "pixelRatio": 2,
+    "width": 42,
+    "x": 588,
+    "y": 314
+  },
+  "tmpoint-rhombus-pink": {
+    "height": 42,
+    "pixelRatio": 2,
+    "width": 42,
+    "x": 630,
+    "y": 314
+  },
+  "tmpoint-rhombus-purple": {
+    "height": 42,
+    "pixelRatio": 2,
+    "width": 42,
+    "x": 672,
+    "y": 314
+  },
+  "tmpoint-rhombus-red": {
+    "height": 42,
+    "pixelRatio": 2,
+    "width": 42,
+    "x": 714,
+    "y": 314
+  },
+  "tmpoint-rhombus-slime": {
+    "height": 42,
+    "pixelRatio": 2,
+    "width": 42,
+    "x": 756,
+    "y": 314
+  },
+  "tmpoint-rhombus-teal": {
+    "height": 42,
+    "pixelRatio": 2,
+    "width": 42,
+    "x": 798,
+    "y": 314
+  },
+  "tmpoint-semicircle-bottom-blue": {
+    "height": 42,
+    "pixelRatio": 2,
+    "width": 46,
+    "x": 840,
+    "y": 314
+  },
+  "tmpoint-semicircle-bottom-brown": {
+    "height": 42,
+    "pixelRatio": 2,
+    "width": 46,
+    "x": 462,
+    "y": 356
+  },
+  "tmpoint-semicircle-bottom-green": {
+    "height": 42,
+    "pixelRatio": 2,
+    "width": 46,
+    "x": 508,
+    "y": 356
+  },
+  "tmpoint-semicircle-bottom-grey": {
+    "height": 42,
+    "pixelRatio": 2,
+    "width": 46,
+    "x": 554,
+    "y": 356
+  },
+  "tmpoint-semicircle-bottom-orange": {
+    "height": 42,
+    "pixelRatio": 2,
+    "width": 46,
+    "x": 600,
+    "y": 356
+  },
+  "tmpoint-semicircle-bottom-pink": {
+    "height": 42,
+    "pixelRatio": 2,
+    "width": 46,
+    "x": 646,
+    "y": 356
+  },
+  "tmpoint-semicircle-bottom-purple": {
+    "height": 42,
+    "pixelRatio": 2,
+    "width": 46,
+    "x": 692,
+    "y": 356
+  },
+  "tmpoint-semicircle-bottom-red": {
+    "height": 42,
+    "pixelRatio": 2,
+    "width": 46,
+    "x": 738,
+    "y": 356
+  },
+  "tmpoint-semicircle-bottom-slime": {
+    "height": 42,
+    "pixelRatio": 2,
+    "width": 46,
+    "x": 784,
+    "y": 356
+  },
+  "tmpoint-semicircle-bottom-teal": {
+    "height": 42,
+    "pixelRatio": 2,
+    "width": 46,
+    "x": 830,
+    "y": 356
+  },
+  "tmpoint-semicircle-top-blue": {
+    "height": 42,
+    "pixelRatio": 2,
+    "width": 46,
+    "x": 876,
+    "y": 356
+  },
+  "tmpoint-semicircle-top-brown": {
+    "height": 42,
+    "pixelRatio": 2,
+    "width": 46,
+    "x": 462,
+    "y": 398
+  },
+  "tmpoint-semicircle-top-green": {
+    "height": 42,
+    "pixelRatio": 2,
+    "width": 46,
+    "x": 508,
+    "y": 398
+  },
+  "tmpoint-semicircle-top-grey": {
+    "height": 42,
+    "pixelRatio": 2,
+    "width": 46,
+    "x": 554,
+    "y": 398
+  },
+  "tmpoint-semicircle-top-orange": {
+    "height": 42,
+    "pixelRatio": 2,
+    "width": 46,
+    "x": 600,
+    "y": 398
+  },
+  "tmpoint-semicircle-top-pink": {
+    "height": 42,
+    "pixelRatio": 2,
+    "width": 46,
+    "x": 646,
+    "y": 398
+  },
+  "tmpoint-semicircle-top-purple": {
+    "height": 42,
+    "pixelRatio": 2,
+    "width": 46,
+    "x": 692,
+    "y": 398
+  },
+  "tmpoint-semicircle-top-red": {
+    "height": 42,
+    "pixelRatio": 2,
+    "width": 46,
+    "x": 738,
+    "y": 398
+  },
+  "tmpoint-semicircle-top-slime": {
+    "height": 42,
+    "pixelRatio": 2,
+    "width": 46,
+    "x": 784,
+    "y": 398
+  },
+  "tmpoint-semicircle-top-teal": {
+    "height": 42,
+    "pixelRatio": 2,
+    "width": 46,
+    "x": 830,
+    "y": 398
+  },
+  "tmpoint-square-blue": {
+    "height": 42,
+    "pixelRatio": 2,
+    "width": 42,
+    "x": 886,
+    "y": 314
+  },
+  "tmpoint-square-brown": {
+    "height": 42,
+    "pixelRatio": 2,
+    "width": 42,
+    "x": 876,
+    "y": 398
+  },
+  "tmpoint-square-green": {
+    "height": 42,
+    "pixelRatio": 2,
+    "width": 42,
+    "x": 448,
+    "y": 174
+  },
+  "tmpoint-square-grey": {
+    "height": 42,
+    "pixelRatio": 2,
+    "width": 42,
+    "x": 490,
+    "y": 174
+  },
+  "tmpoint-square-orange": {
+    "height": 42,
+    "pixelRatio": 2,
+    "width": 42,
+    "x": 532,
+    "y": 174
+  },
+  "tmpoint-square-pink": {
+    "height": 42,
+    "pixelRatio": 2,
+    "width": 42,
+    "x": 574,
+    "y": 174
+  },
+  "tmpoint-square-purple": {
+    "height": 42,
+    "pixelRatio": 2,
+    "width": 42,
+    "x": 616,
+    "y": 174
+  },
+  "tmpoint-square-red": {
+    "height": 42,
+    "pixelRatio": 2,
+    "width": 42,
+    "x": 658,
+    "y": 174
+  },
+  "tmpoint-square-slime": {
+    "height": 42,
+    "pixelRatio": 2,
+    "width": 42,
+    "x": 700,
+    "y": 174
+  },
+  "tmpoint-square-teal": {
+    "height": 42,
+    "pixelRatio": 2,
+    "width": 42,
+    "x": 742,
+    "y": 174
+  },
+  "tmpoint-squiggle-blue": {
+    "height": 40,
+    "pixelRatio": 2,
+    "width": 42,
+    "x": 120,
+    "y": 440
+  },
+  "tmpoint-squiggle-brown": {
+    "height": 40,
+    "pixelRatio": 2,
+    "width": 42,
+    "x": 162,
+    "y": 440
+  },
+  "tmpoint-squiggle-green": {
+    "height": 40,
+    "pixelRatio": 2,
+    "width": 42,
+    "x": 204,
+    "y": 440
+  },
+  "tmpoint-squiggle-grey": {
+    "height": 40,
+    "pixelRatio": 2,
+    "width": 42,
+    "x": 246,
+    "y": 440
+  },
+  "tmpoint-squiggle-orange": {
+    "height": 40,
+    "pixelRatio": 2,
+    "width": 42,
+    "x": 288,
+    "y": 440
+  },
+  "tmpoint-squiggle-pink": {
+    "height": 40,
+    "pixelRatio": 2,
+    "width": 42,
+    "x": 330,
+    "y": 440
+  },
+  "tmpoint-squiggle-purple": {
+    "height": 40,
+    "pixelRatio": 2,
+    "width": 42,
+    "x": 372,
+    "y": 440
+  },
+  "tmpoint-squiggle-red": {
+    "height": 40,
+    "pixelRatio": 2,
+    "width": 42,
+    "x": 414,
+    "y": 440
+  },
+  "tmpoint-squiggle-slime": {
+    "height": 40,
+    "pixelRatio": 2,
+    "width": 42,
+    "x": 456,
+    "y": 440
+  },
+  "tmpoint-squiggle-teal": {
+    "height": 40,
+    "pixelRatio": 2,
+    "width": 42,
+    "x": 498,
+    "y": 440
+  },
+  "tmpoint-star-blue": {
+    "height": 58,
+    "pixelRatio": 2,
+    "width": 58,
+    "x": 0,
+    "y": 0
+  },
+  "tmpoint-star-brown": {
+    "height": 58,
+    "pixelRatio": 2,
+    "width": 58,
+    "x": 58,
+    "y": 0
+  },
+  "tmpoint-star-green": {
+    "height": 58,
+    "pixelRatio": 2,
+    "width": 58,
+    "x": 0,
+    "y": 58
+  },
+  "tmpoint-star-grey": {
+    "height": 58,
+    "pixelRatio": 2,
+    "width": 58,
+    "x": 58,
+    "y": 58
+  },
+  "tmpoint-star-orange": {
+    "height": 58,
+    "pixelRatio": 2,
+    "width": 58,
+    "x": 116,
+    "y": 0
+  },
+  "tmpoint-star-pink": {
+    "height": 58,
+    "pixelRatio": 2,
+    "width": 58,
+    "x": 174,
+    "y": 0
+  },
+  "tmpoint-star-purple": {
+    "height": 58,
+    "pixelRatio": 2,
+    "width": 58,
+    "x": 116,
+    "y": 58
+  },
+  "tmpoint-star-red": {
+    "height": 58,
+    "pixelRatio": 2,
+    "width": 58,
+    "x": 174,
+    "y": 58
+  },
+  "tmpoint-star-slime": {
+    "height": 58,
+    "pixelRatio": 2,
+    "width": 58,
+    "x": 0,
+    "y": 116
+  },
+  "tmpoint-star-teal": {
+    "height": 58,
+    "pixelRatio": 2,
+    "width": 58,
+    "x": 58,
+    "y": 116
+  },
+  "tmpoint-starburst-blue": {
+    "height": 56,
+    "pixelRatio": 2,
+    "width": 56,
+    "x": 116,
+    "y": 116
+  },
+  "tmpoint-starburst-brown": {
+    "height": 56,
+    "pixelRatio": 2,
+    "width": 56,
+    "x": 172,
+    "y": 116
+  },
+  "tmpoint-starburst-green": {
+    "height": 56,
+    "pixelRatio": 2,
+    "width": 56,
+    "x": 0,
+    "y": 174
+  },
+  "tmpoint-starburst-grey": {
+    "height": 56,
+    "pixelRatio": 2,
+    "width": 56,
+    "x": 56,
+    "y": 174
+  },
+  "tmpoint-starburst-orange": {
+    "height": 56,
+    "pixelRatio": 2,
+    "width": 56,
+    "x": 112,
+    "y": 174
+  },
+  "tmpoint-starburst-pink": {
+    "height": 56,
+    "pixelRatio": 2,
+    "width": 56,
+    "x": 168,
+    "y": 174
+  },
+  "tmpoint-starburst-purple": {
+    "height": 56,
+    "pixelRatio": 2,
+    "width": 56,
+    "x": 224,
+    "y": 174
+  },
+  "tmpoint-starburst-red": {
+    "height": 56,
+    "pixelRatio": 2,
+    "width": 56,
+    "x": 280,
+    "y": 174
+  },
+  "tmpoint-starburst-slime": {
+    "height": 56,
+    "pixelRatio": 2,
+    "width": 56,
+    "x": 336,
+    "y": 174
+  },
+  "tmpoint-starburst-teal": {
+    "height": 56,
+    "pixelRatio": 2,
+    "width": 56,
+    "x": 392,
+    "y": 174
+  },
+  "tmpoint-trapezoid-blue": {
+    "height": 42,
+    "pixelRatio": 2,
+    "width": 42,
+    "x": 784,
+    "y": 174
+  },
+  "tmpoint-trapezoid-brown": {
+    "height": 42,
+    "pixelRatio": 2,
+    "width": 42,
+    "x": 826,
+    "y": 174
+  },
+  "tmpoint-trapezoid-green": {
+    "height": 42,
+    "pixelRatio": 2,
+    "width": 42,
+    "x": 868,
+    "y": 174
+  },
+  "tmpoint-trapezoid-grey": {
+    "height": 42,
+    "pixelRatio": 2,
+    "width": 42,
+    "x": 452,
+    "y": 0
+  },
+  "tmpoint-trapezoid-orange": {
+    "height": 42,
+    "pixelRatio": 2,
+    "width": 42,
+    "x": 494,
+    "y": 0
+  },
+  "tmpoint-trapezoid-pink": {
+    "height": 42,
+    "pixelRatio": 2,
+    "width": 42,
+    "x": 536,
+    "y": 0
+  },
+  "tmpoint-trapezoid-purple": {
+    "height": 42,
+    "pixelRatio": 2,
+    "width": 42,
+    "x": 578,
+    "y": 0
+  },
+  "tmpoint-trapezoid-red": {
+    "height": 42,
+    "pixelRatio": 2,
+    "width": 42,
+    "x": 620,
+    "y": 0
+  },
+  "tmpoint-trapezoid-slime": {
+    "height": 42,
+    "pixelRatio": 2,
+    "width": 42,
+    "x": 662,
+    "y": 0
+  },
+  "tmpoint-trapezoid-teal": {
+    "height": 42,
+    "pixelRatio": 2,
+    "width": 42,
+    "x": 704,
+    "y": 0
+  },
+  "tmpoint-triangle-down-blue": {
+    "height": 42,
+    "pixelRatio": 2,
+    "width": 42,
+    "x": 746,
+    "y": 0
+  },
+  "tmpoint-triangle-down-brown": {
+    "height": 42,
+    "pixelRatio": 2,
+    "width": 42,
+    "x": 788,
+    "y": 0
+  },
+  "tmpoint-triangle-down-green": {
+    "height": 42,
+    "pixelRatio": 2,
+    "width": 42,
+    "x": 830,
+    "y": 0
+  },
+  "tmpoint-triangle-down-grey": {
+    "height": 42,
+    "pixelRatio": 2,
+    "width": 42,
+    "x": 872,
+    "y": 0
+  },
+  "tmpoint-triangle-down-orange": {
+    "height": 42,
+    "pixelRatio": 2,
+    "width": 42,
+    "x": 452,
+    "y": 58
+  },
+  "tmpoint-triangle-down-pink": {
+    "height": 42,
+    "pixelRatio": 2,
+    "width": 42,
+    "x": 494,
+    "y": 58
+  },
+  "tmpoint-triangle-down-purple": {
+    "height": 42,
+    "pixelRatio": 2,
+    "width": 42,
+    "x": 536,
+    "y": 58
+  },
+  "tmpoint-triangle-down-red": {
+    "height": 42,
+    "pixelRatio": 2,
+    "width": 42,
+    "x": 578,
+    "y": 58
+  },
+  "tmpoint-triangle-down-slime": {
+    "height": 42,
+    "pixelRatio": 2,
+    "width": 42,
+    "x": 620,
+    "y": 58
+  },
+  "tmpoint-triangle-down-teal": {
+    "height": 42,
+    "pixelRatio": 2,
+    "width": 42,
+    "x": 662,
+    "y": 58
+  },
+  "tmpoint-triangle-up-blue": {
+    "height": 42,
+    "pixelRatio": 2,
+    "width": 42,
+    "x": 704,
+    "y": 58
+  },
+  "tmpoint-triangle-up-brown": {
+    "height": 42,
+    "pixelRatio": 2,
+    "width": 42,
+    "x": 746,
+    "y": 58
+  },
+  "tmpoint-triangle-up-green": {
+    "height": 42,
+    "pixelRatio": 2,
+    "width": 42,
+    "x": 788,
+    "y": 58
+  },
+  "tmpoint-triangle-up-grey": {
+    "height": 42,
+    "pixelRatio": 2,
+    "width": 42,
+    "x": 830,
+    "y": 58
+  },
+  "tmpoint-triangle-up-orange": {
+    "height": 42,
+    "pixelRatio": 2,
+    "width": 42,
+    "x": 872,
+    "y": 58
+  },
+  "tmpoint-triangle-up-pink": {
+    "height": 42,
+    "pixelRatio": 2,
+    "width": 42,
+    "x": 428,
+    "y": 116
+  },
+  "tmpoint-triangle-up-purple": {
+    "height": 42,
+    "pixelRatio": 2,
+    "width": 42,
+    "x": 470,
+    "y": 116
+  },
+  "tmpoint-triangle-up-red": {
+    "height": 42,
+    "pixelRatio": 2,
+    "width": 42,
+    "x": 512,
+    "y": 116
+  },
+  "tmpoint-triangle-up-slime": {
+    "height": 42,
+    "pixelRatio": 2,
+    "width": 42,
+    "x": 554,
+    "y": 116
+  },
+  "tmpoint-triangle-up-teal": {
+    "height": 42,
+    "pixelRatio": 2,
+    "width": 42,
+    "x": 596,
+    "y": 116
+  }
+}
