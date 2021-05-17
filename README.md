@@ -23,7 +23,7 @@ TextureMap polygons use the Mapbox `fill-pattern` property to add a pattern laye
 
 #### Mapbox GL (without Mapbox Studio) or MapLibre GL
 
-If you are working directly with the Mapbox GL or MapLibre libraries, you will need the TextureMap images as a [sprite](https://docs.mapbox.com/help/glossary/sprite/). You can download these from `dist/sprites` or generate them yourself using [spritezero](https://github.com/mapbox/spritezero). See `examples/polygons` for an example that uses a sprite generated from this method.
+If you are working directly with the Mapbox GL or MapLibre libraries, you will need the TextureMap images as a [sprite](https://docs.mapbox.com/help/glossary/sprite/). You can download these from [`dist/sprites`](`dist/sprites`) or generate them yourself using [spritezero](https://github.com/mapbox/spritezero). See [`examples/points`](`examples/points`) for an example project using a sprite.
 
 ### Lines
 
@@ -77,7 +77,7 @@ TextureMap points use the Mapbox `icon-image` property on a `symbol` layer.
 
 #### Mapbox GL (without Mapbox Studio) or MapLibre GL
 
-If you are working directly with the Mapbox GL or MapLibre libraries, you will need the TextureMap images as a [sprite](https://docs.mapbox.com/help/glossary/sprite/). You can download these from `dist/sprites` or generate them yourself using [spritezero](https://github.com/mapbox/spritezero). See `examples/points` for an example that uses a sprite generated from this method.
+If you are working directly with the Mapbox GL or MapLibre libraries, you will need the TextureMap images as a [sprite](https://docs.mapbox.com/help/glossary/sprite/). You can download these from [`dist/sprites`](`dist/sprites`) or generate them yourself using [spritezero](https://github.com/mapbox/spritezero). See [`examples/points`](`examples/points`) for an example project using a sprite.
 
 ## Best Practices
 
