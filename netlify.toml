@@ -1,0 +1,19 @@
+[Settings]
+  ID = "texturemap"
+
+[build]
+  publish = "website"
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    Content-Security-Policy = """
+      default-src 'self';
+      child-src 'self' blob:;
+      img-src 'self' blob: data:;
+      script-src 'self' 'unsafe-inline';
+      """
+    X-Frame-Options = "SAMEORIGIN"
+    X-XSS-Protection = "1; mode=block"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "no-referrer"
