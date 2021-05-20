@@ -21,13 +21,43 @@ aside {
   width: 100%;
   height: 100%;
   background-color: transparent;
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 15px;
 }
 
 .map {
   top: 0;
   bottom: 0;
   width: 100%;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  filter: grayscale(1);
+}
+
+.map-label {
+  position: absolute;
+  bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+  background: #272431;
+  font-family: "Atlas Grotesk Web", -apple-system, BlinkMacSystemFont,
+    avenir next, avenir, segoe ui, helvetica neue, helvetica, Ubuntu, roboto,
+    noto, arial, sans-serif;
+  color: #fff;
+  z-index: 1000;
+  width: 160px;
+  font-size: 16px;
+  padding: 8px 2px;
+}
+
+.icon {
+  position: relative;
+  top: 3px;
+  margin-right: 8px;
 }
 
 #map .mapboxgl-compare .compare-swiper-vertical {
@@ -54,7 +84,6 @@ aside {
 
 .mapboxgl-compare .compare-swiper-vertical:hover:before {
   box-shadow: 0 0 3px rgb(0 0 0 / 64%);
-
 }
 
 .map__controls {

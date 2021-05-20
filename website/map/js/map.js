@@ -114,7 +114,6 @@ function getMapConfig(useTextureMap) {
     ]
   };
 }
-console.log('hi')
 
 var beforeMap = new mapboxgl.Map({
   container: "before",
@@ -126,11 +125,36 @@ var afterMap = new mapboxgl.Map({
   ...getMapConfig(true)
 });
 
+var disable = false;
+beforeMap.on("move", function() {
+  if (!disable) {
+    var center = beforeMap.getCenter();
+    var zoom = beforeMap.getZoom();
+    var pitch = beforeMap.getPitch();
+    var bearing = beforeMap.getBearing();
+    disable = true;
+    afterMap.setCenter(center);
+    afterMap.setZoom(zoom);
+    afterMap.setPitch(pitch);
+    afterMap.setBearing(bearing);
+    disable = false;
+  }
+});
 
-beforeMap.addControl(
-  new mapboxgl.NavigationControl({ showCompass: false }),
-  "top-right"
-);
+afterMap.on("move", function() {
+  if (!disable) {
+    var center = afterMap.getCenter();
+    var zoom = afterMap.getZoom();
+    var pitch = afterMap.getPitch();
+    var bearing = afterMap.getBearing();
+    disable = true;
+    beforeMap.setCenter(center);
+    beforeMap.setZoom(zoom);
+    beforeMap.setPitch(pitch);
+    beforeMap.setBearing(bearing);
+    disable = false;
+  }
+});
 
 beforeMap.scrollZoom.disable();
 

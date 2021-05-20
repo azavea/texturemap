@@ -84,8 +84,8 @@ textarea {
 :root {
   --color-gray-500: #272431;
   --color-gray-400: #5c5676;
-  --color-primary-500: #430094;
-  --color-primary-400: #7200fb;
+  --color-primary-500: #019369;
+  --color-primary-400: #01ac7b;
   --font-size-500: 64px;
   --font-size-400: 48px;
   --font-size-300: 25px;
@@ -236,7 +236,7 @@ img {
 
 @media only screen and (max-width: 560px) {
   .heading-size--500 {
-    font-size: var(--font-size-400);
+    font-size: 36px;
     margin-bottom: 24px;
   }
 
@@ -279,6 +279,8 @@ img {
 .header-primary__nav {
   flex: 1;
   text-align: right;
+  position: relative;
+  top: 2px;
 }
 
 .header-primary__link {
@@ -391,6 +393,10 @@ html.simulate-monochromacy .header-primary__button {
   font-weight: 500;
 }
 
+.footer-primary__link:hover {
+  color: #fff;
+}
+
 @media only screen and (max-width: 560px) {
   .footer-primary {
     padding: 0;
@@ -410,6 +416,9 @@ html.simulate-monochromacy .header-primary__button {
 }
 
 @media only screen and (max-width: 560px) {
+  .footer-primary__link {
+    font-size: var(--font-size-50);
+  }
 }
 /* ==========================================================================
    Map
@@ -524,6 +533,9 @@ html.simulate-monochromacy .header-primary__button {
 }
 
 @media only screen and (max-width: 560px) {
+  .hero__content {
+    text-align: left;
+  }
   .section-hero {
     padding: 0 0 30px;
   }
@@ -557,7 +569,7 @@ html.simulate-monochromacy .header-primary__button {
 }
 
 .types__heading {
-  margin: 16px 0 8px !important;
+  margin: 30px 0 12px !important;
 }
 
 .types__text {
@@ -568,7 +580,6 @@ html.simulate-monochromacy .header-primary__button {
   background-color: #fff;
   padding: 20px 0 0;
   flex: 1;
-  display: grid;
   column-gap: 40px;
   row-gap: 2px;
   grid-template-columns: 1fr;
@@ -594,11 +605,11 @@ html.simulate-monochromacy .header-primary__button {
     display: block;
   }
   .types__item {
+    display: grid;
     column-gap: 40px;
     grid-template-columns: 1fr 1fr;
     border-right-width: 0;
-    border-bottom: 1px solid #eee;
-    padding: 30px 0;
+    padding: 15px 0;
   }
 }
 
