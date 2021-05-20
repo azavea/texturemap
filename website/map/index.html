@@ -1,9 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link defer href="css/map.css" rel="stylesheet" />
-    <link defer href="css/mapboxgl.css" rel="stylesheet" />
-    <script defer src="js/mapboxgl.js"></script>
+    <link href="css/map.css" rel="stylesheet" />
+    <link href="css/mapboxgl.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="//api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-compare/v0.4.0/mapbox-gl-compare.css"
+      type="text/css"
+    />
     <meta charset="utf-8" />
     <title>
       TextureMap: textures, patterns, and shapes for web map accessibility
@@ -54,30 +58,14 @@
 
   <body>
     <aside aria-label="Map demo">
-      <div id="map" class="map texturemap-on">
-<!--         <div class="map__controls">
-          <label class="map__label"
-            ><input
-              id="checkbox-monochromacy"
-              class="map__checkbox"
-              onclick="toggleMonochromacy()"
-              type="checkbox"
-              checked
-            />
-            Simulate monochromacy</label
-          >
-          <label class="map__label"
-            ><input
-              id="checkbox-texturemap"
-              class="map__checkbox"
-              onclick="toggleTexturemap()"
-              type="checkbox"
-              checked
-            />
-            Use TextureMap</label
-          >
-        </div> -->
+      <div id="map" class="map-container texturemap-on">
+        <div id="before" class="map"></div>
+        <div id="after" class="map"></div>
       </div>
     </aside>
+
+    <script src="js/mapboxgl.js"></script>
+    <script src="//api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-compare/v0.4.0/mapbox-gl-compare.js"></script>
+    <script src="js/map.js"></script>
   </body>
 </html>

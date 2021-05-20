@@ -74,8 +74,6 @@ function getMapConfig(useTextureMap) {
                   "tmpoly-line-vertical-down-light-100-black",
                   4,
                   "tmpoly-caret-200-black",
-                  5,
-                  "transparent",
                   6,
                   "tmpoly-square-100-black",
                   7,
@@ -88,15 +86,7 @@ function getMapConfig(useTextureMap) {
                 "fill-opacity": 0.75
               }
             }
-          : {
-              id: "polygons-texture",
-              type: "fill",
-              source: "polygons",
-              layout: {},
-              paint: {
-                "fill-color": "transparent"
-              }
-            }
+          : null
       ]
     },
     minZoom: defaultZoom,
@@ -114,11 +104,10 @@ function getMapConfig(useTextureMap) {
     ]
   };
 }
-console.log('hi')
 
 var beforeMap = new mapboxgl.Map({
   container: "before",
-  ...getMapConfig(false)
+  ...getMapConfig(true)
 });
 
 var afterMap = new mapboxgl.Map({
@@ -126,6 +115,7 @@ var afterMap = new mapboxgl.Map({
   ...getMapConfig(true)
 });
 
+var map = new mapboxgl.Compare(beforeMap, afterMap, "#map");
 
 beforeMap.addControl(
   new mapboxgl.NavigationControl({ showCompass: false }),

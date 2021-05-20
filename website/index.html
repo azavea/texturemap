@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html id="html" lang="en">
+<html  id="html" lang="en">
   <head>
     <link defer rel="stylesheet" href="css/normalize.css" />
     <link defer rel="stylesheet" href="css/main.css" />
@@ -9,7 +9,7 @@
     </title>
     <meta
       name="description"
-      content="Textures, patterns, and shapes that make web maps work for people with colorblindness. Built for Mapbox GL and MapLibre GL."
+      content="Textures, patterns, and shapes that make web maps work for people with color vision deficiency. Built for Mapbox GL and MapLibre GL."
     />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
@@ -65,17 +65,17 @@
         </div>
         <nav aria-label="Header navigation" class="header-primary__nav">
           <a
-            class="footer-primary__link"
+            class="header-primary__link"
             href="https://github.com/azavea/texturemap#readme"
             >Documentation</a
           >
           <a
-            class="footer-primary__link"
+            class="header-primary__link"
             href="https://github.com/azavea/texturemap/releases/latest/download/texturemap.zip"
             >Download</a
           >
           <a
-            class="footer-primary__link"
+            class="header-primary__link"
             href="https://github.com/azavea/texturemap"
             >Github</a
           >
@@ -88,11 +88,12 @@
           <div class="hero">
             <div class="hero__content">
               <h2 class="heading-size--500">
-                Design web maps for accessibility
+                Design colorblind-friendly maps
               </h2>
               <p class="large">
                 Textures, patterns, and shapes that make web maps work for
-                people with colorblindness. Built for Mapbox GL and MapLibre GL.
+                people with color vision deficiency. Built for Mapbox GL and
+                MapLibre GL.
               </p>
               <div class="hero__buttons">
                 <a
@@ -107,29 +108,25 @@
                 >
               </div>
             </div>
-            <div id="map" class="map texturemap-on"></div>
           </div>
         </div>
+        <div id="map" class="map texturemap-on"></div>
       </section>
       <section class="section-types">
-        <h2 class="sr-only heading-size--500">Use cases</h2>
         <div class="container">
+          <div class="types__text">
+            <h2 class="heading-size--400">
+              Accessible styles for all geometry types
+            </h2>
+            <p class="large">
+              TextureMap includes resources for <a href="#">polygon</a>,
+              <a href="#">line</a>, and <a href="#">point</a> data. Every style
+              can be modified to match your color palette and adapt to the
+              specific needs of your map.
+            </p>
+          </div>
           <ul class="types">
             <li class="types__item">
-              <div class="types__left">
-                <h3 class="types__heading heading-size--400">Polygons</h3>
-                <p>
-                  Shape up your polygon layers by offering an
-                  accessibility-boosting pattern fill.
-                </p>
-                <div class="types__links">
-                  <a href=""
-                    >Documentation<span class="sr-only"> for polygons</span></a
-                  >
-                  /
-                  <a href="">Demo<span class="sr-only"> for polygons</span></a>
-                </div>
-              </div>
               <div class="types__right">
                 <picture>
                   <source
@@ -143,29 +140,21 @@
                   <img
                     class="types__image"
                     loading="lazy"
-                    width="383"
-                    height="260"
+                    width="403"
+                    height="403"
                     src="img/texturemap-screenshot-polygons.png"
                     alt="Screenshot of TextureMap applied to polygons"
                   />
                 </picture>
               </div>
+              <div class="types__left">
+                <h3 class="types__heading heading-size--300">Polygons</h3>
+                <p>
+                  A variety of subtle pattern fills
+                </p>
+              </div>
             </li>
             <li class="types__item">
-              <div class="types__left">
-                <h3 class="types__heading heading-size--400">Lines</h3>
-                <p>
-                  Use dashes and gaps for unique line styles. People will line
-                  up to see your maps.
-                </p>
-                <div class="types__links">
-                  <a href=""
-                    >Documentation<span class="sr-only"> for lines</span></a
-                  >
-                  / <a href="">Demo<span class="sr-only"> for lines</span></a>
-                </div>
-              </div>
-
               <div class="types__right">
                 <picture>
                   <source
@@ -179,28 +168,21 @@
                   <img
                     class="types__image"
                     loading="lazy"
-                    width="383"
-                    height="260"
+                    width="403"
+                    height="403"
                     src="img/texturemap-screenshot-lines.png"
                     alt="Screenshot of TextureMap applied to lines"
                   />
                 </picture>
               </div>
+              <div class="types__left">
+                <h3 class="types__heading heading-size--300">Lines</h3>
+                <p>
+                  Compound lines with dashes and gaps
+                </p>
+              </div>
             </li>
             <li class="types__item">
-              <div class="types__left">
-                <h3 class="types__heading heading-size--400">Points</h3>
-                <p>
-                  Allow everyone to get your point. These symbols are as fun as
-                  they are functional.
-                </p>
-                <div class="types__links">
-                  <a href=""
-                    >Documentation<span class="sr-only"> for points</span></a
-                  >
-                  / <a href="">Demo<span class="sr-only"> for points</span></a>
-                </div>
-              </div>
               <div class="types__right">
                 <picture>
                   <source
@@ -214,114 +196,74 @@
                   <img
                     class="types__image"
                     loading="lazy"
-                    width="383"
-                    height="260"
+                    width="403"
+                    height="403"
                     src="img/texturemap-screenshot-points.png"
                     alt="Screenshot of TextureMap applied to points"
                   />
                 </picture>
               </div>
+              <div class="types__left">
+                <h3 class="types__heading heading-size--300">Points</h3>
+                <p>
+                  Simple, recognizable geometric shapes
+                </p>
+              </div>
             </li>
           </ul>
         </div>
       </section>
-      <section class="section-accessibility">
-        <h2 class="sr-only">More about accessibility</h2>
-
-        <div class="container">
-          <section class="accessibility__primary">
-            <div>
-              <h3 class="heading-size--400">About maps and accessibility</h3>
-              <p>
-                Digital maps have enabled a revolution in wayfinding, planning,
-                and analysis. But for many people, a map can be a barrier to
-                using a website.
-              </p>
-              <p>
-                During the Covid-19 pandemic,
-                <a
-                  href="https://www.nbcnews.com/business/consumer/blind-americans-face-roadblocks-booking-online-vaccine-appointments-n1260954"
-                  >blind people were blocked from booking vaccine
-                  appointments</a
-                >
-                because a website required users to interact with a map to
-                complete the process. As cartographers, designers, and
-                developers, we need to do better.
-              </p>
-              <p>
-                One rule of thumb is to think of a map as a supplement to more
-                accessible forms of information and interaction. Offer data as
-                tables, lists, and text. Design workflows that don’t depend on a
-                map to get to the next step. Ask: if the map disappeared, could
-                a user still complete their task?
-              </p>
-              <p>
-                TextureMap can make your map work better for colorblind users.
-                But we want to be clear that it isn’t a complete solution. For a
-                truly accessible experience, you will need to provide your users
-                with a great experience that is not centered on a map.
-              </p>
-            </div>
-            <div>
-              <picture>
-                <source
-                  srcset="img/accessibility-photos.webp"
-                  type="image/webp"
-                />
-                <source
-                  srcset="img/accessibility-photos.jpg"
-                  type="image/jpg"
-                />
-                <img
-                  class="accessibility__image"
-                  src="img/accessibility-photos.jpg"
-                  loading="lazy"
-                  width="513"
-                  height="429"
-                  alt="A collage of three photos intended: one photo of a hand holding a phone displaying a map, one photo of a woman holding a paper map, one photo of a close up paper map"
-                />
-              </picture>
-            </div>
-          </section>
-        </div>
-        <section class="accessibility__secondary">
-          <div class="container">
-            <h3 class="heading-size--300">Other resources</h3>
-            <ul class="resources">
-              <li class="resources__item">
-                <a
-                  class="resources__link"
-                  href="https://riccardoscalco.it/textures/"
-                  >Textures.js</a
-                >
-                <p>Patterns for D3 visualizations</p>
-              </li>
-              <li class="resources__item">
-                <a class="resources__link" href="http://colorbrewer2.org/"
-                  >ColorBrewer</a
-                >
-                <p>“Colorblind safe” color palettes</p>
-              </li>
-              <li class="resources__item">
-                <a
-                  class="resources__link"
-                  href="https://michelf.ca/projects/sim-daltonism/"
-                  >Sim Daltonism</a
-                >
-                <p>Simulate colorblind vision</p>
-              </li>
-              <li class="resources__item">
-                <a
-                  class="resources__link"
-                  href="https://webaim.org/resources/contrastchecker/"
-                  >WebAIM Contrast Checker</a
-                >
-                <p>Test color contrast for map labels</p>
-              </li>
-            </ul>
+      <div class="container">
+        <section class="section-accessibility">
+          <div>
+            <h3 class="heading-size--400">The bigger picture</h3>
+            <p>
+              Digital maps have enabled a revolution in wayfinding, planning,
+              and analysis. But for many people, a map can be a barrier to using
+              a website.
+            </p>
+            <p>
+              During the Covid-19 pandemic,
+              <a
+                href="https://www.nbcnews.com/business/consumer/blind-americans-face-roadblocks-booking-online-vaccine-appointments-n1260954"
+                >blind people were blocked from booking vaccine appointments</a
+              >
+              because a website required users to interact with a map to
+              complete the process. As cartographers, designers, and developers,
+              we need to do better.
+            </p>
+            <p>
+              One rule of thumb is to think of a map as a supplement to more
+              accessible forms of information and interaction. Offer data as
+              tables, lists, and text. Design workflows that don’t depend on a
+              map to get to the next step. Ask: if the map disappeared, could a
+              user still complete their task?
+            </p>
+            <p>
+              TextureMap can make your map work better for colorblind users. But
+              we want to be clear that it isn’t a complete solution. For a truly
+              accessible experience, you will need to provide your users with a
+              great experience that is not centered on a map.
+            </p>
+          </div>
+          <div class="accessibility__image">
+            <picture>
+              <source
+                srcset="img/accessibility-photos.webp"
+                type="image/webp"
+              />
+              <source srcset="img/accessibility-photos.jpg" type="image/jpg" />
+              <img
+                src="img/accessibility-photos.jpg"
+                loading="lazy"
+                width="514"
+                height="482"
+                alt="A collage of three photos intended: one photo of a hand holding a phone displaying a map, one photo of a woman holding a paper map, one photo of a close up paper map"
+              />
+            </picture>
           </div>
         </section>
-      </section>
+      </div>
     </main>
     <footer class="footer-primary">
       <div class="container footer-primary__container">
@@ -376,7 +318,7 @@
     </footer>
     <script>
       let mapLoaded = false;
-      let monochromacySimulation = false;
+      let monochromacySimulation = true;
       function toggleMonochromacy() {
         monochromacySimulation = !monochromacySimulation;
         if (monochromacySimulation) {

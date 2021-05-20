@@ -81,23 +81,6 @@ textarea {
    Base styles
    ========================================================================== */
 
-:root {
-  --color-gray-500: #272431;
-  --color-gray-400: #5c5676;
-  --color-primary-500: #430094;
-  --color-primary-400: #7200fb;
-  --font-size-500: 64px;
-  --font-size-400: 48px;
-  --font-size-300: 25px;
-  --font-size-200: 20px;
-  --font-size-100: 18px;
-  --font-size-50: 16px;
-  --container-width: 1300px;
-  --font-family: "Atlas Grotesk Web", -apple-system, BlinkMacSystemFont,
-    avenir next, avenir, segoe ui, helvetica neue, helvetica, Ubuntu, roboto,
-    noto, arial, sans-serif;
-}
-
 html {
   box-sizing: border-box;
 }
@@ -106,7 +89,6 @@ html {
 *:after {
   box-sizing: inherit;
 }
-
 @font-face {
   font-family: "Atlas Grotesk Web";
   src: url("../fonts/AtlasGrotesk-Medium-Web.woff2") format("woff2"),
@@ -114,9 +96,7 @@ html {
   font-weight: 500;
   font-style: normal;
   font-stretch: normal;
-  font-display: swap;
 }
-
 @font-face {
   font-family: "Atlas Grotesk Web";
   src: url("../fonts/AtlasGrotesk-Regular-Web.woff2") format("woff2"),
@@ -124,33 +104,31 @@ html {
   font-weight: 400;
   font-style: normal;
   font-stretch: normal;
-  font-display: swap;
 }
 
 body {
-  font-size: var(--font-size-100);
-  font-family: var(--font-family);
+  font-size: 16px;
+  font-family: "Atlas Grotesk Web", -apple-system, BlinkMacSystemFont,
+    avenir next, avenir, segoe ui, helvetica neue, helvetica, Ubuntu, roboto,
+    noto, arial, sans-serif;
   font-weight: 400;
   line-height: 1.6;
-  color: var(--color-gray-400);
+  color: #424242;
   text-rendering: optimizeLegibility;
 }
 
-html.simulate-monochromacy {
-  filter: grayscale(1);
-}
-
 a {
-  color: var(--color-primary-400);
+  color: #212121;
   text-decoration: underline;
   transition: 100ms ease-in-out all;
 }
 
 a:hover {
-  color: var(--color-primary-500);
+  color: #008fa2;
 }
 
 p {
+  max-width: 640px;
   margin: 0 0 21px;
 }
 
@@ -159,7 +137,7 @@ p:last-child {
 }
 
 p.large {
-  font-size: var(--font-size-200);
+  font-size: 23px;
 }
 
 h1,
@@ -167,8 +145,9 @@ h2,
 h3,
 h4 {
   font-weight: 500;
+  max-width: 640px;
   line-height: 1.2;
-  color: var(--color-gray-500);
+  color: #212121;
 }
 
 h1:first-child,
@@ -187,21 +166,20 @@ h4:first-child {
 
 img {
   max-width: 100%;
-  height: auto;
 }
 
 @media only screen and (max-width: 1120px) {
   p.large {
-    font-size: var(--font-size-200);
+    font-size: 19px;
   }
 }
 
-@media only screen and (max-width: 560px) {
+@media only screen and (max-width: 480px) {
   body {
-    font-size: var(--font-size-50);
+    font-size: 14px;
   }
   p.large {
-    font-size: var(--font-size-100);
+    font-size: 16px;
   }
 }
 
@@ -210,53 +188,53 @@ img {
    ========================================================================== */
 
 .heading-size--500 {
-  font-size: var(--font-size-500);
+  font-size: 54px;
   margin-bottom: 24px;
 }
 
 .heading-size--400 {
-  font-size: var(--font-size-400);
+  font-size: 32px;
   margin-bottom: 24px;
 }
 
 .heading-size--300 {
-  font-size: var(--font-size-300);
+  font-size: 23px;
   margin-bottom: 18px;
 }
 
 .heading-size--200 {
-  font-size: var(--font-size-200);
+  font-size: 19px;
   margin-bottom: 16px;
 }
 
 .heading-size--100 {
-  font-size: var(--font-size-100);
+  font-size: 16px;
   margin-bottom: 16px;
 }
 
-@media only screen and (max-width: 560px) {
+@media only screen and (max-width: 480px) {
   .heading-size--500 {
-    font-size: var(--font-size-400);
+    font-size: 32px;
     margin-bottom: 24px;
   }
 
   .heading-size--400 {
-    font-size: var(--font-size-300);
+    font-size: 23px;
     margin-bottom: 18px;
   }
 
   .heading-size--300 {
-    font-size: var(--font-size-200);
+    font-size: 19px;
     margin-bottom: 16px;
   }
 
   .heading-size--200 {
-    font-size: var(--font-size-100);
+    font-size: 16px;
     margin-bottom: 16px;
   }
 
   .heading-size--100 {
-    font-size: var(--font-size-50);
+    font-size: 14px;
     margin-bottom: 16px;
   }
 }
@@ -266,6 +244,7 @@ img {
    ========================================================================== */
 
 .header-primary {
+  background-color: #212121;
 }
 
 .header-primary__container {
@@ -276,6 +255,10 @@ img {
 .header-primary__logo {
 }
 
+.header-primary__logo > img {
+  height: 32px;
+}
+
 .header-primary__nav {
   flex: 1;
   text-align: right;
@@ -283,69 +266,17 @@ img {
 
 .header-primary__link {
   margin-left: 10px;
-  text-decoration: none;
-  font-size: var(--font-size-100);
-  font-weight: 500;
-  background: none;
-  color: var(--color-gray-500);
-}
-
-.header-primary__button {
-  margin-left: 10px;
-  color: var(--color-gray-500);
-  text-decoration: none;
-  font-size: var(--font-size-100);
-  font-weight: 500;
-  border: 2px solid var(--color-gray-500);
-  padding-left: 10px;
-  background: #fff;
-  padding: 8px 10px;
-  cursor: pointer;
-  box-shadow: 0 1px 6px 0 rgb(0 0 0 / 6%), 0 2px 32px 0 rgb(0 0 0 / 16%);
-}
-
-.simulate-button {
-  position: fixed;
-  z-index: 200000000;
-  bottom: 20px;
-  right: 0;
-  left: 0;
-  max-width: var(--container-width);
-  margin-left: auto;
-  margin-right: auto;
-  text-align: right;
-  padding: 0 15px;
-}
-
-@media only screen and (max-width: 560px) {
-  .simulate-button {
-    display: none;
-  }
-}
-
-.header-primary__button:hover {
-  background-color: var(--color-primary-400);
-  border: 2px solid var(--color-primary-400);
   color: #fff;
-}
-
-html.simulate-monochromacy .header-primary__button {
-  background-color: var(--color-primary-500);
-  border: 2px solid var(--color-primary-500);
-  color: #fff;
-}
-
-.header-primary__button > svg {
-  width: 22px;
-  margin-right: 8px;
-  margin-top: -6px;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
 }
 
 .header-primary__link:hover {
-  color: var(--color-primary-400);
+  color: #008fa2;
 }
 
-@media only screen and (max-width: 560px) {
+@media only screen and (max-width: 480px) {
   .header-primary__nav {
     display: none;
   }
@@ -356,7 +287,7 @@ html.simulate-monochromacy .header-primary__button {
    ========================================================================== */
 
 .footer-primary {
-  background-color: var(--color-gray-500);
+  background: #222;
   color: #fff;
   padding: 40px 0;
 }
@@ -368,7 +299,7 @@ html.simulate-monochromacy .header-primary__button {
 
 .footer__brand {
   font-weight: 500;
-  font-size: var(--font-size-50);
+  font-size: 14px;
   align-items: center;
   display: flex;
 }
@@ -387,50 +318,123 @@ html.simulate-monochromacy .header-primary__button {
   margin-left: 10px;
   color: #fff;
   text-decoration: none;
-  font-size: var(--font-size-100);
+  font-size: 16px;
   font-weight: 500;
 }
 
-@media only screen and (max-width: 560px) {
+@media only screen and (max-width: 480px) {
   .footer-primary {
     padding: 0;
   }
   .footer-primary__container {
     display: flex;
     padding: 28px 15px 24px;
-    flex-direction: column;
   }
   .footer-primary__nav {
-    display: flex;
-    text-align: left;
-    margin-left: -10px;
-    margin-bottom: 20px;
-    order: -1;
+    display: none;
   }
 }
 
-@media only screen and (max-width: 560px) {
+@media only screen and (max-width: 480px) {
 }
 /* ==========================================================================
    Map
    ========================================================================== */
 
-.map {
-  height: 80vh;
-  background-color: #fff;
-  overflow: hidden;
-  margin: 40px 20px 0;
-  transition: 0.2s ease-in-out;
+.mapboxgl-canvas {
+  outline: none;
 }
 
-.map__iframe {
+.mapboxgl-canvas:focus-visible {
+  outline: 5px auto focus-ring-color;
+  outline: 5px auto -webkit-focus-ring-color;
+}
+
+.map-container {
+  max-width: 900px;
+  height: 440px;
+  border-radius: 3px 3px 0 0;
+  position: relative;
+}
+
+.map {
+  position: absolute !important;
+  top: 0;
+  bottom: 0;
   width: 100%;
-  height: 100%;
-  border: none;
+}
+
+#after {
+  filter: grayscale(1);
+}
+
+.mapboxgl-compare {
+  background-color: #222;
+}
+.mapboxgl-compare .compare-swiper-vertical {
+transform: scale(.8);
+    box-shadow: none;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #222;
+}
+
+.map__controls {
+  background-color: #eeeeee;
+  color: #212121;
+  z-index: 5000;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  font-size: 14px;
+  padding: 4px 8px;
+}
+
+.map__label:last-child {
+  margin-right: 0;
+}
+
+.map__label {
+  margin-right: 8px;
+  user-select: none;
+}
+
+.map__checkbox {
+  position: relative;
+  top: 1px;
+  margin-right: 2px;
+}
+
+.hero .mapboxgl-map {
+  font-family: "Atlas Grotesk Web", -apple-system, BlinkMacSystemFont,
+    avenir next, avenir, segoe ui, helvetica neue, helvetica, Ubuntu, roboto,
+    noto, arial, sans-serif;
+}
+
+.mapboxgl-ctrl-top-right {
+  transform: scale(0.8);
+}
+
+.map.texturemap-on .mapboxgl-canvas {
+  filter: grayscale(1);
+}
+
+@media only screen and (max-width: 1120px) {
+  .map-container {
+    height: 400px;
+    margin-right: -15px;
+  }
+}
+
+@media only screen and (max-width: 1020px) {
+  .map-container {
+    height: 480px;
+    margin-right: -15px;
+  }
 }
 
 @media only screen and (max-width: 768px) {
-  .map {
+  .map-container {
     display: none;
   }
 }
@@ -440,32 +444,42 @@ html.simulate-monochromacy .header-primary__button {
    ========================================================================== */
 
 .hero {
+  display: grid;
+  column-gap: 60px;
+  grid-template-columns: repeat(2, 1fr);
 }
 
 .section-hero {
+  background-color: #212121;
   margin-top: 0;
   padding-top: 40px;
 }
 
+.section-hero h1,
+.section-hero h2,
+.section-hero h3,
+.section-hero p {
+  color: #fff;
+}
+
 .hero__content {
-  max-width: 680px;
-  text-align: center;
-  margin: 0 auto;
+  max-width: 550px;
 }
 
 .hero__buttons {
   margin-top: 36px;
-  font-size: var(--font-size-200);
+  font-size: 19px;
 }
 
 .hero__button-gettingstarted {
-  background-color: var(--color-primary-400);
-  border: 2px solid var(--color-primary-400);
+  background: #008fa2;
+  border: 2px solid #008fa2;
   color: #fff;
   text-decoration: none;
+  border-radius: 5px;
   font-weight: 500;
   margin-right: 10px;
-  width: 160px;
+  width: 180px;
   display: inline-block;
   text-align: center;
   line-height: 0;
@@ -474,12 +488,13 @@ html.simulate-monochromacy .header-primary__button {
 }
 
 .hero__button-download {
-  background-color: transparent;
-  border: 2px solid var(--color-primary-400);
-  color: var(--color-primary-400);
+  background: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+  border-radius: 5px;
   text-decoration: none;
-  font-weight: 500;
-  width: 160px;
+  font-weight: 00;
+  width: 180px;
   display: inline-block;
   text-align: center;
   line-height: 0;
@@ -489,8 +504,8 @@ html.simulate-monochromacy .header-primary__button {
 
 .hero__button-gettingstarted:hover,
 .hero__button-download:hover {
-  background-color: var(--color-primary-500);
-  border-color: var(--color-primary-500);
+  background-color: #007180;
+  border-color: #007180;
   color: #fff;
 }
 
@@ -508,7 +523,7 @@ html.simulate-monochromacy .header-primary__button {
 
 @media only screen and (max-width: 1120px) {
   .hero__buttons {
-    font-size: var(--font-size-100);
+    font-size: 16px;
     margin-top: 32px;
   }
 
@@ -523,7 +538,7 @@ html.simulate-monochromacy .header-primary__button {
   }
 }
 
-@media only screen and (max-width: 560px) {
+@media only screen and (max-width: 480px) {
   .section-hero {
     padding: 0 0 30px;
   }
@@ -535,19 +550,16 @@ html.simulate-monochromacy .header-primary__button {
 
 .types {
   list-style-type: none;
+  margin: 0;
   padding: 0;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 30px;
-  margin: 10px 0 0;
+  display: flex;
 }
 
 .section-types {
-  padding: 150px 0;
   margin: 0;
   z-index: 2;
   position: relative;
-  background-color: #fff;
+  background: #fff;
 }
 
 .types__links {
@@ -557,17 +569,14 @@ html.simulate-monochromacy .header-primary__button {
 }
 
 .types__heading {
-  margin: 16px 0 8px !important;
-}
-
-.types__text {
-  max-width: 680px;
+  margin-bottom: 19px;
 }
 
 .types__item {
   background-color: #fff;
-  padding: 20px 0 0;
+  padding: 60px 30px;
   flex: 1;
+  border-right: 1px solid #eee;
   display: grid;
   column-gap: 40px;
   row-gap: 2px;
@@ -584,9 +593,10 @@ html.simulate-monochromacy .header-primary__button {
 }
 
 .types__image {
-  box-shadow: 0 0 1px black;
-  content-visibility: auto;
+  border: 1px solid #eee;
+  width: 391px;
   box-sizing: content-box;
+  border-radius: 3px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -602,10 +612,7 @@ html.simulate-monochromacy .header-primary__button {
   }
 }
 
-@media only screen and (max-width: 560px) {
-  .section-types {
-    padding: 20px 0;
-  }
+@media only screen and (max-width: 480px) {
   .types {
     display: block;
   }
@@ -620,8 +627,8 @@ html.simulate-monochromacy .header-primary__button {
    ========================================================================== */
 
 .section-accessibility {
-  padding: 0 0 150px;
-  display: flex;
+  background: #eeeeee;
+  padding: 60px 0;
 }
 
 .resources {
@@ -635,9 +642,9 @@ html.simulate-monochromacy .header-primary__button {
 }
 
 .resources__link {
-  font-size: var(--font-size-200);
+  font-size: 19px;
   font-weight: 500;
-  color: var(--color-gray-500);
+  color: #212121;
   margin: 8px 0;
   display: inline-block;
 }
@@ -652,10 +659,7 @@ html.simulate-monochromacy .header-primary__button {
 }
 
 .accessibility__image {
-  content-visibility: auto;
-  flex-shrink: 0;
-  order: -1;
-  margin-right: 60px;
+  width: 513px;
 }
 
 .accessibility__secondary {
@@ -673,13 +677,9 @@ html.simulate-monochromacy .header-primary__button {
   }
 }
 
-@media only screen and (max-width: 560px) {
+@media only screen and (max-width: 480px) {
   .section-accessibility {
     padding: 30px 0;
-    display: block;
-  }
-  .accessibility__image {
-    margin: 30px 0 0;
   }
   .accessibility__secondary {
     grid-template-columns: 1fr;
@@ -688,9 +688,6 @@ html.simulate-monochromacy .header-primary__button {
   }
   .resources {
     grid-template-columns: 1fr;
-  }
-  .resources__link {
-    font-size: var(--font-size-100);
   }
 }
 
