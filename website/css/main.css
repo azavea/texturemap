@@ -286,7 +286,7 @@ img {
 .header-primary__link {
   margin-left: 10px;
   text-decoration: none;
-  font-size: var(--font-size-100);
+  font-size: var(--font-size-50);
   font-weight: 500;
   background: none;
   color: var(--color-gray-500);
@@ -389,7 +389,7 @@ html.simulate-monochromacy .header-primary__button {
   margin-left: 10px;
   color: #fff;
   text-decoration: none;
-  font-size: var(--font-size-100);
+  font-size: var(--font-size-50);
   font-weight: 500;
 }
 
