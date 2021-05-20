@@ -84,8 +84,8 @@ textarea {
 :root {
   --color-gray-500: #272431;
   --color-gray-400: #5c5676;
-  --color-primary-500: #019369;
-  --color-primary-400: #01ac7b;
+  --color-primary-500: #016a4c;
+  --color-primary-400: #01845f;
   --font-size-500: 64px;
   --font-size-400: 48px;
   --font-size-300: 25px;
@@ -675,23 +675,30 @@ html.simulate-monochromacy .header-primary__button {
   border-top: 1px solid #c9c9c9;
 }
 
+@media only screen and (max-width: 1120px) {
+  .accessibility__image {
+    width: 40vw;
+  }
+}
+
 @media only screen and (max-width: 768px) {
   .accessibility__primary {
     grid-template-columns: 1fr;
   }
-  .resources {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media only screen and (max-width: 560px) {
   .section-accessibility {
     padding: 30px 0;
     display: block;
   }
+  .resources {
+    grid-template-columns: repeat(2, 1fr);
+  }
   .accessibility__image {
     margin: 30px 0 0;
+    width: auto;
   }
+}
+
+@media only screen and (max-width: 560px) {
   .accessibility__secondary {
     grid-template-columns: 1fr;
     padding-top: 30px;
