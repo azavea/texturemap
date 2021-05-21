@@ -98,9 +98,9 @@ function generateSVGs({ name, styles }) {
           if (err) {
             return console.log(err);
           }
-          data = data.replace(/%FILL_COLOR%/g, fillColor);
-          data = data.replace(/%STROKE_COLOR%/g, strokeColor);
-          data = data.replace(/%STROKE_WIDTH%/g, strokeWidth);
+          data = data.replace(/{FILL_COLOR}/g, fillColor);
+          data = data.replace(/{STROKE_COLOR}/g, strokeColor);
+          data = data.replace(/{STROKE_WIDTH}/g, strokeWidth);
 
           fs.writeFile(newFile, data, "utf8", function(err) {
             if (err) return console.log(err);
