@@ -2,8 +2,7 @@
   ID = "texturemap"
 
 [build]
-  publish = "_site"
-  command = "echo 'npm run copy-examples'"
+  publish = "website"
 
 [[headers]]
   for = "/*"
