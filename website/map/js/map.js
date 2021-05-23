@@ -61,6 +61,7 @@ function getMapConfig(useTextureMap) {
               type: "fill",
               source: "polygons",
               layout: {},
+              filter: ["all", ["match", ["get", "C_DIG1"], [5], false, true]],
               paint: {
                 "fill-pattern": [
                   "step",
@@ -74,8 +75,6 @@ function getMapConfig(useTextureMap) {
                   "tmpoly-line-vertical-down-light-100-black",
                   4,
                   "tmpoly-caret-200-black",
-                  5,
-                  "transparent",
                   6,
                   "tmpoly-square-100-black",
                   7,
@@ -85,7 +84,7 @@ function getMapConfig(useTextureMap) {
                   9,
                   "tmpoly-plus-200-black"
                 ],
-                "fill-opacity": 0.75
+                "fill-opacity": 1
               }
             }
           : {
