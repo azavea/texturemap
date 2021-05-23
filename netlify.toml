@@ -3,6 +3,7 @@
 
 [build]
   publish = "website"
+  command = "echo 'npm run copy-examples'"
 
 [[headers]]
   for = "/*"

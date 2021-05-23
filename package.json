@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node src/index.js"
+    "build-patterns": "node src/build-patterns.js",
+    "copy-examples": "node src/copy-examples.js"
   },
   "repository": {
     "type": "git",
@@ -17,6 +18,7 @@
     "url": "https://github.com/azavea/texturemap/issues"
   },
   "homepage": "https://github.com/azavea/texturemap",
-  "dependencies": {},
-  "devDependencies": {}
+  "devDependencies": {
+    "fs-extra": "^10.0.0"
+  }
 }
