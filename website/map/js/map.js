@@ -8,7 +8,7 @@ function getMapConfig(useTextureMap) {
       version: 8,
       name: "Blank",
       id: "blank",
-      sprite: window.location.href + "js/polygons-sprite@2x",
+      sprite: window.location.href + "js/polygons-sprite",
       sources: {
         polygons: {
           type: "geojson",
