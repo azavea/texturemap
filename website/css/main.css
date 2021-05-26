@@ -681,7 +681,6 @@ html.simulate-monochromacy .header-primary__button {
 @media only screen and (max-width: 1120px) {
   .accessibility__image {
     width: 40vw;
-    display: none;
   }
 }
 
@@ -699,6 +698,7 @@ html.simulate-monochromacy .header-primary__button {
   .accessibility__image {
     margin: 30px 0 0;
     width: auto;
+    display: none;
   }
 }
 
