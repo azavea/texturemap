@@ -217,42 +217,88 @@
           </ul>
         </div>
       </section>
-    </main>
-    <footer class="footer-primary">
-      <div class="container footer-primary__container">
-        <div class="footer__brand">
-          <a href="https://azavea.com">
-            <img
-              class="footer__logo"
-              width="131"
-              height="32"
-              src="img/azavea-logo.svg"
-              alt="Azavea"
-          /></a>
-        </div>
-        <nav aria-label="Footer navigation" class="footer-primary__nav">
-          <a
-            class="footer-primary__link"
-            href="https://github.com/azavea/texturemap#how-to-use"
-            >Documentation</a
-          >
-          <a
-            class="footer-primary__link"
-            href="https://github.com/azavea/texturemap/releases/latest/download/texturemap.zip"
-            >Download</a
-          >
-          <a
-            class="footer-primary__link"
-            href="https://github.com/azavea/texturemap"
-            >Github</a
-          >
-        </nav>
+      <div class="container">
+        <section class="section-accessibility">
+          <div>
+            <h3 class="heading-size--400">Make your map more useful</h3>
+            <p>
+              Approximately 300 million people—or 4.5% of the global
+              population—have a form of color vision deficiency (the inability
+              to distinguish certain shades of color). Complex maps that depend
+              exclusively on color to symbolize
+              <a href="http://www.stat.yale.edu/Courses/1997-98/101/catdat.htm"
+                >categorical data</a
+              >
+              can be frustrating, if not impossible, to read.
+            </p>
+            <p>
+              According to
+              <a
+                href="https://colororacle.org/resources/2007_JennyKelso_DesigningMapsForTheColourVisionImpaired.pdf"
+                >Designing Maps for the Colour-Vision Impaired</a
+              >
+              by Bernhard Jenny and Nathaniel Vaughn Kelso:
+            </p>
+            <blockquote>
+              To avoid problematic colour combinations, the cartographer should
+              use colours with strong contrast and supplemental visual
+              variables, such as shape, size, and
+              <strong>pattern variations</strong> to allow all readers to
+              discern and directly interpret a symbol without consulting a
+              legend"
+            </blockquote>
+            <p>
+              TextureMap gives you everything you need to start adding textures,
+              patterns, and shapes to your maps in minutes.
+            </p>
+            <div class="cta__buttons">
+              <a
+                href="https://github.com/azavea/texturemap#how-to-use"
+                class="hero__button-gettingstarted"
+                >Get started</a
+              >
+              <a
+                href="https://github.com/azavea/texturemap/releases/latest/download/texturemap.zip"
+                class="hero__button-download"
+                >Download</a
+              >
+            </div>
+          </div>
+          <div class="accessibility__image">
+            <picture>
+              <source
+                srcset="img/accessibility-photos.webp"
+                type="image/webp"
+              />
+              <source srcset="img/accessibility-photos.jpg" type="image/jpg" />
+              <img
+                src="img/accessibility-photos.jpg"
+                loading="lazy"
+                width="514"
+                height="482"
+                alt="A collage of three photos intended: one photo of a hand holding a phone displaying a map, one photo of a woman holding a paper map, one photo of a close up paper map"
+              />
+            </picture>
+          </div>
+        </section>
       </div>
-    </footer>
+    </main>
+    <div class="container footer-primary__container">
+      <footer class="footer-primary">
+        <a href="https://azavea.com">
+          <img
+            class="footer__logo"
+            width="144"
+            height="35"
+            src="img/azavea-logo.png"
+            alt="Azavea"
+        /></a>
+      </footer>
+    </div>
     <script>
       let mapLoaded = false;
       function loadMap() {
-        if (!mapLoaded && window.innerWidth > 768) {
+        if (!mapLoaded && window.innerWidth > 560) {
           document.getElementById("map").innerHTML =
             '<iframe class="map__iframe" loading="lazy" src="map" title="Demo of TextureMap"></iframe>';
           mapLoaded = true;

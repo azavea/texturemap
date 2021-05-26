@@ -26,6 +26,12 @@ aside {
   grid-gap: 15px;
 }
 
+@media only screen and (max-width: 768px) {
+  .map-container {
+    grid-template-columns: 1fr;
+  }
+}
+
 .map {
   top: 0;
   bottom: 0;
