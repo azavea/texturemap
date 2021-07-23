@@ -1,8 +1,8 @@
-var defaultCenter = { lng: -75.17705316570994, lat: 39.97833441433514 };
+var defaultCenter = { lng: -75.17758, lat: 39.97833 };
 var defaultZoom = 16.5;
 var defaultBearing = 0;
 
-function getMapConfig(useTextureMap) {
+function getMapConfig({ simulate, texture }) {
   return {
     style: {
       version: 8,
@@ -23,39 +23,72 @@ function getMapConfig(useTextureMap) {
             "background-color": "#fff"
           }
         },
-        {
-          id: "polygons-fill",
-          type: "fill",
-          source: "polygons",
-          layout: {},
-          paint: {
-            "fill-color": [
-              "step",
-              ["get", "C_DIG1"],
-              "#bcbd22",
-              1,
-              "#2ca02c",
-              2,
-              "#ff7f0e",
-              3,
-              "#d62728",
-              4,
-              "#9467bd",
-              5,
-              "transparent",
-              6,
-              "#1f77b4",
-              7,
-              "#e377c2",
-              8,
-              "#17becf",
-              9,
-              "#8c564b"
-            ],
-            "fill-opacity": 1
-          }
-        },
-        useTextureMap
+        simulate
+          ? {
+              id: "polygons-fill",
+              type: "fill",
+              source: "polygons",
+              layout: {},
+              paint: {
+                "fill-color": [
+                  "step",
+                  ["get", "C_DIG1"],
+                  "#ABABAB",
+                  1,
+                  "#707070",
+                  2,
+                  "#989898",
+                  3,
+                  "#5B5B5B",
+                  4,
+                  "#7E7E7E",
+                  5,
+                  "transparent",
+                  6,
+                  "#646464",
+                  7,
+                  "#A0A0A0",
+                  8,
+                  "#8E8E8E",
+                  9,
+                  "#656565"
+                ],
+                "fill-opacity": 1
+              }
+            }
+          : {
+              id: "polygons-fill",
+              type: "fill",
+              source: "polygons",
+              layout: {},
+              paint: {
+                "fill-color": [
+                  "step",
+                  ["get", "C_DIG1"],
+                  "#bcbd22",
+                  1,
+                  "#2ca02c",
+                  2,
+                  "#ff7f0e",
+                  3,
+                  "#d62728",
+                  4,
+                  "#9467bd",
+                  5,
+                  "transparent",
+                  6,
+                  "#1f77b4",
+                  7,
+                  "#e377c2",
+                  8,
+                  "#17becf",
+                  9,
+                  "#8c564b"
+                ],
+                "fill-opacity": 1
+              }
+            },
+        texture
           ? {
               id: "polygons-texture",
               type: "fill",
@@ -114,52 +147,86 @@ function getMapConfig(useTextureMap) {
   };
 }
 
-var beforeMap = new mapboxgl.Map({
-  container: "before",
-  ...getMapConfig(false)
+var mapSimulation = new mapboxgl.Map({
+  container: "map-default",
+  ...getMapConfig({ simulate: false, texture: false })
 });
 
-var afterMap = new mapboxgl.Map({
-  container: "after",
-  ...getMapConfig(true)
+var mapDefault = new mapboxgl.Map({
+  container: "map-simulation",
+  ...getMapConfig({ simulate: true, texture: false })
+});
+
+var mapTexturemap = new mapboxgl.Map({
+  container: "map-texturemap",
+  ...getMapConfig({ simulate: true, texture: true })
 });
 
 var disable = false;
-beforeMap.on("move", function() {
+mapDefault.on("move", function() {
   if (!disable) {
-    var center = beforeMap.getCenter();
-    var zoom = beforeMap.getZoom();
-    var pitch = beforeMap.getPitch();
-    var bearing = beforeMap.getBearing();
+    var center = mapDefault.getCenter();
+    var zoom = mapDefault.getZoom();
+    var pitch = mapDefault.getPitch();
+    var bearing = mapDefault.getBearing();
     disable = true;
-    afterMap.setCenter(center);
-    afterMap.setZoom(zoom);
-    afterMap.setPitch(pitch);
-    afterMap.setBearing(bearing);
+    mapSimulation.setCenter(center);
+    mapSimulation.setZoom(zoom);
+    mapSimulation.setPitch(pitch);
+    mapSimulation.setBearing(bearing);
+    mapTexturemap.setCenter(center);
+    mapTexturemap.setZoom(zoom);
+    mapTexturemap.setPitch(pitch);
+    mapTexturemap.setBearing(bearing);
     disable = false;
   }
 });
 
-afterMap.on("move", function() {
+mapSimulation.on("move", function() {
   if (!disable) {
-    var center = afterMap.getCenter();
-    var zoom = afterMap.getZoom();
-    var pitch = afterMap.getPitch();
-    var bearing = afterMap.getBearing();
+    var center = mapSimulation.getCenter();
+    var zoom = mapSimulation.getZoom();
+    var pitch = mapSimulation.getPitch();
+    var bearing = mapSimulation.getBearing();
     disable = true;
-    beforeMap.setCenter(center);
-    beforeMap.setZoom(zoom);
-    beforeMap.setPitch(pitch);
-    beforeMap.setBearing(bearing);
+    mapDefault.setCenter(center);
+    mapDefault.setZoom(zoom);
+    mapDefault.setPitch(pitch);
+    mapDefault.setBearing(bearing);
+    mapTexturemap.setCenter(center);
+    mapTexturemap.setZoom(zoom);
+    mapTexturemap.setPitch(pitch);
+    mapTexturemap.setBearing(bearing);
     disable = false;
   }
 });
 
-beforeMap.scrollZoom.disable();
+mapTexturemap.on("move", function() {
+  if (!disable) {
+    var center = mapTexturemap.getCenter();
+    var zoom = mapTexturemap.getZoom();
+    var pitch = mapTexturemap.getPitch();
+    var bearing = mapTexturemap.getBearing();
+    disable = true;
+    mapDefault.setCenter(center);
+    mapDefault.setZoom(zoom);
+    mapDefault.setPitch(pitch);
+    mapDefault.setBearing(bearing);
+    mapSimulation.setCenter(center);
+    mapSimulation.setZoom(zoom);
+    mapSimulation.setPitch(pitch);
+    mapSimulation.setBearing(bearing);
+    disable = false;
+  }
+});
 
-afterMap.addControl(
+mapTexturemap.addControl(
   new mapboxgl.NavigationControl({ showCompass: false }),
   "top-right"
 );
 
-afterMap.scrollZoom.disable();
+mapDefault.scrollZoom.disable();
+
+mapTexturemap.scrollZoom.disable();
+
+mapSimulation.scrollZoom.disable();
