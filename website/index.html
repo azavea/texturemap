@@ -57,32 +57,16 @@
   <body>
     <header class="header-primary">
       <div class="container header-primary__container">
-        <h1 class="sr-only">TextureMap</h1>
-        <div class="header-primary__logo">
-          <img
-            src="img/texturemap-logo.svg"
-            height="32"
-            width="170"
-            alt="TextureMap logo"
-          />
-        </div>
-        <nav aria-label="Header navigation" class="header-primary__nav">
-          <a
-            class="header-primary__link"
-            href="https://github.com/azavea/texturemap#how-to-use"
-            >Documentation</a
-          >
-          <a
-            class="header-primary__link"
-            href="https://github.com/azavea/texturemap/releases/latest/download/texturemap.zip"
-            >Download</a
-          >
-          <a
-            class="header-primary__link"
-            href="https://github.com/azavea/texturemap"
-            >Github</a
-          >
-        </nav>
+        <h1>
+          <div class="header-primary__logo">
+            <img
+              src="img/texturemap-logo.svg"
+              height="32"
+              width="170"
+              alt="TextureMap"
+            />
+          </div>
+        </h1>
       </div>
     </header>
     <main>
@@ -288,18 +272,18 @@
         </section>
       </div>
     </main>
-    <div class="container footer-primary__container">
-      <footer class="footer-primary">
-        <a href="https://azavea.com">
-          <img
-            class="footer__logo"
-            width="144"
-            height="35"
-            src="img/azavea-logo.svg"
-            alt="Azavea"
-        /></a>
-      </footer>
-    </div>
+
+    <footer class="footer-primary">
+      <a href="https://azavea.com">
+        <img
+          class="footer__logo"
+          width="144"
+          height="35"
+          src="img/azavea-logo.svg"
+          alt="Azavea"
+      /></a>
+    </footer>
+
     <script>
       let mapLoaded = false;
       function loadMap() {
