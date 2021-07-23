@@ -88,10 +88,10 @@ blockquote {
    ========================================================================== */
 
 :root {
-  --color-gray-500: #eae3da;
-  --color-gray-400: #eae3da;
-  --color-primary-500: #b1e2e7;
-  --color-primary-400: #85d1d8;
+  --color-gray-500: #fff;
+  --color-gray-400: #bebfc0;
+  --color-primary-500: #85d1d8;
+  --color-primary-400: #7679d6;
   --font-size-500: 64px;
   --font-size-400: 48px;
   --font-size-300: 25px;
