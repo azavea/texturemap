@@ -89,7 +89,7 @@ blockquote {
 
 :root {
   --color-gray-500: #dbdbdb;
-  --color-gray-400: #bfbfbf;
+  --color-gray-400: #a3a3a3;
   --color-primary-500: #b28600;
   --color-primary-400: #d2a106;
   --font-size-500: 64px;
@@ -140,7 +140,7 @@ body {
   font-weight: 400;
   line-height: 1.6;
   color: var(--color-gray-400);
-  text-rendering: optimizeLegibility;
+  text-rendering: geometricPrecision;
   background-color: var(--background-color);
 }
 
@@ -593,7 +593,7 @@ html.simulate-monochromacy .header-primary__button {
 }
 
 .types__heading {
-  margin: 30px 0 12px !important;
+  margin: 16px 0 8px !important;
 }
 
 .types__text {
@@ -623,6 +623,10 @@ html.simulate-monochromacy .header-primary__button {
   content-visibility: auto;
   box-sizing: content-box;
   border-radius: 2px;
+}
+
+.types__left p {
+  font-size: var(--font-size-50);
 }
 
 @media only screen and (max-width: 768px) {
