@@ -12,16 +12,16 @@ function getMapConfig({ simulate, texture }) {
       sources: {
         polygons: {
           type: "geojson",
-          data: "js/polygon.geojson"
-        }
+          data: "js/polygon.geojson",
+        },
       },
       layers: [
         {
           id: "background",
           type: "background",
           paint: {
-            "background-color": "#fff"
-          }
+            "background-color": "#fff",
+          },
         },
         simulate
           ? {
@@ -51,10 +51,10 @@ function getMapConfig({ simulate, texture }) {
                   8,
                   "#8E8E8E",
                   9,
-                  "#656565"
+                  "#656565",
                 ],
-                "fill-opacity": 1
-              }
+                "fill-opacity": 1,
+              },
             }
           : {
               id: "polygons-fill",
@@ -83,10 +83,10 @@ function getMapConfig({ simulate, texture }) {
                   8,
                   "#17becf",
                   9,
-                  "#8c564b"
+                  "#8c564b",
                 ],
-                "fill-opacity": 1
-              }
+                "fill-opacity": 1,
+              },
             },
         texture
           ? {
@@ -115,10 +115,10 @@ function getMapConfig({ simulate, texture }) {
                   8,
                   "tmpoly-line-vertical-light-100-black",
                   9,
-                  "tmpoly-plus-200-black"
+                  "tmpoly-plus-200-black",
                 ],
-                "fill-opacity": 1
-              }
+                "fill-opacity": 1,
+              },
             }
           : {
               id: "polygons-texture",
@@ -126,10 +126,10 @@ function getMapConfig({ simulate, texture }) {
               source: "polygons",
               layout: {},
               paint: {
-                "fill-color": "transparent"
-              }
-            }
-      ]
+                "fill-color": "transparent",
+              },
+            },
+      ],
     },
     minZoom: defaultZoom,
     center: defaultCenter,
@@ -139,85 +139,15 @@ function getMapConfig({ simulate, texture }) {
     dragRotate: false,
     touchZoomRotate: false,
     maxBounds: [
-      -75.17986178398132,
-      39.976330828104786,
-      -75.17422914505005,
-      39.979849588073435
-    ]
+      -75.17986178398132, 39.976330828104786, -75.17422914505005,
+      39.979849588073435,
+    ],
   };
 }
 
-var mapSimulation = new mapboxgl.Map({
-  container: "map-default",
-  ...getMapConfig({ simulate: false, texture: false })
-});
-
-var mapDefault = new mapboxgl.Map({
-  container: "map-simulation",
-  ...getMapConfig({ simulate: true, texture: false })
-});
-
 var mapTexturemap = new mapboxgl.Map({
   container: "map-texturemap",
-  ...getMapConfig({ simulate: true, texture: true })
-});
-
-var disable = false;
-mapDefault.on("move", function() {
-  if (!disable) {
-    var center = mapDefault.getCenter();
-    var zoom = mapDefault.getZoom();
-    var pitch = mapDefault.getPitch();
-    var bearing = mapDefault.getBearing();
-    disable = true;
-    mapSimulation.setCenter(center);
-    mapSimulation.setZoom(zoom);
-    mapSimulation.setPitch(pitch);
-    mapSimulation.setBearing(bearing);
-    mapTexturemap.setCenter(center);
-    mapTexturemap.setZoom(zoom);
-    mapTexturemap.setPitch(pitch);
-    mapTexturemap.setBearing(bearing);
-    disable = false;
-  }
-});
-
-mapSimulation.on("move", function() {
-  if (!disable) {
-    var center = mapSimulation.getCenter();
-    var zoom = mapSimulation.getZoom();
-    var pitch = mapSimulation.getPitch();
-    var bearing = mapSimulation.getBearing();
-    disable = true;
-    mapDefault.setCenter(center);
-    mapDefault.setZoom(zoom);
-    mapDefault.setPitch(pitch);
-    mapDefault.setBearing(bearing);
-    mapTexturemap.setCenter(center);
-    mapTexturemap.setZoom(zoom);
-    mapTexturemap.setPitch(pitch);
-    mapTexturemap.setBearing(bearing);
-    disable = false;
-  }
-});
-
-mapTexturemap.on("move", function() {
-  if (!disable) {
-    var center = mapTexturemap.getCenter();
-    var zoom = mapTexturemap.getZoom();
-    var pitch = mapTexturemap.getPitch();
-    var bearing = mapTexturemap.getBearing();
-    disable = true;
-    mapDefault.setCenter(center);
-    mapDefault.setZoom(zoom);
-    mapDefault.setPitch(pitch);
-    mapDefault.setBearing(bearing);
-    mapSimulation.setCenter(center);
-    mapSimulation.setZoom(zoom);
-    mapSimulation.setPitch(pitch);
-    mapSimulation.setBearing(bearing);
-    disable = false;
-  }
+  ...getMapConfig({ simulate: true, texture: true }),
 });
 
 mapTexturemap.addControl(
@@ -225,8 +155,4 @@ mapTexturemap.addControl(
   "top-right"
 );
 
-mapDefault.scrollZoom.disable();
-
 mapTexturemap.scrollZoom.disable();
-
-mapSimulation.scrollZoom.disable();

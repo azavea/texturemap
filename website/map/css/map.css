@@ -21,9 +21,6 @@ aside {
   width: 100%;
   height: 100%;
   background-color: transparent;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 15px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -121,6 +118,10 @@ aside {
   font-family: var(--font-family);
 }
 
+.map {
+  width: 100%;
+  height: 100%;
+}
+
 .mapboxgl-ctrl-top-right {
-  transform: scale(0.8);
 }

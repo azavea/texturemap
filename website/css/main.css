@@ -88,10 +88,10 @@ blockquote {
    ========================================================================== */
 
 :root {
-  --color-gray-500: #fff;
-  --color-gray-400: #bebfc0;
-  --color-primary-500: #85d1d8;
-  --color-primary-400: #7679d6;
+  --color-gray-500: #dbdbdb;
+  --color-gray-400: #bfbfbf;
+  --color-primary-500: #b28600;
+  --color-primary-400: #d2a106;
   --font-size-500: 64px;
   --font-size-400: 48px;
   --font-size-300: 25px;
@@ -150,8 +150,7 @@ html.simulate-monochromacy {
 
 a {
   color: var(--color-primary-400);
-  text-decoration: underline;
-  transition: 100ms ease-in-out all;
+  text-decoration: none;
 }
 
 a:hover {
@@ -319,7 +318,7 @@ img {
   text-decoration: none;
   font-size: var(--font-size-100);
   font-weight: 500;
-  border: 2px solid var(--color-gray-500);
+  border: 3px solid var(--color-gray-500);
   padding-left: 10px;
   background: #fff;
   padding: 8px 10px;
@@ -348,7 +347,7 @@ img {
 
 .header-primary__button:hover {
   background-color: var(--color-primary-400);
-  border: 2px solid var(--color-primary-400);
+  border: 3px solid var(--color-primary-400);
   color: #fff;
 }
 
@@ -381,12 +380,12 @@ html.simulate-monochromacy .header-primary__button {
 .footer-primary {
   text-align: center;
   color: var(--color-gray-500);
-  padding: 40px 0;
-  border-top: 1px solid #2c303a;
+  padding: 0;
 }
 
 .footer__logo {
   position: relative;
+  margin: 0 0 60px;
 }
 
 .footer__brand {
@@ -415,7 +414,7 @@ html.simulate-monochromacy .header-primary__button {
 
 @media only screen and (max-width: 560px) {
   .footer-primary {
-    padding: 20px 0 0;
+    padding: 0;
   }
   .footer-primary__container {
     display: flex;
@@ -445,6 +444,7 @@ html.simulate-monochromacy .header-primary__button {
   overflow: hidden;
   margin: 40px 20px 0;
   transition: 0.2s ease-in-out;
+  border-radius: 2px;
 }
 
 .map__iframe {
@@ -478,11 +478,12 @@ html.simulate-monochromacy .header-primary__button {
 }
 
 .hero__buttons {
-  margin-top: 36px;
+  margin-top: 34px;
   font-size: var(--font-size-200);
 }
 
 .hero__button-gettingstarted {
+  border-radius: 2px;
   background-color: var(--color-primary-400);
   border: 2px solid var(--color-primary-400);
   color: var(--background-color);
@@ -494,10 +495,10 @@ html.simulate-monochromacy .header-primary__button {
   text-align: center;
   line-height: 0;
   padding: 27px 0;
-  transition: 100ms ease-in-out all;
 }
 
 .hero__button-download {
+  border-radius: 2px;
   background-color: transparent;
   border: 2px solid var(--color-primary-400);
   color: var(--color-primary-400);
@@ -508,7 +509,6 @@ html.simulate-monochromacy .header-primary__button {
   text-align: center;
   line-height: 0;
   padding: 27px 0;
-  transition: 100ms ease-in-out all;
 }
 
 .hero__button-gettingstarted:hover,
@@ -535,12 +535,12 @@ html.simulate-monochromacy .header-primary__button {
 
   .hero__button-gettingstarted {
     width: auto;
-    padding: 17px 12px 19px;
+    padding: 21px;
     margin-right: 6px;
   }
   .hero__button-download {
     width: auto;
-    padding: 17px 12px 19px;
+    padding: 21px;
   }
 }
 
@@ -550,6 +550,15 @@ html.simulate-monochromacy .header-primary__button {
   }
   .section-hero {
     padding: 0 0 30px;
+  }
+  .hero__button-gettingstarted {
+    width: auto;
+    padding: 17px;
+    margin-right: 6px;
+  }
+  .hero__button-download {
+    width: auto;
+    padding: 17px;
   }
 }
 
@@ -613,6 +622,7 @@ html.simulate-monochromacy .header-primary__button {
   box-shadow: 0 0 1px black;
   content-visibility: auto;
   box-sizing: content-box;
+  border-radius: 2px;
 }
 
 @media only screen and (max-width: 768px) {
