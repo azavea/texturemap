@@ -90,18 +90,17 @@ blockquote {
 :root {
   --color-gray-500: #f0f0f0;
   --color-gray-400: #dbdbdb;
-  --color-gray-500: #fff;
-  --color-gray-400: #a3a3a3;
-  --color-primary-500: #b28600;
-  --color-primary-400: #d2a106;
+  --color-primary-500: hsl(237deg 100% 71%);
+  --color-primary-400: hsl(237deg 100% 81%);
+
   --font-size-500: 64px;
   --font-size-400: 48px;
   --font-size-300: 25px;
   --font-size-200: 20px;
   --font-size-100: 18px;
   --font-size-50: 16px;
-  --background-color: #16181d;
-  --container-width: 1300px;
+  --background-color: #18191b;
+  --container-width: 1500px;
   --font-family: "Atlas Grotesk Web", -apple-system, BlinkMacSystemFont,
     avenir next, avenir, segoe ui, helvetica neue, helvetica, Ubuntu, roboto,
     noto, arial, sans-serif;
@@ -151,8 +150,10 @@ html.simulate-monochromacy {
 }
 
 a {
-  color: var(--color-primary-400);
-  text-decoration: none;
+  color: var(--color-gray-400);
+  text-decoration: underline;
+  transition: all ease 0.2s;
+  text-decoration-thickness: 2px;
 }
 
 a:hover {
@@ -486,8 +487,8 @@ html.simulate-monochromacy .header-primary__button {
 
 .hero__button-gettingstarted {
   border-radius: 2px;
-  background-color: var(--color-primary-400);
-  border: 2px solid var(--color-primary-400);
+  background-color: var(--color-gray-400);
+  border: 2px solid var(--color-gray-400);
   color: var(--background-color);
   text-decoration: none;
   font-weight: 500;
@@ -497,13 +498,14 @@ html.simulate-monochromacy .header-primary__button {
   text-align: center;
   line-height: 0;
   padding: 27px 0;
+  transition: all ease 0.2s;
 }
 
 .hero__button-download {
   border-radius: 2px;
-  background-color: transparent;
-  border: 2px solid var(--color-primary-400);
-  color: var(--color-primary-400);
+  background-color: var(--color-gray-400);
+  border: 2px solid var(--color-gray-400);
+  color: var(--background-color);
   text-decoration: none;
   font-weight: 500;
   width: 180px;
@@ -511,6 +513,7 @@ html.simulate-monochromacy .header-primary__button {
   text-align: center;
   line-height: 0;
   padding: 27px 0;
+  transition: all ease 0.2s;
 }
 
 .hero__button-gettingstarted:hover,
@@ -555,12 +558,12 @@ html.simulate-monochromacy .header-primary__button {
   }
   .hero__button-gettingstarted {
     width: auto;
-    padding: 17px;
+    padding: 20px 17px;
     margin-right: 6px;
   }
   .hero__button-download {
     width: auto;
-    padding: 17px;
+    padding: 20px 17px;
   }
 }
 
@@ -582,16 +585,10 @@ html.simulate-monochromacy .header-primary__button {
 }
 
 .section-types {
-  padding: 150px 0;
+  padding: 120px 0;
   margin: 0;
   z-index: 2;
   position: relative;
-}
-
-.types__links {
-  color: #ccc;
-  margin-top: 16px;
-  display: none;
 }
 
 .types__heading {
