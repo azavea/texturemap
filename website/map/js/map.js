@@ -8,11 +8,11 @@ function getMapConfig({ simulate, texture }) {
       version: 8,
       name: "Blank",
       id: "blank",
-      sprite: window.location.href + "js/polygons-sprite",
+      sprite: window.location.href + "/js/polygons-sprite",
       sources: {
         polygons: {
           type: "geojson",
-          data: "js/polygon.geojson",
+          data: "/map/js/polygon.geojson",
         },
       },
       layers: [
