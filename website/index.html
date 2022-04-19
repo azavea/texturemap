@@ -4,9 +4,7 @@
     <link defer rel="stylesheet" href="css/normalize.css" />
     <link defer rel="stylesheet" href="css/main.css" />
     <meta charset="utf-8" />
-    <title>
-      TextureMap: Design colorblind-friendly maps for improved accessibility
-    </title>
+    <title>TextureMap: Colorblind-friendly maps made easy</title>
     <meta
       name="description"
       content="Textures, patterns, and shapes that make web maps work for people with color vision deficiency. Built for Mapbox GL and MapLibre GL."
@@ -15,7 +13,7 @@
 
     <meta
       property="og:title"
-      content="TextureMap: Design colorblind-friendly maps for improved accessibility"
+      content="TextureMap: Colorblind-friendly maps made easy"
     />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://texturemap.org" />
@@ -54,15 +52,15 @@
     <meta name="theme-color" content="#fafafa" />
   </head>
 
-  <body>
+  <body id="body">
     <header class="header-primary">
       <div class="container header-primary__container">
         <h1>
           <div class="header-primary__logo">
             <img
               src="img/texturemap-logo.svg"
-              height="32"
-              width="170"
+              height="38"
+              width="204"
               alt="TextureMap"
             />
           </div>
@@ -74,8 +72,10 @@
         <div class="container">
           <div class="hero">
             <div class="hero__content">
-              <h2 class="heading-size--500">Design colorblind-friendly maps</h2>
-              <p class="large">
+              <h2 class="heading-size--500">
+                Colorblind-friendly maps made easy
+              </h2>
+              <p>
                 Textures, patterns, and shapes that make web maps work for
                 people with color vision deficiency. Built for Mapbox GL and
                 MapLibre GL.
@@ -93,9 +93,21 @@
                 >
               </div>
             </div>
+            <div class="hero__map">
+              <div class="toggle">
+                <label
+                  ><input
+                    type="checkbox"
+                    onclick="toggleMonochromacy()"
+                    checked
+                  />
+                  Simulate monochromacy</label
+                >
+              </div>
+              <div id="map" class="map texturemap-on"></div>
+            </div>
           </div>
         </div>
-        <div id="map" class="map texturemap-on"></div>
       </section>
       <section class="section-types">
         <div class="container">
@@ -103,7 +115,7 @@
             <h2 class="heading-size--400">
               Accessible styles for all geometry types
             </h2>
-            <p class="large">
+            <p>
               TextureMap includes resources for
               <a href="https://github.com/azavea/texturemap#polygons">polygon</a
               >, <a href="https://github.com/azavea/texturemap#lines">line</a>,
@@ -115,11 +127,11 @@
           </div>
           <ul class="types">
             <li class="types__item">
-              <div class="types__right">
+              <div class="types__right types__image--polygons">
                 <picture>
                   <source
-                    srcset="img/texturemap-screenshot-polygons.webp"
-                    type="image/webp"
+                    srcset="img/texturemap-screenshot-polygons.avif"
+                    type="image/avif"
                   />
                   <source
                     srcset="img/texturemap-screenshot-polygons.png"
@@ -137,18 +149,14 @@
               </div>
               <div class="types__left">
                 <h3 class="types__heading heading-size--200">Polygons</h3>
-                <p>
-                  Shape up your polygon layers by offering an
-                  accessibility-boosting pattern fill
-                </p>
               </div>
             </li>
             <li class="types__item">
-              <div class="types__right">
+              <div class="types__right types__image--lines">
                 <picture>
                   <source
-                    srcset="img/texturemap-screenshot-lines.webp"
-                    type="image/webp"
+                    srcset="img/texturemap-screenshot-lines.avif"
+                    type="image/avif"
                   />
                   <source
                     srcset="img/texturemap-screenshot-lines.png"
@@ -166,18 +174,14 @@
               </div>
               <div class="types__left">
                 <h3 class="types__heading heading-size--200">Lines</h3>
-                <p>
-                  Make your lines visually distinct with a mix of dashes and
-                  gaps
-                </p>
               </div>
             </li>
             <li class="types__item">
-              <div class="types__right">
+              <div class="types__right types__image--points">
                 <picture>
                   <source
-                    srcset="img/texturemap-screenshot-points.webp"
-                    type="image/webp"
+                    srcset="img/texturemap-screenshot-points.avif"
+                    type="image/avif"
                   />
                   <source
                     srcset="img/texturemap-screenshot-points.png"
@@ -195,91 +199,110 @@
               </div>
               <div class="types__left">
                 <h3 class="types__heading heading-size--200">Points</h3>
-                <p>
-                  Replace circle markers with a variety of simple, recognizable
-                  geometric shapes
-                </p>
               </div>
             </li>
           </ul>
         </div>
       </section>
-      <div class="container">
-        <section class="section-accessibility">
-          <div>
-            <h3 class="heading-size--400">Make your map more useful</h3>
-            <p>
-              Approximately 300 million people—or 4.5% of the global
-              population—have a form of color vision deficiency (the inability
-              to distinguish certain shades of color). Complex maps that depend
-              exclusively on color to symbolize
-              <a href="http://www.stat.yale.edu/Courses/1997-98/101/catdat.htm"
-                >categorical data</a
-              >
-              can be frustrating, if not impossible, to read.
-            </p>
-            <p>
-              According to
-              <a
-                href="https://colororacle.org/resources/2007_JennyKelso_DesigningMapsForTheColourVisionImpaired.pdf"
-                >Designing Maps for the Colour-Vision Impaired</a
-              >
-              by Bernhard Jenny and Nathaniel Vaughn Kelso:
-            </p>
-            <blockquote>
-              To avoid problematic colour combinations, the cartographer should
-              use colours with strong contrast and supplemental visual
-              variables, such as shape, size, and
-              <strong>pattern variations</strong> to allow all readers to
-              discern and directly interpret a symbol without consulting a
-              legend"
-            </blockquote>
-            <p>
-              TextureMap gives you everything you need to start adding textures,
-              patterns, and shapes to your maps in minutes.
-            </p>
-            <div class="cta__buttons">
-              <a
-                href="https://github.com/azavea/texturemap#how-to-use"
-                class="hero__button-gettingstarted"
-                >Get started</a
-              >
-              <a
-                href="https://github.com/azavea/texturemap/releases/latest/download/texturemap.zip"
-                class="hero__button-download"
-                >Download</a
-              >
+
+      <section class="section-accessibility">
+        <div class="container">
+          <div class="container-accessibility">
+            <div>
+              <h3 class="heading-size--400">
+                Let’s make maps better for everyone
+              </h3>
+              <p>
+                Approximately 300 million people—or 4.5% of the global
+                population—have a form of color vision deficiency (the inability
+                to distinguish certain shades of color). Complex maps that
+                depend exclusively on color to symbolize
+                <a
+                  href="http://www.stat.yale.edu/Courses/1997-98/101/catdat.htm"
+                  >categorical data</a
+                >
+                can be frustrating, if not impossible, to read.
+              </p>
+              <p>
+                According to
+                <a
+                  href="https://colororacle.org/resources/2007_JennyKelso_DesigningMapsForTheColourVisionImpaired.pdf"
+                  >Designing Maps for the Colour-Vision Impaired</a
+                >
+                by Bernhard Jenny and Nathaniel Vaughn Kelso:
+              </p>
+              <blockquote>
+                To avoid problematic colour combinations, the cartographer
+                should use colours with strong contrast and supplemental visual
+                variables, such as shape, size, and
+                <strong>pattern variations</strong> to allow all readers to
+                discern and directly interpret a symbol without consulting a
+                legend"
+              </blockquote>
+              <p>
+                TextureMap gives you everything you need to start adding
+                textures, patterns, and shapes to your maps in minutes.
+              </p>
+              <div class="cta__buttons">
+                <a
+                  href="https://github.com/azavea/texturemap#how-to-use"
+                  class="hero__button-gettingstarted"
+                  >Get started</a
+                >
+                <a
+                  href="https://github.com/azavea/texturemap/releases/latest/download/texturemap.zip"
+                  class="hero__button-download"
+                  >Download</a
+                >
+              </div>
+            </div>
+            <div class="accessibility__image">
+              <picture>
+                <source
+                  srcset="img/accessibility-photos.webp"
+                  type="image/webp"
+                />
+                <source
+                  srcset="img/accessibility-photos.jpg"
+                  type="image/jpg"
+                />
+                <img
+                  src="img/accessibility-photos.jpg"
+                  loading="lazy"
+                  width="514"
+                  height="482"
+                  alt="A collage of three photos intended: one photo of a hand holding a phone displaying a map, one photo of a woman holding a paper map, one photo of a close up paper map"
+                />
+              </picture>
             </div>
           </div>
-          <div class="accessibility__image">
-            <picture>
-              <source
-                srcset="img/accessibility-photos.webp"
-                type="image/webp"
-              />
-              <source srcset="img/accessibility-photos.jpg" type="image/jpg" />
-              <img
-                src="img/accessibility-photos.jpg"
-                loading="lazy"
-                width="514"
-                height="482"
-                alt="A collage of three photos intended: one photo of a hand holding a phone displaying a map, one photo of a woman holding a paper map, one photo of a close up paper map"
-              />
-            </picture>
-          </div>
-        </section>
-      </div>
+        </div>
+      </section>
     </main>
 
     <footer class="footer-primary">
-      <a href="https://azavea.com">
-        <img
-          class="footer__logo"
-          width="144"
-          height="35"
-          src="img/azavea-logo.svg"
-          alt="Azavea"
-      /></a>
+      <div class="container">
+        <div class="footer-logo">
+          TextureMap is an open-source project by
+          <a href="https://azavea.com">Azavea</a>
+        </div>
+        <div class="footer-links">
+          <ul>
+            <li>
+              <a href="https://github.com/azavea/texturemap#how-to-use"
+                >Get Started</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://github.com/azavea/texturemap/releases/latest/download/texturemap.zip"
+                >Download</a
+              >
+            </li>
+            <li><a href="https://github.com/azavea/texturemap">Github</a></li>
+          </ul>
+        </div>
+      </div>
     </footer>
 
     <script>
@@ -293,6 +316,15 @@
       }
       loadMap();
       window.addEventListener("resize", loadMap);
+      monochromacyToggled = true;
+      function toggleMonochromacy() {
+        monochromacyToggled = !monochromacyToggled;
+        if (!monochromacyToggled) {
+          document.getElementById("body").classList.add("monochromacy-off");
+        } else {
+          document.getElementById("body").classList.remove("monochromacy-off");
+        }
+      }
     </script>
   </body>
 </html>

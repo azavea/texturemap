@@ -1,5 +1,5 @@
 var defaultCenter = { lng: -75.17758, lat: 39.97833 };
-var defaultZoom = 16.5;
+var defaultZoom = 17.5;
 var defaultBearing = 0;
 
 function getMapConfig({ simulate, texture }) {
@@ -65,25 +65,25 @@ function getMapConfig({ simulate, texture }) {
                 "fill-color": [
                   "step",
                   ["get", "C_DIG1"],
-                  "#bcbd22",
+                  "#1b9e77",
                   1,
-                  "#2ca02c",
+                  "#d95f02",
                   2,
-                  "#ff7f0e",
+                  "#7570b3",
                   3,
-                  "#d62728",
+                  "#e7298a",
                   4,
-                  "#9467bd",
+                  "#66a61e",
                   5,
                   "transparent",
                   6,
-                  "#1f77b4",
+                  "#e6ab02",
                   7,
-                  "#e377c2",
+                  "#a6761d",
                   8,
-                  "#17becf",
+                  "#666666",
                   9,
-                  "#8c564b",
+                  "#17becf",
                 ],
                 "fill-opacity": 1,
               },
@@ -147,7 +147,7 @@ function getMapConfig({ simulate, texture }) {
 
 var mapTexturemap = new mapboxgl.Map({
   container: "map-texturemap",
-  ...getMapConfig({ simulate: true, texture: true }),
+  ...getMapConfig({ simulate: false, texture: true }),
 });
 
 mapTexturemap.addControl(
