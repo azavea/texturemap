@@ -120,9 +120,9 @@ html {
 
 @font-face {
   font-family: "Atlas Grotesk Web";
-  src: url("../fonts/AtlasGrotesk-Medium-Web.woff2") format("woff2"),
-    url("../fonts/AtlasGrotesk-Medium-Web.woff") format("woff");
-  font-weight: 500;
+  src: url("../fonts/AtlasGrotesk-Bold-Web.woff2") format("woff2"),
+    url("../fonts/AtlasGrotesk-Bold-Web.woff") format("woff");
+  font-weight: 600;
   font-style: normal;
   font-stretch: normal;
   font-display: swap;
@@ -220,7 +220,7 @@ img {
   }
 }
 
-@media only screen and (max-width: 560px) {
+@media only screen and (max-width: 700px) {
   body {
     font-size: var(--font-size-50);
   }
@@ -259,7 +259,7 @@ img {
   margin-bottom: 16px;
 }
 
-@media only screen and (max-width: 560px) {
+@media only screen and (max-width: 700px) {
   .heading-size--500 {
     font-size: 36px;
     margin-bottom: 18px;
@@ -299,7 +299,7 @@ img {
 }
 
 .header-primary__logo img {
-  width: clamp(180px, 15.7vw, 340px);
+  width: clamp(170px, 15.7vw, 340px);
 }
 
 .header-primary__nav {
@@ -335,7 +335,7 @@ img {
   box-shadow: 0 1px 6px 0 rgb(0 0 0 / 6%), 0 2px 32px 0 rgb(0 0 0 / 16%);
 }
 
-@media only screen and (max-width: 560px) {
+@media only screen and (max-width: 700px) {
   .simulate-button {
     display: none;
   }
@@ -363,7 +363,7 @@ html.simulate-monochromacy .header-primary__button {
   color: var(--color-primary-400);
 }
 
-@media only screen and (max-width: 560px) {
+@media only screen and (max-width: 700px) {
   .header-primary__nav {
     display: none;
   }
@@ -433,7 +433,7 @@ html.simulate-monochromacy .header-primary__button {
   color: #fff;
 }
 
-@media only screen and (max-width: 560px) {
+@media only screen and (max-width: 700px) {
   .footer-primary__container {
     display: flex;
     padding: 28px 15px 24px;
@@ -447,7 +447,7 @@ html.simulate-monochromacy .header-primary__button {
   }
 }
 
-@media only screen and (max-width: 560px) {
+@media only screen and (max-width: 700px) {
   .header-primary__container {
     text-align: left;
   }
@@ -477,7 +477,7 @@ html.simulate-monochromacy .header-primary__button {
   border: none;
 }
 
-@media only screen and (max-width: 560px) {
+@media only screen and (max-width: 700px) {
   .map {
     display: none;
   }
@@ -578,7 +578,7 @@ html.simulate-monochromacy .header-primary__button {
   }
 }
 
-@media only screen and (max-width: 560px) {
+@media only screen and (max-width: 700px) {
   .hero__content {
     text-align: left;
     flex-basis: 100%;
@@ -588,7 +588,7 @@ html.simulate-monochromacy .header-primary__button {
     display: none;
   }
   .section-hero {
-    padding: 0 0 40px;
+    padding: 10px 0 50px;
   }
   .hero__button-gettingstarted {
     width: auto;
@@ -681,7 +681,7 @@ html.simulate-monochromacy .header-primary__button {
   }
 }
 
-@media only screen and (max-width: 560px) {
+@media only screen and (max-width: 700px) {
   .section-types {
     padding: 40px 0;
   }
@@ -691,6 +691,9 @@ html.simulate-monochromacy .header-primary__button {
   .types__item {
     grid-template-columns: 1fr;
     padding: 15px 0;
+  }
+  .types__item:last-child {
+    padding-bottom: 0;
   }
 }
 
@@ -776,7 +779,7 @@ html.simulate-monochromacy .header-primary__button {
   }
 }
 
-@media only screen and (max-width: 560px) {
+@media only screen and (max-width: 700px) {
   .footer-primary .container {
     display: flex;
     flex-direction: column;

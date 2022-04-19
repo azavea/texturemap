@@ -308,7 +308,7 @@
     <script>
       let mapLoaded = false;
       function loadMap() {
-        if (!mapLoaded && window.innerWidth > 560) {
+        if (!mapLoaded && window.innerWidth > 700) {
           document.getElementById("map").innerHTML =
             '<iframe class="map__iframe" loading="lazy" src="map" title="Demo of TextureMap"></iframe>';
           mapLoaded = true;
