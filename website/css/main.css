@@ -95,12 +95,14 @@ blockquote {
 
   accent-color: var(--color-primary-400);
 
-  --font-size-500: clamp(53.33px, 5.39vw, 97.02px);
-  --font-size-400: clamp(39.47px, 4.004vw, 72.072px);
-  --font-size-300: clamp(29.21px, 2.926vw, 52.668px);
-  --font-size-200: clamp(21.62px, 2.156vw, 38.808px);
-  --font-size-100: clamp(16px, 1.617vw, 29.106px);
-  --font-size-50: clamp(16px, 1.155vw, 20.79px);
+  --multiplier: 0.9;
+
+  --font-size-500: clamp(53.33px, 5.39vw, 77.616px);
+  --font-size-400: clamp(39.47px, 4.004vw, 57.8378px);
+  --font-size-300: clamp(29.21px, 2.926vw, 42.2661px);
+  --font-size-200: clamp(21.62px, 2.156vw, 31.1434px);
+  --font-size-100: clamp(16px, 1.617vw, 23.3576px);
+  --font-size-50: clamp(16px, 1.155vw, 16.684px);
 
   --background-color-primary: #151515;
   --background-color-secondary: #1f1f1f;
@@ -203,7 +205,7 @@ h1 {
 }
 
 .container {
-  max-width: 1800px;
+  max-width: 1400px;
   margin-left: auto;
   margin-right: auto;
   padding: 0 30px;
@@ -507,6 +509,7 @@ html.simulate-monochromacy .header-primary__button {
 
 .hero__map {
   flex-basis: 50%;
+  position: relative;
 }
 
 .hero__buttons {
@@ -813,7 +816,7 @@ html.simulate-monochromacy .header-primary__button {
 
 .toggle {
   position: absolute;
-  right: 8px;
+  right: -25px;
   bottom: 14px;
   background-color: var(--background-color-secondary);
   font-size: var(--font-size-50);
