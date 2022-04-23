@@ -145,13 +145,13 @@ function getMapConfig({ simulate, texture }) {
   };
 }
 
-var mapTexturemap = new mapboxgl.Map({
+var mapTexturemap = new maplibregl.Map({
   container: "map-texturemap",
   ...getMapConfig({ simulate: false, texture: true }),
 });
 
 mapTexturemap.addControl(
-  new mapboxgl.NavigationControl({ showCompass: false }),
+  new maplibregl.NavigationControl({ showCompass: false }),
   "top-right"
 );
 
