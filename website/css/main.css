@@ -20,11 +20,21 @@
 ::-moz-selection {
   background: #b3d4fc;
   text-shadow: none;
+  color: var(--background-color);
+}
+
+a::-moz-selection {
+  color: currentColor;
 }
 
 ::selection {
   background: #b3d4fc;
   text-shadow: none;
+  color: var(--background-color);
+}
+
+a::selection {
+  color: currentColor;
 }
 
 /*
